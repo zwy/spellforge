@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>SpellForge</title>
+  <rect width="64" height="64" rx="15" fill="#0f1115"/>
+  <path d="M24 17H19a5 5 0 0 0-5 5v6a4 4 0 0 1-4 4
+           4 4 0 0 1 4 4v6a5 5 0 0 0 5 5h5"
+        fill="none" stroke="#6c8cff" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 17h5a5 5 0 0 1 5 5v6a4 4 0 0 0 4 4
+           4 4 0 0 0-4 4v6a5 5 0 0 1-5 5h-5"
+        fill="none" stroke="#6c8cff" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 22l3.2 6.8L42 32l-6.8 3.2L32 42l-3.2-6.8L22 32
+           l6.8-3.2z"
+        fill="#e6e9ef"/>
+</svg>
