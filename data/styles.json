@@ -1,0 +1,2392 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-09-24T01:11:47Z",
+  "source": "openrouter.ai/benchmarks/media/images",
+  "styles": [
+    {
+      "id": "portraits",
+      "group": "Photoreal",
+      "name": "Portraits",
+      "url": "https://openrouter.ai/benchmarks/media/images/portraits",
+      "why_chosen": "Skin and lens realism, natural light and motion, hands and eyes.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "candid-outdoors",
+          "label": "Candid outdoors",
+          "heading": "Candid outdoors",
+          "caption": "Skin and lens realism, natural light and motion, hands and eyes.",
+          "prompt": "Candid photograph of a man laughing mid-conversation on a city sidewalk in late afternoon sun, hair moving in the wind, one hand raised mid-gesture. Backlit with the lens flare kept in frame, background traffic softly out of focus, natural skin tones.",
+          "url": "https://openrouter.ai/benchmarks/media/images/portraits?variant=candid-outdoors",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "街头人像",
+              "value": "以所选主体为画面核心，生成一张午后城市人行道上的抓拍肖像。人物置于画面三分线一侧，上半身完整入镜，动作停在说话或大笑的瞬间，一只手抬起做手势，发丝被风带起。采用逆光机位，太阳位于主体身后偏上，允许镜头光斑留在画面内且不裁切；背景车流与建筑以浅景深柔化，只留色块与光点。保留自然肤色与真实皮肤纹理，暖金色高光配冷调阴影。严格保持主体身份、五官与关键外貌特征一致，不改变发型轮廓与服装主色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "抓拍写真",
+              "value": "把所选主体放进一段正在发生的街头对话里：身体侧对镜头、头部自然转向，笑容或表情停在半途，双手处于真实动作中而非摆拍。构图用中景，头顶留少量空间，脚下可裁切。光源为傍晚斜射逆光，边缘轮廓发亮，镜头光斑自然落在肩线或画面上方。背景为虚化的街道与车流，暖橙与青灰形成对比。肤质保留毛孔、绒毛与自然油光，不要过度磨皮。保持主体身份与关键特征一致，服装、发色、配饰不得随意改动。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "生活方式",
+              "value": "生成一张带生活气息的户外场景图，以所选主体为视觉中心。主体置于城市人行道或街角，处于行走、交谈或回头的动态瞬间，与周围环境自然互动。傍晚逆光从背后打来，形成柔和轮廓光与轻微空气雾感，镜头光斑保留在画面内。背景车流、行人与建筑用大光圈虚化成暖色光斑。整体为低饱和暖金加冷调阴影，轻微胶片颗粒。保持主体身份、比例与关键特征一致，主体面部不得被背景元素遮挡。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "封面海报",
+              "value": "以所选主体为主角，生成可横竖裁切的街头抓拍式封面图。主体占据画面中偏一侧，另一侧留出干净空间便于后期排字。采用傍晚逆光与镜头光斑，光线擦过主体边缘形成高光轮廓，背景车流与街道深度虚化。画面强调真实镜头质感：轻微暗角、柔和颗粒、自然肤色与清晰眼神光。主体表情为真实的笑或专注神态，动作处于半途而非定格摆拍。严格保持主体身份、五官比例与关键特征一致，发型与服装主色不变。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T00:58:29Z"
+        },
+        {
+          "id": "close-up",
+          "label": "Close-up detail",
+          "heading": "Close-up detail",
+          "caption": "Skin and lens realism, natural light and motion, hands and eyes.",
+          "prompt": "Photograph of an elderly luthier holding a half-finished violin body up to a workshop window to check its line, both hands in sharp focus, wood dust suspended in the light. Weathered skin and worn fingernails visible, soft directional daylight from one side, the workbench dark behind.",
+          "url": "https://openrouter.ai/benchmarks/media/images/portraits?variant=close-up",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "匠人肖像",
+              "value": "以「所选主体」为核心生成一张胸上到半身的近距离写实肖像：主体双手把核心物件举至窗边，借侧向自然日光检验线条，手部与面部同时保持锐利对焦，空气中可见悬浮的微尘颗粒。光线为单侧柔和方向性日光，背景压暗，工作台隐入阴影。保留真实肤质、皱纹、指节与指甲磨损细节，衣着与手部特征必须与参考一致，不美化、不磨皮。整体为暖木色与灰褐的低饱和色调。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "手部特写",
+              "value": "聚焦「所选主体」的双手与所持物件，采用近景特写构图，画面主体为手部与物件边缘，可带入少量前臂与下颌轮廓。单侧柔和窗光从画面一侧切入，在指节与物件弧面上形成明确高光与过渡阴影，木屑或粉尘在光带中悬浮，景深极浅，背景工作台压成暗色虚化。保留指纹、指甲磨损、皮肤纹理等真实质感，手型与物件结构必须与参考一致。暖木色与灰褐为主的低饱和配色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品细节",
+              "value": "把「所选主体」（产品或器物）置于窗前的双手之间，以举向光源检验线条的姿势呈现，镜头贴近主体表面，突出材质纹理、接缝与手工痕迹。单侧柔和方向性日光塑形，让表面产生清晰高光带与柔和阴影过渡，背景工作台压暗虚化，空气中可见细小尘埃。色彩以暖木色、米白与灰褐为主，整体安静、纪实。保持产品外形、比例、颜色与关键结构特征一致，不做夸张变形。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "氛围场景",
+              "value": "生成一张具有纪实手感的近景场景图，以「所选主体」为画面中心，置于靠窗的工作空间内，侧向自然日光形成方向明确的柔光，主体被光带照亮、背景压暗成深色环境。空气中有悬浮微尘，画面保留自然动态与轻微运动模糊边缘，浅景深让主体细节锐利。色调温暖克制，以木色、灰褐与米白为主。保持主体的身份、外观、比例与关键特征与参考一致。构图紧凑、留白少，视线集中。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T00:53:14Z"
+        },
+        {
+          "id": "studio-headshot",
+          "label": "Studio headshot",
+          "heading": "Studio headshot",
+          "caption": "Skin and lens realism, natural light and motion, hands and eyes.",
+          "prompt": "Studio headshot of a woman in a charcoal blazer against a mid-grey seamless backdrop, lit by a large softbox slightly above and to the left with a soft fill from the right, catchlights in both eyes. An 85mm look with shallow depth of field, skin texture and flyaway hairs kept rather than smoothed.",
+          "url": "https://openrouter.ai/benchmarks/media/images/portraits?variant=studio-headshot",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "以所选主体为唯一焦点，生成一张工作室半身头像。主体居中，取肩部以上胸像构图，头顶、发型轮廓与双肩完整可见，不裁切额头、下巴或关键配饰，正对镜头或轻微三分之二侧脸。背景为干净的中灰无缝幕布，无任何陈设。主光用大柔光箱置于主体左上方略高处，右侧以柔和补光填充阴影，双眼各留一枚清晰眼神光，明暗过渡平滑。模拟 85mm 镜头，浅景深，焦点锁在眼睛。保留真实皮肤纹理与飞散发丝，拒绝过度磨皮。保持主体身份、五官、发型与服装特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "职业照",
+              "value": "把所选主体拍成一张职业形象照。构图为胸口以上的半身肖像，人物挺立居中，肩线水平，头部与肩部边缘不裁切，目光平视镜头，表情自然克制。背景使用中灰无缝背板，色调统一、无渐变噪点，与主体衣着形成克制对比。布光沿用单只大柔光箱位于左上方略高处作为主光，右侧柔和补光压住阴影，双眼中保留明确眼神光。镜头感为 85mm 浅景深，皮肤纹理、毛孔与飞散发丝如实保留，不做液化或磨皮。严格保持主体身份与关键外貌特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "将所选主体设定为角色定妆照。半身胸像构图居中，主体正面朝向镜头，双肩与头部完整入画，姿态稳定不夸张。背景为均匀的中灰无缝幕布，纯粹衬托角色轮廓与服装剪影。主光来自左上方的大柔光箱，右侧柔和补光，双眼中各有一枚清晰眼神光，塑造立体但柔和的面部体积。模拟 85mm 镜头与浅景深，焦点落在眼睛，皮肤质感、发丝走向和飞散发丝全部保留，不做平滑处理。保持角色身份、发型、服装与标志性特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "播客封面",
+              "value": "以所选主体为封面人物生成一张竖版肖像。主体居中偏上，取胸部以上构图，头顶与肩部完整，留出下方与两侧的干净中灰背景呼吸空间。采用大柔光箱置于左上方略高处作主光，右侧柔和补光平衡阴影，双眼保留明亮眼神光，氛围冷静、专业、可信。镜头模拟 85mm，浅景深虚化背景，皮肤纹理与飞散发丝保留真实感。保持主体身份、五官比例、发型与服装特征一致，不改变年龄感与气质。画面内不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:17Z"
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "group": "Photoreal",
+      "name": "Animals",
+      "url": "https://openrouter.ai/benchmarks/media/images/animals",
+      "why_chosen": "Fur, anatomy and fine detail.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "macro-insect",
+          "label": "Macro insect",
+          "heading": "Macro insect",
+          "caption": "Fur, anatomy and fine detail.",
+          "prompt": "Macro photograph of a honeybee on a lavender flower, the compound eyes and the individual hairs on the thorax in focus, pollen grains visible on the legs. Diffused light, soft purple and green bokeh, no motion blur.",
+          "url": "https://openrouter.ai/benchmarks/media/images/animals?variant=macro-insect",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "微距特写",
+              "value": "以「所选主体」为唯一焦点的极致微距特写：让主体占据画面主要区域，仅保留最关键的一小块结构进入绝对清晰区，其余部分自然过渡为柔焦。采用漫射柔光，避免硬阴影与高光溢出，真实呈现表面绒毛、纹理、颗粒与细微反光。背景为浅紫与草绿的低饱和虚化光斑，营造安静、湿润、自然的氛围。严格保持主体的身份、形态与关键特征一致，不改变其固有色与结构比例。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "生态壁纸",
+              "value": "生成一张以「所选主体」为核心的生态微距壁纸。横向宽幅构图，主体略偏一侧并留出呼吸空间，背景是大面积柔和虚化的绿意与花影，形成浅紫到嫩绿的冷暖过渡。用逆光或侧逆光勾勒主体边缘轮廓，光线漫射均匀，绒毛、鳞片、纹路与颗粒清晰可辨。整体色调清新通透、安静自然，具备微距摄影的浅景深与真实光学质感。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品微距",
+              "value": "将「所选主体」作为产品置于微距镜头下拍摄：以三分之四侧角贴近主体，突出材质表面的细腻纹理、纤维、缝隙与细微反光，浅景深让焦点落在最具辨识度的局部。采用柔和漫射光配合轻微侧光，避免生硬阴影；色彩保留主体固有色，并与浅紫、草绿的自然背景柔和呼应。画面干净、克制、有呼吸感。严格保持产品外形、比例、配色与识别特征不变。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "自然图鉴",
+              "value": "生成一张自然图鉴风格的微距影像，以「所选主体」为唯一被摄对象。构图居中或轻微偏移，主体完整入画且边缘不被裁切，关键结构落在清晰焦点内，形态特征可辨认。光线为无方向性的漫射自然光，表面绒毛、纹理与半透明质感真实呈现，背景为浅紫与绿色调的低对比虚化。整体氛围安静、写实、可信，接近科学摄影的记录感。保持主体身份、姿态与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T00:53:30Z"
+        },
+        {
+          "id": "pet-at-home",
+          "label": "Pet at home",
+          "heading": "Pet at home",
+          "caption": "Fur, anatomy and fine detail.",
+          "prompt": "Photograph of a tabby cat asleep on a sunlit windowsill, fur lit from behind so the individual hairs glow at the edges, one ear turned toward the camera. Shallow depth of field, a houseplant soft in the background, quiet morning light.",
+          "url": "https://openrouter.ai/benchmarks/media/images/animals?variant=pet-at-home",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "宠物肖像",
+              "value": "以所选宠物为唯一主体，拍摄窗台晨光中的写实肖像。采用近景到中景构图，主体蜷卧或侧躺于木质窗台，占据画面中下部，上方留出窗框与室内空间。使用逆光或侧逆光，让毛发边缘透出暖金色轮廓光，单根毛发清晰可见；浅景深使背景绿植虚化成柔和色块。保持毛色、斑纹、眼色、体态与关键特征完全一致。色调为暖米白与浅金，氛围安静慵懒。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "生成一张以所选主体为中心的家居生活场景图。主体自然置于靠窗的窗台或桌面，沐浴清晨斜射的柔和阳光，光线从侧后方进入形成通透轮廓。采用水平视角，主体落在三分线交点，背景保留虚化的绿植、窗帘或室内陈设，浅景深、低对比、暖色调。写实质感，强调表面纹理与细微绒毛般的光泽。严格保持主体身份、外形比例与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成横向宽幅写实壁纸。以所选主体为视觉焦点，偏置于画面一侧，另一侧留给被晨光穿透的窗台、薄雾与虚化绿植，形成大面积呼吸感留白。用逆光轮廓光勾勒主体边缘，浅景深，配色为柔和过渡的暖白、浅金与灰绿。光线低反差、无硬阴影，整体安静通透，带清晨的湿润感。保持主体外形与关键特征一致，不改变其身份。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "把所选产品放入窗台晨光场景，做成生活方式产品图。产品置于木质窗台，与视线大致齐平，占据画面中央或三分线位置，旁边可点缀少量绿植叶片。使用侧逆自然光，让产品边缘出现细腻高光与轮廓亮边，材质纹理、磨砂或反光表面清晰可辨。浅景深虚化背景，整体暖白与浅木色调。保持产品外形、配色与关键细节不变。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:46Z"
+        },
+        {
+          "id": "wildlife",
+          "label": "Wildlife",
+          "heading": "Wildlife",
+          "caption": "Fur, anatomy and fine detail.",
+          "prompt": "Wildlife photograph of a red fox pausing in long grass at dawn, mid-step with one forepaw raised, looking directly at the camera. Dew on the grass, low warm backlight through the coat, long lens compression with the treeline soft behind.",
+          "url": "https://openrouter.ai/benchmarks/media/images/animals?variant=wildlife",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "野生动物肖像",
+              "value": "以所选主体为核心，生成一张野生动物摄影风格的中近景肖像。主体置于画面中央偏侧，采用平视机位、长焦压缩构图，背景为虚化的树林或草原层次。光线用清晨低角度暖色逆光，勾勒主体边缘轮廓，毛发或表面质感要有清晰的绒毛、纹理与细腻高光。色彩保持暖金与冷绿对比，氛围安静、警觉、有呼吸感。严格保持主体身份与关键特征一致，不改变外形比例与标志性细节。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为核心，生成一张清晨野外场景图。主体位于长草或自然植被中，呈停顿、迈步或凝视的中途动态，一只前肢抬起或身体微侧，视线朝向镜头。前景带露珠细节，背景树林柔和虚化，形成纵深。用低角度暖色逆光穿过主体表面，产生轮廓光与半透明质感。色调暖金、青绿、柔雾灰，氛围安静而紧张。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为核心，生成竖屏或宽屏壁纸级野生动物画面。主体偏置于三分线交点，留出大面积虚化的自然环境作为呼吸空间。采用长焦浅景深，背景树林化为柔和色块，主体毛发或材质细节锐利。光线为清晨暖色低逆光，边缘金边、阴影通透。色彩以暖金、草绿、雾蓝为主，整体氛围沉静、有清晨湿润感。保持主体身份与关键特征一致，不做拟人化或风格化改动。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报主视觉",
+              "value": "以所选主体为核心，生成一张野生动物纪录片海报级主视觉。主体位于画面中央或黄金分割点，低机位平视，长焦压缩让背景树林与晨雾形成层次柔和的纵深。逆光穿过主体边缘形成暖色轮廓光，露珠、毛发、表面质感清晰可辨。色彩暖金与青绿互补，氛围静谧而有张力，主体视线直视观者。保持主体身份与关键特征一致，不改动结构与标志性细节。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:24Z"
+        }
+      ]
+    },
+    {
+      "id": "cities",
+      "group": "Photoreal",
+      "name": "Cities & streets",
+      "url": "https://openrouter.ai/benchmarks/media/images/cities",
+      "why_chosen": "Neon and signage, geometry at scale, famous-place fidelity.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "landmark",
+          "label": "Landmark",
+          "heading": "Landmark",
+          "caption": "Neon and signage, geometry at scale, famous-place fidelity.",
+          "prompt": "Photograph of the Eiffel Tower from across the river at sunrise, the ironwork lattice resolved clearly against a pale pink sky, the riverbank empty and wet from overnight rain. Wide angle, the tower centred and complete from base to tip.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cities?variant=landmark",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "生成一张竖构图手机壁纸：以所选主体为画面核心，安置在前景下方三分之一处的湿河岸步道上，背后是居中、从基座到塔尖完整入画的铁塔。广角镜头、地平线压低，塔身垂直贯穿画面上半部，形成对称的纵向几何。清晨淡粉与浅蓝渐变天空，湿地面反光柔和，铁艺格栅纹理清晰锐利。严格保持主体身份与关键外形特征一致，比例自然、不裁切主体。整体安静清冷、雨后通透。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "旅拍人像",
+              "value": "以所选人物为唯一主体的清晨旅拍人像。人物站在空旷湿河岸边，全身或七分身构图，三分之二侧身或回望镜头，身体落在画面下三分之一，头顶上方完整保留塔尖到基座的铁塔轮廓，人物与地标形成大小对比的纵深关系。采用清晨逆侧光，淡粉天空作柔和轮廓光，肤色自然、衣料质感真实，地面湿反光映出人物与塔影。保持人物身份、发型、服装与关键特征一致，不换脸、不增删配饰。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "生成一张以所选主体为核心的叙事场景图，把主体自然嵌入这座清晨河畔地标：主体位于前景或中景偏下，背后铁塔居中且基座到塔尖完整可见，广角视野保留开阔河面与空荡河岸。光线为日出前的淡粉与浅青过渡，空气通透带轻微水汽，湿地面产生细碎高光反射，铁件格栅纹理锐利清晰。色彩克制、低饱和冷调，氛围安静、雨后有故事感。保持主体身份与关键特征完全一致，位置与透视合理。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "生成一张竖版海报主视觉：以所选主体为视觉焦点，居中偏下放置，上方留出大片清晨天空与居中完整的铁塔作为呼吸空间，广角对称构图，塔身垂直对齐画面中线。淡粉至浅蓝的天空渐变作底，湿河岸形成镜面反光带，冷调低饱和、质感写实、细节锐利。主体受柔和侧光，轮廓干净，与地标尺度形成对比。保持主体身份、形态与关键特征一致，不做风格化变形。画面内不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:48Z"
+        },
+        {
+          "id": "night-street",
+          "label": "Night street",
+          "heading": "Night street",
+          "caption": "Neon and signage, geometry at scale, famous-place fidelity.",
+          "prompt": "Photograph of a narrow city street at night in the rain, neon signs in several colours reflected in the wet asphalt, one pedestrian under an umbrella walking away from the camera, the tail lights of a taxi streaking. Handheld look, some lens flare, the lettering on the signs legible.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cities?variant=night-street",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "街拍人像",
+              "value": "以「所选主体」为画面唯一主角，置于雨夜窄街中央或略偏一侧，采用纵深透视的全身或七分身构图，人物背对或侧背镜头行走，留出湿漉漉柏油路反光与两侧霓虹光带。用多色霓虹作为轮廓光与逆光，冷蓝、洋红、青绿在潮湿地面上拉出倒影，手持感轻微晃动，允许少量镜头光晕。保持主体身份、服装、发型与关键特征一致，不改变脸型与体型。背景招牌以虚化光斑呈现，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品夜景",
+              "value": "以「所选主体」为广告级静物或产品，放置在雨夜窄街的路面或低矮台阶上，采用低角度近景与浅景深，前景产品清晰锐利，背景是延伸的城市街道与虚化霓虹。用湿沥青反射的多色光塑造边缘光和金属或玻璃质感，冷调环境与暖色招牌光形成对比，雨滴与镜头光晕增加真实感。保持产品外形、颜色、材质与标识位置一致，不变形不增减部件。背景不出现可读文字，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "以「所选主体」为角色主体，置于雨夜窄街的中景或全身构图，角色可撑伞、回望或行走，保持其发型、服装轮廓、配色和标志性道具一致。用霓虹招牌的洋红、青绿、冷蓝作为主色光，湿地面反光托出剪影，手持摄影感与轻微光晕强化电影氛围。背景街道向纵深压缩，建筑和招牌只作色块与光斑，避免抢主体。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景壁纸",
+              "value": "以「所选主体」作为雨夜街景的视觉锚点，采用竖版纵深构图，主体位于中景或前景，街道、霓虹、雨丝与湿沥青反光共同构成氛围。多色霓虹在潮湿地面上形成长条倒影，冷蓝夜色与暖橙车灯对比，手持视角与少量镜头光晕增强临场感。保持主体身份、外形、材质和关键细节一致，主体不被背景吞没。画面适合手机壁纸，留出安全边距。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:27Z"
+        },
+        {
+          "id": "skyline",
+          "label": "Skyline",
+          "heading": "Skyline",
+          "caption": "Neon and signage, geometry at scale, famous-place fidelity.",
+          "prompt": "Photograph of a dense city skyline at dusk from across the water, dozens of towers with their windows lit in a mix of warm and cool, the skyline reflected and broken in the water below. Long exposure, no boats, every vertical edge of the towers straight.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cities?variant=skyline",
+          "aspect_ratio": "16:9",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "以所选主体为唯一视觉焦点，将其置于开阔城市天际线前的中央偏下位置，主体完整可见、轮廓清晰，不被建筑遮挡关键特征。采用黄昏时分从对岸水面远眺的视角，数十栋高楼窗灯呈暖冷交织的密集光点，天幕由橙红渐变至深蓝。用长曝光拉出水面倒影与纵向光带，让倒影轻微破碎拉丝。主体色彩与环境霓虹形成呼应但不被淹没，保持其身份与关键特征一致。画面不出现船只等杂乱元素，塔楼垂直边缘保持笔直。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "生成一张以所选主体为主视觉的城市主题海报底图。主体居中或置于三分线上，占据较大画幅，与背后密集天际线形成清晰前后景层次；背景为黄昏对岸拍摄的楼群，窗灯暖冷交织，天幕从橙红过渡到靛蓝，水面倒影被长曝光拉成纵向光条。主体接受环境光轻微染色，边缘保留轮廓光以便从复杂背景中分离。保持主体身份、比例与关键特征一致，避免楼体线条穿过面部或主体重点。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "为所选主体构建一个真实可信的城市黄昏场景。主体位于临水观景平台或对岸高处，与远处密集天际线形成明确远近关系；相机以广角水平拍摄，长曝光使水面平滑并携带建筑倒影与光带，塔楼窗灯冷暖混光，天空由暖橙渐变到冷蓝。保持主体原有身份、穿着与关键特征，光源方向与城市暮色一致，整体色彩统一在青蓝与橙金之间。建筑垂直边缘笔直，水面前景干净，不出现船影、文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "封面",
+              "value": "生成适合横版封面的城市夜景影像。所选主体安排在画面三分点之一，约占三分之一面积，其余留给密集楼群天际线与水面倒影，形成开阔留白以便后续排版但画面本身不含任何文字。采用黄昏对岸远眺视角配合长曝光，天空由橙红过渡到深蓝，窗灯温暖与冷调交织成密集光点，倒影在平静水面上被拉长打散。主体由冷暖环境光勾勒轮廓，保持身份与关键特征一致，与城市光比协调。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:10Z"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "group": "Photoreal",
+      "name": "Food & drink",
+      "url": "https://openrouter.ai/benchmarks/media/images/food",
+      "why_chosen": "Texture and appetite, glass and liquid, repetition.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "bakery",
+          "label": "Bakery",
+          "heading": "Bakery",
+          "caption": "Texture and appetite, glass and liquid, repetition.",
+          "prompt": "Close-up photograph of a sourdough loaf torn open by hand, steam still coming off the crumb, the open structure irregular with a glossy interior and a dark blistered crust. Side light from a window, flour on the board, shallow depth of field.",
+          "url": "https://openrouter.ai/benchmarks/media/images/food?variant=bakery",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "美食特写",
+              "value": "以所选主体（如面包、甜点、菜肴）为唯一焦点，生成一张极致真实的美食特写。采用近距离微距或特写构图，主体占据画面中心或黄金分割点，完整呈现表面纹理、截面结构、蒸汽或油润光泽。使用来自侧窗的柔和硬侧光，形成明暗过渡与高光，背景简洁并带浅景深虚化，木板上可散落面粉或配料碎屑增加真实感。保持主体形态、色泽和关键特征一致，不改变食材本质。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "饮品特写",
+              "value": "以所选饮品主体为核心，生成一张摄影级饮品特写。采用近景或微距构图，杯壁、液面、冰块、气泡或冷凝水珠清晰可见，液体透光与折射质感强烈。使用侧逆光或窗边自然光，让玻璃边缘产生高光，液体呈现通透层次，背景简洁并带浅景深。保持杯型、饮品颜色、装饰物等关键特征一致，不改变主体识别度。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品海报",
+              "value": "以所选产品为唯一主体，生成一张美食摄影风格的产品海报画面。采用中心构图或三分法，主体置于干净台面或木质砧板上，周围可点缀少量同色系食材、面粉或器皿形成重复节奏。使用侧窗光塑造立体感与材质纹理，浅景深突出主体，色彩温暖自然，氛围新鲜诱人。保持产品外形、包装、品牌色和关键细节一致，不虚构不存在的功能。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "菜单配图",
+              "value": "以所选主体（菜品或套餐）为核心，生成一张适合菜单或社交媒体的美食场景图。采用略带俯视或四分之三视角，主体置于木质桌面或烘焙纸上，搭配餐具、香草、面粉痕迹等元素形成重复与节奏。光线为柔和侧光，质感真实，蒸汽或油光增强食欲，背景适度虚化。保持主体摆盘、份量与关键特征一致，不添加无关装饰。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:15Z"
+        },
+        {
+          "id": "cocktail",
+          "label": "Cocktail",
+          "heading": "Cocktail",
+          "caption": "Texture and appetite, glass and liquid, repetition.",
+          "prompt": "Photograph of a negroni in a heavy rocks glass over one large clear ice cube, an orange peel twist on the rim, condensation on the outside of the glass. Bar top with a dark background, one warm light from the side catching the colour of the liquid, shallow depth of field.",
+          "url": "https://openrouter.ai/benchmarks/media/images/food?variant=cocktail",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "饮品主图",
+              "value": "以所选主体为画面唯一焦点，拍一张近景静物特写：主体置于深色台面中央略偏下，背景压成近乎全黑的暗场，仅用一侧暖色硬光擦亮主体轮廓，勾出玻璃、液体与表面水汽的通透质感和高光。浅景深，焦点落在主体正面纹理，前后景自然虚化。保持主体原有外形、材质、颜色与关键细节不变，不改造其识别特征。整体以暖琥珀与深褐为主色，冷色只做极小面积点缀，画面干净、有食欲与质感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "广告海报",
+              "value": "以所选主体为视觉中心生成一张竖版广告海报：主体占据画面中部偏下，采用低角度或平视的近景构图，四周大面积深色留白供后期排版。用一束从侧后方打来的暖光穿过主体边缘，形成液体般的透亮反光与细腻高光；台面湿润反光、细小凝露颗粒清晰可见。浅景深让背景融入黑暗，营造高级、克制的酒吧氛围。严格保留主体的形状、材质、色彩和标志性细节，不替换、不美化失真。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "把所选主体放进深夜酒吧台面的场景中：主体居中或偏右，前景台面带有湿润反光与轻微凝露，背景用重复排列的杯影或灯斑做节奏化虚化，形成纵深与秩序感。单一暖色侧光从画面外侧切入，照亮主体一侧并压暗另一侧，强化体积与质感；冷调环境光只作为极窄的轮廓补光。浅景深、低饱和暗调，整体气氛安静而有仪式感。保持主体身份与关键特征一致，外观细节不得改动。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "竖版壁纸",
+              "value": "生成一张竖屏壁纸，以所选主体为唯一视觉焦点，居中偏下放置，上方保留大片深色负空间，便于锁屏时间与图标区域干净通透。使用单一暖色侧光斜切主体，突出表面材质、玻璃般的高光与细小水汽颗粒；背景近黑，仅留微弱光晕过渡，浅景深让主体边缘轻微虚化。色彩以暖琥珀、焦糖与深褐为主，冷色点缀面积极小。保持主体原本的形态、颜色、质感与识别特征完全一致，不做风格化改写。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:54Z"
+        },
+        {
+          "id": "espresso-pour",
+          "label": "Espresso pour",
+          "heading": "Espresso pour",
+          "caption": "Texture and appetite, glass and liquid, repetition.",
+          "prompt": "Close-up photograph of espresso falling from a portafilter into a clear glass cup on a marble counter, the crema breaking into ribbons as it lands, a single droplet suspended in mid-air above the surface. Strong backlight through the glass, condensation beading on the outside, shallow depth of field.",
+          "url": "https://openrouter.ai/benchmarks/media/images/food?variant=espresso-pour",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "饮品海报",
+              "value": "以所选主体为画面唯一主角，采用近景特写与竖版构图。将主体置于大理石台面或透明玻璃杯旁，让浓缩咖啡从冲煮头落入杯中，油脂在液面裂成飘带，一滴悬停半空。强逆光穿透玻璃与液体，杯壁凝结水珠，浅景深突出主体与液体质感，整体暖棕与高光冷白对比，强化食欲与新鲜感。保持主体外形、材质、颜色与关键识别特征一致，背景简洁。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品特写",
+              "value": "以所选产品为绝对焦点，生成近景微距摄影。把产品放在大理石台面上，旁边安排透明玻璃杯承接浓缩咖啡，液柱入杯时油脂形成丝带，半空悬一滴液体。用强逆光勾勒玻璃边缘与产品轮廓，杯壁凝结细密水珠，浅景深让背景虚化而产品纹理锐利，色彩保留咖啡暖棕、玻璃冷光与大理石灰度。保持产品外观、标签位置、材质与关键特征一致，不改变主体结构。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "菜单配图",
+              "value": "生成一张以所选主体为核心的菜单级美食摄影。主体居中或位于三分线交点，前景是透明玻璃杯，浓缩咖啡从冲煮头落下，油脂飘带和悬停液滴强化动态；背景是大理石台面与柔和高光。采用强逆光穿透玻璃，水珠凝结在杯壁，浅景深突出主体与液体层次，整体氛围温暖、干净、有食欲。严格保持主体身份、比例、颜色和关键识别特征一致，不替换主体。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "社媒配图",
+              "value": "制作适合社交媒体竖版传播的摄影图，以所选主体为视觉中心。采用近景特写和垂直构图，让浓缩咖啡从冲煮头落入透明玻璃杯，油脂裂成飘带，一滴液体悬停半空；大理石台面提供真实承托，强逆光穿透玻璃，杯壁水珠清晰，浅景深营造高级食欲氛围。主体与咖啡液滴形成前后或左右呼应，保持主体身份、发型、服装或产品外观等关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:16Z"
+        },
+        {
+          "id": "plated-dish",
+          "label": "Plated dish",
+          "heading": "Plated dish",
+          "caption": "Texture and appetite, glass and liquid, repetition.",
+          "prompt": "Photograph of a plated seared salmon fillet on a white ceramic plate, crisp skin facing up, a spoon of herb sauce dragged across the plate, a few microgreens. Three-quarter view from above, soft daylight from the side, the flakes of the fish visible where the fillet is cut.",
+          "url": "https://openrouter.ai/benchmarks/media/images/food?variant=plated-dish",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "菜品图",
+              "value": "以「所选主体」为核心生成一张主菜级美食摄影。采用俯视四分之三视角，主体置于白瓷盘或浅色器皿中，占画面中部偏下，四周留出可涂抹酱汁的台面空间。侧向柔和日光，保留高光与柔和阴影，突出焦脆表皮、油润光泽与食材断面的纤维纹理。背景为浅色亚麻桌布或素色台面，冷白与暖褐形成低饱和对比。保持主体形态、份量与关键配料一致，不改变食材本身的颜色与结构。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "将「所选主体」作为美食场景中的主角产品进行布景拍摄。采用俯视四分之三视角，主体立于湿润反光的台面或浅盘中，旁边以同款小份重复排列形成节奏感，液体沿器壁缓慢流下并凝成高光水珠。侧逆光穿过玻璃或液体产生通透质感，冷调环境色衬托主体的暖色。背景干净留白，浅景深虚化。保持产品外形、配色、材质与结构比例一致，不改变造型与轮廓。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以「所选主体」为中心生成一张竖版美食主题海报底图。主体置于画面中下部，上方留出大面积浅色背景作为排版留白，台面用酱汁拖出一道弧线串联画面。侧向柔光塑造立体感，强调表面光泽、酥脆颗粒与液体质感。配色以白瓷、奶油、香草绿与焦糖棕为主，整体干净明亮、令人有食欲。保持主体身份与关键特征一致，仅调整布光与构图。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张竖版美食质感壁纸。将「所选主体」重复排列或沿对角线节奏铺陈，形成整齐的韵律与疏密变化，器皿、玻璃杯与液体反光穿插其中。采用俯视或微俯视角，侧向柔和日光，背景为纯色或浅色石材台面。强调表面纹理、水珠与通透光泽，色调统一在奶油白、浅木与低饱和绿之间，氛围安静清爽。保持主体形态与辨识度一致，不添加无关元素。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:09Z"
+        }
+      ]
+    },
+    {
+      "id": "interiors",
+      "group": "Photoreal",
+      "name": "Interiors",
+      "url": "https://openrouter.ai/benchmarks/media/images/interiors",
+      "why_chosen": "Straight lines, materials and believable clutter.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "kitchen",
+          "label": "Kitchen",
+          "heading": "Kitchen",
+          "caption": "Straight lines, materials and believable clutter.",
+          "prompt": "Photograph of a home kitchen mid-cooking, a pan on the hob with steam rising, chopped vegetables on a wooden board, a tea towel over the oven handle and one cupboard door left open. Natural light from a window over the sink, straight verticals, wide angle.",
+          "url": "https://openrouter.ai/benchmarks/media/images/interiors?variant=kitchen",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以「所选主体」作为画面叙事核心，安放在一间正在使用的居家厨房中景位置，与灶台、砧板、半开的柜门构成前中后三层空间关系。采用广角视角，机位大致与台面同高，画面所有垂直线笔直不倾斜，边缘不出现透视畸变。光线为水槽上方窗户射入的自然散射光，柔和侧逆光勾勒主体轮廓，热气或水汽在光束里可见。材质还原哑光木、拉丝不锈钢、釉面瓷砖与棉麻布的细腻反光，色彩以暖白、原木与灰绿为主，保留真实的生活凌乱感。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "以「所选主体」为唯一商品焦点，静置于木质砧板或厨房台面上，周围只保留少量可信的厨房杂物作为陪衬，不遮挡主体。使用略高于台面的平视广角构图，主体占画面三分之一以上，垂直线保持笔直。窗户自然光从侧后方打来，形成柔和过渡的亮面与浅阴影，突出产品表面材质、边缘高光与真实反光。背景为虚化的橱柜与瓷砖墙面，色调偏暖白与原木，整体干净但有生活痕迹。严格保持产品造型、比例、材质与配色一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以「所选主体」为视觉中心，制作一张生活方式风格的横版主视觉。主体位于画面中偏左或偏右三分点，另一侧留出干净负空间用于后期排版。采用厨房广角视角，垂直线笔直，前景可用虚化的砧板或餐具做框景。自然光从窗户斜射形成明暗分区，蒸汽与尘埃在光线中形成氛围颗粒，材质强调哑光木、不锈钢与棉麻的对比。色彩以暖白、原木、灰绿为基调，可加轻微胶片颗粒。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以「所选主体」为点缀元素，生成一张可用于屏幕或空间氛围的宽幅画面。主体安排在画面一侧三分之一处，其余区域交给窗光、台面、瓷砖与半开柜门构成纵深，构图横向舒展，垂直线保持笔直。光线为清晨或傍晚的斜射自然光，柔和而低对比，蒸汽、水汽与浅景深虚化共同营造安静的生活感。材质强调哑光木质、搪瓷、玻璃与布料的细微纹理，色彩统一在暖白、原木与低饱和灰绿中，整体耐看不抢眼。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:37Z"
+        },
+        {
+          "id": "library",
+          "label": "Library",
+          "heading": "Library",
+          "caption": "Straight lines, materials and believable clutter.",
+          "prompt": "Photograph of a long library reading room in late afternoon, low sun raking down one wall of shelves so the light falls off sharply toward the far end, dust visible in the beam. One reader at the nearest table. Wide angle from standing height, verticals kept straight.",
+          "url": "https://openrouter.ai/benchmarks/media/images/interiors?variant=library",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体为画面唯一视觉核心，置于长条形室内空间的前景或中段，采用站立视平线的广角构图，垂直线保持笔直，空间向纵深延伸、远端逐渐变暗。光源为傍晚低角度斜射光，沿一侧墙面或货架铺开，形成锐利的明暗衰减，光柱中可见浮尘颗粒。材质保留真实木纹、漆面与织物纹理，允许少量可信的生活杂物点缀。色调偏暖琥珀与深褐，阴影浓郁但细节可辨，氛围安静、有时间的重量感。保持主体身份与关键特征一致，不改变其形状、比例与主色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人像写真",
+              "value": "以所选主体为唯一焦点，安排其坐在离镜头最近的桌椅处，采用站立高度的广角近中景，垂直线笔直、身体完整不被裁切。傍晚低角度侧逆光从一侧扫过，勾出主体轮廓，面部一侧受光、一侧沉入柔和阴影，光柱中飘浮细小尘埃。背景是纵深排列的书架与长桌，向远端快速压暗形成自然渐隐。材质强调皮肤真实质感、织物褶皱与木质表面反射，色调暖琥珀加暗褐。保持主体身份、五官、发型与服饰特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品静物",
+              "value": "以所选主体为画面唯一核心，放置在长阅读桌的近端桌面，采用站立视平线的广角构图，垂直线保持笔直，桌面与书架向纵深延伸并在远端没入阴影。傍晚低角度斜射光从一侧掠过，形成长而锐利的投影与明显的明暗落差，光柱中可见浮尘。材质还原产品表面质感与木质、纸张、金属的细微纹理，桌面允许少量可信杂物衬托尺度。色调偏暖琥珀与深褐，氛围安静克制。保持主体外形、比例、配色与关键细节一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张宽幅横向壁纸，以所选主体作为画面的视觉锚点，置于长阅读室的近景或中景一侧，采用站立视平线的广角构图，垂直线笔直，空间沿对角线向纵深收束。傍晚低角度斜光沿墙面或货架铺开，远端迅速衰减为深色，光柱中尘埃可见，形成强烈的明暗节奏。材质保留真实木纹、漆面与织物肌理，色调为暖琥珀、深褐与少量冷灰。保持主体身份、轮廓与主色一致。画面留出可放置图标或时钟的安静暗部。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:02Z"
+        },
+        {
+          "id": "living-room",
+          "label": "Living room",
+          "heading": "Living room",
+          "caption": "Straight lines, materials and believable clutter.",
+          "prompt": "Photograph of a lived-in living room in mid-morning light, a linen sofa with a thrown blanket, a stack of books and a half-finished mug on the coffee table, a rug slightly askew. Wide angle from standing height, verticals kept straight, light from a large window on the left.",
+          "url": "https://openrouter.ai/benchmarks/media/images/interiors?variant=living-room",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以「所选主体」为画面核心，将其放进一间有人居住感的客厅：中上午的侧光从左侧大窗斜射进来，光质柔和但有方向，在墙面与地面留下自然亮暗过渡。站在人眼高度用广角拍摄，垂直线保持笔直不歪斜，主体置于中景偏一侧，前景保留亚麻沙发、随手搭着的毛毯、茶几上一摞书和喝了一半的杯子、略微歪斜的地毯等可信的生活痕迹。材质写实：织物有褶皱与绒毛感，木面有细微划痕，色彩偏低饱和暖灰米白。保持主体身份与关键特征一致，不改变其形状、比例与识别度。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "把「所选主体」当作客厅里的真实物件来拍：产品放在茶几或亚麻沙发坐垫上，处在中上午左侧窗光下，光从左边打来形成柔和却方向明确的高光与落地投影。站在人眼高度、广角镜头拍摄，垂直线笔直，产品位于中景或前景三分之一处，周围用书堆、半杯饮品、歪斜地毯等可信杂物陪衬，但不得遮挡或抢走主体。材质与色彩忠于产品本身，保留真实纹理并融入低饱和暖调氛围。保持产品外形、比例、配色、标签位置与关键细节一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人像",
+              "value": "让「所选主体」自然地待在这间客厅里，例如坐在亚麻沙发上、手边搭着毛毯。中上午的光从左侧大窗进来，照亮主体一侧脸颊与衣物褶皱，另一侧留柔和阴影，形成有方向感却不生硬的布光。站在人眼高度、广角取景，垂直线保持笔直，主体位于中景，前景可带入茶几上的书与半杯饮品、略微歪斜的地毯，营造真实居住氛围。色调低饱和暖灰，织物与皮肤质感真实。保持主体身份、五官、发型、体型与服装关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以「所选主体」为视觉重心的横向氛围图：镜头站在人眼高度、广角拍摄整间客厅，左侧大窗透入中上午的光，门框窗框与墙面垂直线保持笔直。亚麻沙发、随手搭着的毛毯、茶几上一摞书和喝了一半的杯子、略微歪斜的地毯共同构成可信的生活痕迹，主体融入其中而不突兀。材质写实，织物褶皱、木纹、陶杯釉面清晰可辨，色彩偏低饱和暖米与灰调，氛围安静松弛。保持主体身份与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:59Z"
+        },
+        {
+          "id": "office",
+          "label": "Office",
+          "heading": "Office",
+          "caption": "Straight lines, materials and believable clutter.",
+          "prompt": "Photograph of a small open-plan office at the end of the day, three desks with monitors still on, a jacket over one chair, cables and a water bottle on the nearest desk, blinds half drawn. Wide angle from standing height, ceiling panels above and evening light from the window.",
+          "url": "https://openrouter.ai/benchmarks/media/images/interiors?variant=office",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体作为画面核心，置于傍晚下班的开放式办公室：三张工位、仍亮着的显示器、椅背搭着外套、桌面散落线缆与水瓶，百叶窗半合。采用站立视平线的广角构图，主体位于中景偏前景，上方天花格栅与侧窗黄昏光形成上下夹持。保留真实材质：哑光桌面、织物褶皱、金属与塑料的反光差异；色彩为米灰、冷白屏光加暖橙落日。杂物自然散落但不凌乱。严格保持主体身份与关键特征一致，不改外形比例与主色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "环境人像",
+              "value": "把所选人物以自然姿态融入下班后的办公室：坐在工位前或斜靠桌边，半身或全身入镜，面部同时受显示器冷光与窗外暖光打光，明暗过渡柔和。站立高度广角视角，人物落在画面三分之一处，四周保留三张工位、外套、水瓶、盘绕线缆等可信杂物交代空间层次。保持人物身份、发型、肤色与服装主色一致，不做磨皮或换脸。整体低饱和写实，氛围安静、略带疲惫但仍有温度。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "以所选产品为唯一主角，摆放在办公室最靠前的桌面上：哑光桌板、旁边一只水与盘绕线缆作为尺度参照和真实杂物，背景是虚化的亮屏显示器与半合百叶窗。采用站立高度的广角微俯构图，产品位于画面下三分之一并保持清晰焦点，黄昏侧窗光勾出边缘与材质高光，冷色环境光补暗部。保持产品外形、比例、结构与配色完全一致。允许桌面轻微反光与自然投影，质感写实不过度修饰。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张写实空间壁纸：以所选主体的轮廓或局部作为前景锚点，背景是傍晚空置的开放式办公室，三张工位、亮着的显示器、搭在椅背的外套、桌面线缆与半合百叶窗。站立视平线广角取景，天花格栅与地面形成稳定水平线，主体偏置于左或右三分之一留出呼吸空间，便于裁切成不同分辨率。光线为黄昏暖侧光叠加冷白屏光，材质真实、色调低饱和。保持主体关键特征与主色一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:32Z"
+        }
+      ]
+    },
+    {
+      "id": "landscape",
+      "group": "Photoreal",
+      "name": "Landscape & nature",
+      "url": "https://openrouter.ai/benchmarks/media/images/landscape",
+      "why_chosen": "Foliage density, water and reflections, empty composition, and scale.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "coast",
+          "label": "Coast",
+          "heading": "Coast",
+          "caption": "Foliage density, water and reflections, empty composition, and scale.",
+          "prompt": "Photograph of a tidal rock pool at low light, anemones open underwater, wet granite crusted with barnacles and weed around the rim, the horizon and breaking surf soft and far out of focus behind. Overcast daylight with no direct sun, macro depth of field.",
+          "url": "https://openrouter.ai/benchmarks/media/images/landscape?variant=coast",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "生成一张以所选主体为唯一视觉焦点的横向壁纸。主体置于三分线交点或中心偏下，前景保留湿润花岗岩、藤壶与海藻的微距质感，中景是清浅潮池水面与倒影，远景海岸线与碎浪彻底失焦成柔和灰蓝。采用阴天散射光，无直射阳光，低饱和冷调，暗部保留细节。保持主体身份、轮廓与关键特征一致，比例与姿态自然不变形，画面留出大面积安静留白。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "把所选产品作为唯一主体，静置于潮池边缘的湿润花岗岩上。采用微距浅景深，产品正面或四分之三角度清晰锐利，表面保留环境反射与细小水珠；周围藤壶、海藻与浅水提供质感陪衬，水面倒影轻微映出产品轮廓。阴天散射光，冷灰蓝低饱和色调，无硬阴影与高光溢出。严格保持产品外形、比例、材质与颜色一致，不做变形或替换。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物写真",
+              "value": "生成一张以所选人物为主体的中近景氛围写真。人物位于潮池边，半身或七分身构图，侧身低头或望向远处海平线；阴天散射光均匀包裹面部，皮肤保留自然质感与冷调环境反光。背景为失焦的湿润礁石、海藻与碎浪，浅景深只让人物与近处水面锐利。保持人物身份、五官、发型、服饰与关键特征一致，不改变年龄与体型。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为画面核心，构建开阔的海岸潮池场景。主体置于前景或中景，约占画面三分之一，其余空间交给空寂的潮池水面、湿润礁石与远处失焦的海平线；微距景深让前景纹理锐利、远景柔和。阴天低照度散射光，冷灰蓝与湿润深色为主调，水面倒影提供微弱高光。保持主体造型、比例与关键特征一致，不额外添加无关元素。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:13Z"
+        },
+        {
+          "id": "desert",
+          "label": "Desert",
+          "heading": "Desert",
+          "caption": "Foliage density, water and reflections, empty composition, and scale.",
+          "prompt": "Photograph of an empty sand desert an hour before sunset, one long dune ridge running diagonally through the frame with a razor line between the lit and shadowed faces, wind ripples in the foreground sand. No people, no vehicles, no plants. Clear sky fading from pale gold to blue.",
+          "url": "https://openrouter.ai/benchmarks/media/images/landscape?variant=desert",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "生成以所选主体为核心的荒漠场景图。让主体立于一条斜贯画面的长沙丘脊线上，脊线一侧被夕照染成暖金、另一侧沉入冷蓝阴影，形成刀锋般的明暗分界。前景保留风纹细沙纹理，天空由淡金过渡到蓝，空旷无杂物。主体尺度可小可大以强化辽阔感，但需保持其身份与关键外形特征一致，光影方向统一。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "生成以所选主体为视觉焦点的竖式或横式海报画面。将主体置于沙丘明暗交界线附近，利用斜向脊线作为引导线，夕照侧光勾出边缘高光，阴影面保留细节。整体色调淡金到冷蓝，留出大片干净天空与沙面作为呼吸空间，画面无人物车辆植物干扰。保持主体身份与关键特征一致，构图不裁切主体要害部位。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成以所选主体点缀其间的宽幅壁纸。主体可偏置于画面一侧或远景小比例出现，与斜穿画面的沙丘脊线、前景风纹沙面、淡金转蓝的渐变晴空共同构成极简空寂构图。光线为日落前一小时的暖侧光，质感细腻、阴影通透，色彩克制。保持主体身份与关键外形特征一致，不喧宾夺主。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "生成以所选角色为主体的全身或大半身设计图，置于荒漠沙丘环境中。角色站立或行走于斜向脊线之上，一侧身体受暖金夕照、另一侧没入冷蓝阴影，轮廓被锐利明暗线强化；前景风纹细沙提供地面质感。服装与材质在侧光下呈现清晰层次。保持角色身份、发型、服饰与关键特征一致，比例与姿态自然。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:02:52Z"
+        },
+        {
+          "id": "forest",
+          "label": "Forest",
+          "heading": "Forest",
+          "caption": "Foliage density, water and reflections, empty composition, and scale.",
+          "prompt": "Photograph of an old-growth temperate rainforest after rain, moss on every trunk and fallen log, ferns dense across the floor, thin fog between the far trees. Overcast light with no direct sun, everything from the nearest fern to the last trunk in focus.",
+          "url": "https://openrouter.ai/benchmarks/media/images/landscape?variant=forest",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以「所选主体」为画面唯一叙事核心，将其安放在雨后原始温带雨林的倒木旁或苔藓空地上，主体位于中景，四周由覆满苔藓的树干与密集蕨类自然包围，形成密实的绿色框架。采用阴天漫射光，无直射阳光与硬阴影，薄雾在远树之间分层拉开纵深。前景蕨叶到最远树干均保持清晰，构图留出足够的空景呼吸感。保持主体的外形、比例、材质与关键识别特征完全一致。整体色调冷绿偏青、湿润带反光。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人像",
+              "value": "以「所选主体」为中心生成一张雨林环境人像。人物取半身或全身，站在苔藓覆盖的倒木与蕨类之间，身后薄雾中的树干层层退远，形成明显纵深。采用阴天柔和的漫射顶光，面部无硬阴影，肤质保留自然的湿润质感。保持人物五官、发型、体型与服装的关键特征一致，不被风格化改写或替换。色调冷绿偏青，皮肤与衣物带轻微湿反光。背景密度高但绝不抢主体。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "以「所选主体」为唯一商品焦点，将其静置于雨后温带雨林的苔藓地面或倒木表面，产品位于中景偏下，四周由蕨类叶片与湿苔自然环绕，形成有机的绿色底座。采用阴天漫射光与柔和天光反射，表面呈现细腻的湿润高光，无强烈硬阴影。保持产品的形状、比例、材质、颜色与结构细节完全一致，不增删任何部件。前景到背景全部清晰，色调冷绿偏青。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以「所选主体」为视觉锚点的宽幅桌面壁纸。主体置于画面中下部或三分线交点，两侧与上方留出由苔藓树干、蕨叶和薄雾构成的空景，形成舒展的横向层次与宏大尺度感。阴天漫射光，无直射阳光，雾气在远树之间分层。前景蕨叶清晰锐利，最远树干仍保留可辨识轮廓。整体冷绿偏青、湿润沉静。保持主体的外形、比例与关键特征一致，不因风格化而变形。构图简洁，避免杂乱元素干扰。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:25Z"
+        },
+        {
+          "id": "mountains",
+          "label": "Mountains",
+          "heading": "Mountains",
+          "caption": "Foliage density, water and reflections, empty composition, and scale.",
+          "prompt": "Photograph of a glacial valley from a high ridge, snow-capped peaks along the skyline, a braided river flat on the valley floor far below, a single tiny hut for scale. Crisp morning air, clouds casting shadows across the slopes, sharp to the horizon.",
+          "url": "https://openrouter.ai/benchmarks/media/images/landscape?variant=mountains",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "人像旅拍",
+              "value": "以所选人物为唯一视觉核心，将其置于高脊边缘或前景岩台，背景为雪峰天际线与远处冰川谷、谷底辫状河和单间小屋形成尺度参照。保持人物身份、五官、发型与服装关键特征一致，采用清晨侧逆光与冷调空气感，皮肤质感自然，云影掠过山坡增加层次。构图保留宽阔横向视野与锐利地平线，人物可占画面中景，避免裁切头部与关键肢体。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品外景",
+              "value": "以所选产品为绝对主体，放置在高山脊岩面或覆雪平台，利用清晨硬朗斜光勾勒轮廓与材质，背景是雪峰天际线、冰川谷、辫状河反光与微缩小屋，制造宏大尺度对比。保持产品外形、颜色、比例和关键结构一致，不改变品牌识别特征；用冷蓝灰与雪白为主色，水面反射与云影增强真实感。采用3:2横幅、低机位或平视构图，让产品清晰锐利，背景有景深但可辨。不出现额外文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "以所选角色为主体，生成其站在高脊俯瞰冰川谷的全身或七分身环境立绘。角色身份、发型、服装轮廓与关键配饰保持一致，姿态自然，可侧身回望或迎风站立。场景沿用雪峰天际线、谷底辫状河、山坡云影和单间小屋的尺度参照，清晨冷光与空气透视塑造体积感。构图采用3:2横向，角色位于三分线附近，避免被前景遮挡；背景保持摄影级真实，不卡通化。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为画面焦点，生成适合作为壁纸的横向高山景观。主体置于高脊、雪坡或谷底河湾附近，保持其身份、外形与关键特征一致；背景展开雪峰天际线、冰川谷、辫状河反光与远处小屋，强调空旷构图和巨大尺度。使用清晨冷调、锐利地平线、云影层次和自然质感，水面与积雪反光细腻。主体可偏左或偏右留出呼吸空间，避免居中呆板，保持高解析度与边缘干净。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:07Z"
+        }
+      ]
+    },
+    {
+      "id": "people-in-scenes",
+      "group": "Photoreal",
+      "name": "People in scenes",
+      "url": "https://openrouter.ai/benchmarks/media/images/people-in-scenes",
+      "why_chosen": "Multiple faces, counting, and limbs mid-action.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "sport-in-motion",
+          "label": "Sport in motion",
+          "heading": "Sport in motion",
+          "caption": "Multiple faces, counting, and limbs mid-action.",
+          "prompt": "Photograph of a basketball game in a public park at the moment of a layup, one player in the air with the ball leaving the fingertips, two defenders with arms up, feet visibly off the ground. Fast shutter freezing every limb, long shadows, chain-link fence behind.",
+          "url": "https://openrouter.ai/benchmarks/media/images/people-in-scenes?variant=sport-in-motion",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "运动海报",
+              "value": "生成一张以所选主体为核心的运动主题海报画面。采用横版宽幅构图，主体置于画面偏左或偏右三分线位置，全身完整入镜，四肢处于动作最高点的定格瞬间，脚下离地或刚触地，背景留出大面积负空间用于承载节奏感。用高速快门凝固每一处肢体细节，侧逆光拉出长而硬朗的地面投影，色调偏冷、对比强烈，金属围网或场地线条作为背景结构。保持主体身份、面部特征、发型与服装关键细节一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "生成一张以所选主体为主角的写实户外场景图。采用3:2横构图，中景到全身景别，主体在公共球场、公园或街道场地中执行一个动态动作，周围有两到三个陪体做出反应姿态，全部人物双脚离地或重心明显偏移。使用高速快门冻结所有肢体，避免运动模糊，长影斜投地面，逆光勾边，色彩自然但饱和度略高。保持主体身份与关键外貌特征一致，陪体不抢焦点，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "生成一张以所选主体为原型的运动角色设定图。采用3:2横构图，主体占据画面主体区域，呈现腾空或爆发动作的定格姿态，四肢舒展、肌肉张力清晰、衣物因运动产生自然褶皱与飘动。光线为强烈侧逆光，地面长影强化动势，背景为虚化的围网、看台或树影，冷调高对比，写实质感保留皮肤与织物质地。保持主体身份、面部结构、发型与标志性服装元素一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以所选主体为中心的宽幅壁纸画面。采用3:2横构图，主体略偏离正中置于黄金分割点，全身或大半身入镜，处于跳跃、扣击或冲刺的瞬间，肢体完整不被裁切，四周留出呼吸空间。高速快门凝固动作，斜射阳光拉出长影，背景为球场围网、草地或城市天际线的浅景深层次。色彩偏冷暖对撞，氛围紧张有力量感。保持主体身份与关键特征一致，画面干净可延展，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:29Z"
+        },
+        {
+          "id": "street-crowd",
+          "label": "Street crowd",
+          "heading": "Street crowd",
+          "caption": "Multiple faces, counting, and limbs mid-action.",
+          "prompt": "Photograph of a busy pedestrian crossing at midday, roughly twenty people walking in both directions, each face clearly a different person, some looking at phones and some talking. Shot from the far kerb at eye level, sharp from front to back, ordinary daylight.",
+          "url": "https://openrouter.ai/benchmarks/media/images/people-in-scenes?variant=street-crowd",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "群像街拍",
+              "value": "以所选主体为画面核心，放入正午繁忙的斑马线人群场景：主体站在人行横道中央或近侧，周围约二十位路人双向穿行，每个人面孔各不相同，有人低头看手机、有人侧头交谈，手臂与腿部处于行走中的自然动态。镜头置于对街路缘、与视线齐平，3:2 横构图，前景到背景全部清晰锐利，不虚化人群。保持主体身份、发型、服装与关键特征一致，肤质与衣料呈现真实日光的自然质感，色彩为普通白昼的中性写实调。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "广告海报",
+              "value": "生成一张横版广告主视觉：把所选主体安排在繁忙斑马线人群的中景偏前位置作为视觉焦点，周围约二十位面孔各异的路人双向走动，部分看手机、部分交谈，肢体处于迈步瞬间，形成真实流动的城市节奏。采用对街路缘平视视角，3:2 构图，全景深、前后皆清晰，正午普通日光、无戏剧化打光，色调中性写实。保持主体身份与关键特征一致，产品外观或服饰细节不被遮挡。画面留出上方或侧边干净区域便于后期排版。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为叙事中心，构建正午城市路口的人流过街场景：主体或行走或停步于斑马线上，约二十位各不相同的路人双向穿行，构成真实的人流密度与前后层次，有人看手机、有人交谈、有人侧头张望。平视机位从对街路缘拍摄，3:2 横构图，全景深，前后人物都清晰可辨。保持主体身份、发型、体型与服饰特征一致，光线为普通白昼的硬朗自然光，阴影短而明确，色彩写实、不过度调色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "输出一张角色所处环境的全身设定图：所选主体站在繁忙人行横道中央，身体处于行走动态，一只脚落地、一只脚抬起，手臂自然摆动。周围约二十位面孔互不相同的路人双向穿行，有人看手机、有人交谈，用于体现真实人群尺度与动作参考。采用对街路缘平视、3:2 横构图、全景深，人物从头到脚完整入画不被裁切，日光为普通正午自然光。保持主体身份、五官、发型、服装配色与标志性配件一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:51Z"
+        },
+        {
+          "id": "team-at-work",
+          "label": "Team at work",
+          "heading": "Team at work",
+          "caption": "Multiple faces, counting, and limbs mid-action.",
+          "prompt": "Photograph of four cooks working the pass in a restaurant kitchen at service, plating three dishes at once, several hands in frame and some of them overlapping. One cook partly hidden behind another, steam rising into hard overhead light, each face clearly a different person.",
+          "url": "https://openrouter.ai/benchmarks/media/images/people-in-scenes?variant=team-at-work",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以「所选主体」为核心生成一张真实工作现场的场景照。采用 3:2 横向中景，让多名主体错落站位、至少一人被前方同伴半遮挡，画面前景保留若干手部动作且允许相互交叠，形成纵深与忙碌层次。用硬质顶部顶光压出强烈明暗对比，蒸汽或热气在光束中升腾形成可见体积感。色彩偏冷调金属灰与暖调环境光对撞，皮肤质感真实、带汗光与微油光，织物褶皱清晰。保持每个主体的五官、发型、身份与关键特征互不混淆、各自可辨。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以「所选主体」为视觉核心，做成一张横向电影感团队海报底图。构图采用 3:2 略低机位中景，主体群像呈半环或斜向排布，一人被另一人遮挡形成前后关系，边缘手部动作向画面外延伸制造动势。光线为强烈顶部硬光加局部反射补光，高光锐利、阴影浓重，金属与台面出现明显反光。色调冷静硬朗，暖色只集中在主体皮肤与所持物体上。保持主体身份、面部特征、服装与配饰完全一致，多人之间不得串脸。留出上方或侧边呼吸空间便于后期排字。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "剧照",
+              "value": "生成一张纪录片式的工作现场剧照，以「所选主体」为叙事中心。3:2 横向构图，中近景带轻微广角感，主体处于画面动作高峰瞬间，多人手部同时作业、有交叠和轻微运动拖影，一人半掩在另一人身后制造真实拥挤感。采用现场硬顶光与蒸汽散射，形成高反差亮部与深色背景，颗粒感与轻微噪点增强纪实质感。色彩低饱和偏青灰，暖光仅来自工作台灯。严格保持主体的脸型、发型、肤色与关键标识一致，被遮挡部分仍可辨识。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "团队照",
+              "value": "以「所选主体」组成的团队为核心，拍摄一张真实工作状态下的群像。3:2 横向中景，主体们围绕同一工作台或场景紧凑站位，前后错开、部分身体与手部在画框内交叠并被前景遮挡，表情专注自然、各人神态不同。使用顶部硬光制造立体轮廓与强明暗对比，环境中的烟、雾、蒸汽被光线打亮。质感追求高解析商业摄影：皮肤毛孔、汗珠、织物纹理、金属反光均清晰。色调冷暖对撞、层次分明。保持每位主体身份与关键特征独立一致，不得互换或混脸。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:16Z"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "group": "Photoreal",
+      "name": "Product shots",
+      "url": "https://openrouter.ai/benchmarks/media/images/product",
+      "why_chosen": "Gloss and labels, thin bezels, fabric on a body, box text.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "apparel",
+          "label": "Apparel",
+          "heading": "Apparel",
+          "caption": "Gloss and labels, thin bezels, fabric on a body, box text.",
+          "prompt": "Photograph of a person wearing an unbranded olive cotton overshirt, framed from the shoulders to the hips against a plain warm-grey backdrop, hands in the pockets so the fabric pulls and creases naturally. Buttons and stitching visible, soft even studio light, no visible logos.",
+          "url": "https://openrouter.ai/benchmarks/media/images/product?variant=apparel",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "服装上身图",
+              "value": "以「所选主体」为核心，生成一张服装上身展示图：人物从肩部到胯部入镜，双手自然插兜或垂放，让面料随动作产生真实拉扯与褶皱。背景使用纯色暖灰无缝布，光线为柔和均匀的影棚光，避免硬阴影。清晰呈现纽扣、缝线、织物纹理与垂坠感，色彩保持低饱和自然。严格保持主体身份、发型、体型与服装关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "电商主图",
+              "value": "以「所选主体」为唯一商品焦点，生成简洁的电商主图。构图居中，主体占画面约七成，四周留出均匀留白，背景为纯色暖灰或浅米灰，无缝无道具干扰。采用柔光箱正面偏侧的均匀布光，保留面料光泽与织物细节，暗部干净不过曝。保持主体身份、款式、颜色与关键特征完全一致，不做夸张变形。画面干净高级，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "穿搭海报",
+              "value": "以「所选主体」为中心生成竖版穿搭海报画面。人物半身入镜，肩胯完整可见，姿态自然放松，可用手插兜、整理衣领等动作让布料产生真实褶皱。暖灰背景配合柔和顶光与侧补光，营造干净克制的影棚氛围，色调低饱和、偏中性。强调服装轮廓、缝线与质感层次。严格保持主体身份与关键外观特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "材质细节",
+              "value": "以「所选主体」的服装局部为焦点生成细节特写。采用近景或中近景构图，聚焦领口、门襟、纽扣与袖口缝线，让织物纹理、纱线走向与自然褶皱清晰可辨。背景虚化为纯色暖灰，使用柔和均匀的影棚光，轻微侧光勾出面料光泽与立体感，避免高反差硬影。保持主体款式、颜色与材质特征一致。画面不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:45Z"
+        },
+        {
+          "id": "cosmetics",
+          "label": "Cosmetics",
+          "heading": "Cosmetics",
+          "caption": "Gloss and labels, thin bezels, fabric on a body, box text.",
+          "prompt": "Photograph of a small unbranded amber glass bottle with a black dropper cap on a pale seamless studio sweep, lit by one large softbox from the left with a black card on the right holding the edge. The glass reads amber through its full depth, one soft highlight down the shoulder, contact shadow tight beneath the base.",
+          "url": "https://openrouter.ai/benchmarks/media/images/product?variant=cosmetics",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品主图",
+              "value": "以「所选主体」为唯一核心，置于浅色无缝影棚背景中央，采用简洁直立构图，主体完整入镜、底部与两侧留出均匀余白，不裁切顶部或关键轮廓。左侧布置一块大面积柔光箱作为主光，右侧用黑色挡板压住边缘，形成一侧柔亮、一侧收暗的立体过渡；材质需呈现通透或细腻的质感，沿肩部或转折处留一条柔和长高光，底座下方紧贴一小片干净接触阴影。保持主体身份、外形比例、颜色与关键细节完全一致，背景为纯净低饱和渐变，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "质感特写",
+              "value": "围绕「所选主体」拍摄一张近距离质感特写，镜头贴近至主体上部或材质最丰富的局部，让表面纹理、反光与厚度占据画面主要区域，边缘可轻微出画但不得切掉关键识别特征。光线沿用单侧大柔光箱加对侧黑卡的方式，制造一条沿结构走向的柔和长高光与一道渐隐的暗部收边，突出通透感、磨砂感或织物质地。色彩控制在暖调中性色与低饱和背景之间，氛围干净、克制、偏商业静物。严格保持主体身份、颜色与关键结构一致，不添加任何多余道具，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景海报",
+              "value": "把「所选主体」放进一个极简影棚氛围的场景画面中，浅色无缝背景由地面自然过渡到墙面，主体略微偏置或置于三分线交点，周围留出大片干净负空间便于后期排版。主光来自左上方大面积柔光，右后方用黑卡压暗轮廓，形成柔亮到深影的层次；主体材质需保留真实反光与厚度，底部有紧实的接触阴影。整体色调温和高级、低饱和，带一点静谧的棚拍氛围。保持主体身份与关键特征一致，不改变其比例和主色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "系列陈列",
+              "value": "以「所选主体」为主角，生成同一款式在同一影棚条件下并排或前后错落的陈列画面，数量为两到三件，尺寸、朝向略有差异但主体身份与外观特征必须完全一致。使用浅色无缝背景，左侧大柔光箱统一打光，右侧黑卡收边，使每件主体都获得一条方向一致的柔和高光与紧贴底部的接触阴影，前后件之间以轻微虚实和亮度差区分层次。色彩保持低饱和中性调，画面干净、对称、有秩序感。不添加任何文字标签或装饰物，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:51Z"
+        },
+        {
+          "id": "electronics",
+          "label": "Electronics",
+          "heading": "Electronics",
+          "caption": "Gloss and labels, thin bezels, fabric on a body, box text.",
+          "prompt": "Product photograph of an unbranded pair of over-ear wireless headphones standing on a matte black surface, the matte plastic and the brushed aluminium reading as different materials, a thin seam line around each ear cup. One large softbox above, a rim light on the headband, no text anywhere.",
+          "url": "https://openrouter.ai/benchmarks/media/images/product?variant=electronics",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品主图",
+              "value": "以所选主体为唯一焦点，将其居中放置在哑光纯黑无缝台面上，采用略低于主体中线的平视或轻微俯角拍摄，主体完整入镜、不裁切关键部位。顶部用一只大面积柔光箱做主光，形成柔和渐变高光与干净落地阴影，顶端再补一道轮廓光勾出边缘线条。用光线区分主体上的不同材质：哑光塑料、拉丝金属、织物各自呈现不同的反射与颗粒感，结构接缝、倒角与薄边框清晰锐利。保持主体造型、比例、配色与关键特征一致，不增删结构或配件，背景简洁无杂物。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "质感特写",
+              "value": "以所选主体为唯一焦点，拍摄局部微距特写，只保留主体最有辨识度的一段结构，让材质对比成为画面主角：哑光表面吃光柔和、缎面金属出现细长高光带、织物纹路与颗粒清晰可见。单侧大柔光从上方斜切，另一侧用窄光带压出暗部，让接缝、倒角与薄边缘产生锐利光边。色彩克制，以黑、灰、银与主体固有色为主，浅景深把背景融成纯色渐变。严格保持主体材质、颜色与造型特征一致，不替换零件、不改变比例。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为唯一焦点，将其放入极简暗调棚拍场景：哑光黑台面、无纹理的深灰渐变背景，主体下方留一片干净阴影与轻微倒影。上方主柔光箱提供均匀亮度，侧后方一道轮廓光沿主体边缘走线，使轮廓与背景分离，整体读作安静、高级、克制的产品氛围。色温保持中性偏冷，高光干净不溢出。保持主体外观、配色、结构与关键特征完全一致，不添加背景道具或品牌元素。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以所选主体为唯一焦点，在画面上方或侧面预留大面积纯色负空间用于后期排版，主体置于下三分线附近，整体采用哑光黑到深灰的渐变背景。顶光柔和、轮廓光清晰，材质分层明确（哑光、拉丝金属、织物），边缘锐利、阴影可控。色彩低饱和，以黑灰银为主体基调，画面干净有秩序感。严格保持主体造型、比例、配色与关键特征一致，不改变结构、不添加配件。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:30Z"
+        },
+        {
+          "id": "packaged-good",
+          "label": "Packaged good",
+          "heading": "Packaged good",
+          "caption": "Gloss and labels, thin bezels, fabric on a body, box text.",
+          "prompt": "Product photograph of a cardboard cereal box with the word GRANOLA printed large across the front panel in a clean sans serif, standing on a pale wooden table beside a bowl. Front three-quarter view, soft window light, the box edges crisp and the printed text sharp.",
+          "url": "https://openrouter.ai/benchmarks/media/images/product?variant=packaged-good",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品主图",
+              "value": "以「所选主体」为唯一视觉中心，复刻本场景的桌面静物产品摄影。主体直立或稳放于浅色木质台面，旁边点缀一只简洁的碗或同类关联道具作陪衬。采用正面三分之四视角、中近景构图，主体占画面主要区域，边缘与轮廓完整不裁切。柔和窗侧光从左上方斜射，台面留下淡投影，主体表面高光细腻、有轻微光泽。背景干净并轻微虚化，整体色调为暖白与浅木。保持主体形状、配色、材质与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "包装提案",
+              "value": "把「所选主体」作为包装正面视觉的核心载体，生成正面三分之四视角的包装打样效果图。主体立于浅木台面，卡纸或纸张的哑光质感清晰可辨，折角与边缘锐利挺括，表面带一层柔和反射。正面大面板保持平整、留白干净，便于后续排版；侧面与顶面略受光形成体积感。柔窗光斜射，投影浅淡。整体色彩偏暖白与浅木色。保持主体外形比例、配色方案与关键结构特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "电商详情",
+              "value": "以「所选主体」为核心，生成竖构图、可直接用于电商详情页的产品场景图。主体位于画面中下部并占据主体面积，上方留出干净的呼吸空间便于叠放信息。正面三分之四视角，浅木台面加一只碗或杯作为氛围道具，位置偏侧不抢焦点。柔和窗光自左上打入，主体边缘清晰锐利，材质与印刷质感清晰。背景为浅米色墙面并轻微虚化。保持主体身份、配色、材质与关键细节一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "静物场景",
+              "value": "以「所选主体」为主角，生成一张生活化的桌面静物场景图。主体自然立在浅色木桌上，与碗、勺或布巾等日常道具形成轻松的组合关系，摆放略微错落不呆板。采用正面三分之四视角、平视高度拍摄，景深稍浅，让主体最清晰、道具与背景渐次虚化。柔和窗光照亮主体正面，桌面留下温柔投影，色调为暖白与浅木的舒适日常感。保持主体的外形、配色与材质特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:12Z"
+        }
+      ]
+    },
+    {
+      "id": "vehicles",
+      "group": "Photoreal",
+      "name": "Vehicles",
+      "url": "https://openrouter.ai/benchmarks/media/images/vehicles",
+      "why_chosen": "Reflective bodywork and mechanical plausibility.",
+      "variant_axis_name": "Scene",
+      "scenarios": [
+        {
+          "id": "aircraft",
+          "label": "Aircraft",
+          "heading": "Aircraft",
+          "caption": "Reflective bodywork and mechanical plausibility.",
+          "prompt": "Photograph of a small propeller aircraft parked on a grass airstrip in early morning mist, the polished aluminium fuselage reflecting the sunrise, propeller blades still, the wing struts and control surfaces where they should be. Low three-quarter view, no markings or registration text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/vehicles?variant=aircraft",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品图",
+              "value": "以「所选主体」为画面唯一焦点，采用低位四分之三视角，主体置于草地地平线稍上方，轮廓完整不被裁切。清晨薄雾弥漫，低角度暖金色阳光从侧后方掠过，在抛光金属表面拉出高光反射与渐层色温；背景为低饱和冷灰蓝雾气与湿草纹理，空气感通透。保持主体身份、材质、比例与关键结构特征完全一致，机械细节必须合理可信，不增减部件。整体质感写实锐利、无过度磨皮。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "生成一张以「所选主体」为中心的清晨草地机场场景图。构图沿用低角度四分之三侧面，主体占画面约三分之二，前景留一段带露珠的草叶，背景是被雾气柔化的树线与微亮天光，形成前中后三层纵深。光源为画面侧后方的日出，暖金与冷蓝互补，金属反射细腻、阴影长而柔。保持主体形态、比例、配色与识别特征一致，结构不能错位变形。氛围安静、清冷、初醒。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以「所选主体」为主视觉制作一张横向海报式画面：主体偏左或偏右三分线布置，另一侧留出干净雾气天空作为文案留白区。低位四分之三视角强调体量与反射面，金属表面映出橙金日出条带，与冷灰蓝环境形成高级灰调。保持主体身份、轮廓、材质与关键特征严格一致，不允许改款或添加无关零件。光线低角度、硬朗但被雾气柔化边缘，质感写实。画面干净、无装饰元素干扰。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以「所选主体」为视觉中心的横向壁纸。保持低位四分之三视角与水平延伸的草地道线，主体位于画面中右或中左三分处，四周留出雾气空间便于裁切。清晨薄雾中暖金日出光斜穿画面，抛光金属面产生均匀镜面反射，冷蓝灰调压住整体，色彩克制、层次通透。保持主体外形比例、材质与识别细节一致，结构可信、不变形。整体锐利干净、无杂乱元素。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:03:39Z"
+        },
+        {
+          "id": "car",
+          "label": "Car",
+          "heading": "Car",
+          "caption": "Reflective bodywork and mechanical plausibility.",
+          "prompt": "Photograph of an unbranded dark green sports coupe parked on a wet mountain road at golden hour, the bodywork reflecting the sky and the trees in long clean highlights, brake discs visible through the wheel spokes. Three-quarter front view from a low angle, no visible badges or number plate text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/vehicles?variant=car",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "汽车广告",
+              "value": "以所选主体（整车或某个车型）为核心，置于湿润山地公路的金色时刻场景中。采用低角度四分之三前视构图，主体占据画面中偏左或中偏右的三分之二区域，前后留出可呼吸的公路与山景。让车漆如镜面般反射天空与树影，形成长而干净的条状高光，轮辐间隙可见刹车盘等机械细节，体现结构可信度。保持车身颜色、轮廓比例、轮毂样式与关键特征一致，去除品牌标识与车牌文字。光线为斜射暖金色低角度光，阴影拉长，地面有水膜反光，整体氛围清冷通透、写实摄影质感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品海报",
+              "value": "把所选主体（产品、器物或整车）作为画面唯一主角，放在湿漉漉的山间公路与金色时刻天光之间。采用低机位三分之四视角构图，主体略偏一侧，另一侧留出大面积渐变的天空与山影作为负空间，便于后期加排版。材质表面要有清晰的镜面反射与长条状干净高光，金属与玻璃部分强调机械可信度与细节锐度。保持主体外形、比例、配色与关键识别特征一致，不改变其结构。整体色调为冷绿与暖金对比，氛围安静、高级、写实。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为中心，构建金色时刻湿山路的写实环境场景。低角度三分之四视角，主体位于画面视觉重心，公路向远处延伸形成纵深引导线，两侧树木与山体在暖光中形成柔和层次。地面有薄水膜，反射天光与主体轮廓，主体表面呈现长而干净的高光条纹，细节如轮辐、缝隙、材质纹理清晰可辨。保持主体的身份特征、比例、颜色与结构一致，不添加无关装饰。光线方向统一，阴影方向合理，整体写实、清冷通透。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以所选主体为视觉焦点的横向宽幅壁纸。采用低角度三分之四视角，主体置于画面一侧三分之一处，另一侧保留开阔的湿路与暖金色天空作为呼吸空间，方便桌面图标排布。强调主体表面的镜面反射与长条高光，地面水膜映出天光与主体轮廓，机械细节锐利可信。色调以深绿、冷灰与金色暖光对撞，氛围安静通透。保持主体身份、外形比例、配色与关键特征一致，不改变其结构。画面干净无杂物。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:06Z"
+        },
+        {
+          "id": "motorcycle",
+          "label": "Motorcycle",
+          "heading": "Motorcycle",
+          "caption": "Reflective bodywork and mechanical plausibility.",
+          "prompt": "Photograph of an unbranded cafe racer motorcycle on a concrete floor in an empty garage, chrome exhaust and a brushed aluminium tank, the chain, sprocket and brake lines mechanically plausible and in focus. Side-on view, one skylight overhead, no badges.",
+          "url": "https://openrouter.ai/benchmarks/media/images/vehicles?variant=motorcycle",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品图",
+              "value": "以所选主体为唯一核心，放入空旷车库的水泥地面上，采用正侧向视角让主体横贯画面。单一天窗顶光从上方落下，形成干净高光与柔和阴影；强调金属反光、拉丝或抛光表面和机械结构的可信度，链条、齿轮、管线等细节清晰对焦。保持主体身份、轮廓、材质与关键特征一致，背景简洁无品牌标识。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "让所选主体自然置身于空置车库场景，构图以侧向全景或中近景为主，地面为带细纹的水泥，顶部仅一扇天窗提供方向性顶光。画面重点表现反光外壳、金属接缝与机械部件的合理连接，阴影克制、色调冷灰带金属高光。保持主体身份和关键外观特征一致，不添加多余道具或品牌元素。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "将所选主体作为海报主视觉，采用横向侧视构图，主体占据画面中心并留出呼吸空间。背景为空车库与水泥地，单一天窗顶光勾勒轮廓，强化反射材质、镀铬细节和机械可信度，整体呈冷峻写实摄影质感。保持主体身份、比例和关键特征一致，不改变其核心造型。画面保持干净，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以所选主体为中心的宽幅壁纸，采用侧向视角和低机位，让主体横跨画面。环境是空旷车库、水泥地面与一束天窗顶光，强调金属反光、拉丝质感和精密机械结构，链条、齿轮、刹车管线清晰锐利。色调冷静、光影层次分明。保持主体身份与关键特征一致，背景简洁无干扰。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:28Z"
+        }
+      ]
+    },
+    {
+      "id": "3d-renders",
+      "group": "Illustration",
+      "name": "3D render",
+      "url": "https://openrouter.ai/benchmarks/media/images/3d-renders",
+      "why_chosen": "Stylized appeal, studio materials, depth and lighting.",
+      "variant_axis_name": "Subject",
+      "scenarios": [
+        {
+          "id": "environment",
+          "label": "Environment",
+          "heading": "Environment",
+          "caption": "Stylized appeal, studio materials, depth and lighting.",
+          "prompt": "3D render, physically based materials, soft studio lighting. An unfurnished concrete stairwell lit by a single skylight, board-formed concrete and a brushed steel handrail, soft global illumination bouncing off the walls and contact shadows tight where each tread meets the wall. Wide vertical view, no decoration.",
+          "url": "https://openrouter.ai/benchmarks/media/images/3d-renders?variant=environment",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "竖屏海报",
+              "value": "以「所选主体」为唯一视觉核心，置于未装修的混凝土楼梯井中，采用2:3竖幅广角构图，主体位于中下部，上方保留天窗光束与楼梯纵深。使用3D渲染、物理精确材质与柔和棚拍光：清水混凝土墙板纹理、拉丝钢扶手、墙面漫反射全局光，踏步与墙体交接处有紧实接触阴影。色彩为冷灰水泥与钢灰，天窗暖白高光。保持主体身份与关键特征一致，外形、材质、比例不漂移。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品展示",
+              "value": "把「所选主体」作为产品静物置于楼梯井的踏步或转角平台，采用2:3竖构图，利用扶手与楼梯线条形成引导线。3D渲染、物理精确材质，柔和工作室灯光从天窗落下，混凝土呈细腻板模纹理，拉丝钢有细腻高光，全局光照在墙面柔和反弹，主体底部有紧实接触阴影。整体冷灰中性色，仅天窗光带暖意。保持产品外形、颜色、材质与关键特征一致，不变形不替换。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色概念",
+              "value": "以「所选主体」为角色主体，站在混凝土楼梯井中，2:3竖幅远景或中全景，人物全身完整入镜，头顶留出天窗光与楼梯纵深。3D渲染与物理精确材质，柔和棚拍光自天窗倾泻，清水混凝土墙板纹理、拉丝钢扶手，墙面漫反射全局光，踏步接触阴影清晰。冷灰主调，天窗暖白轮廓光。保持角色身份、发型、服装与关键外貌一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景壁纸",
+              "value": "将「所选主体」融入单天窗照明的混凝土楼梯井，2:3竖屏壁纸构图，主体可居中或偏下，楼梯与扶手形成向上延伸的透视线。使用3D渲染、物理精确材质与柔和工作室光，板模混凝土、拉丝钢扶手、墙面全局光反弹和踏步紧实接触阴影共同营造冷峻静谧氛围。冷灰水泥色为主，天窗暖白高光点缀。保持主体身份与关键特征一致，比例自然不突兀。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:00Z"
+        },
+        {
+          "id": "material-study",
+          "label": "Material study",
+          "heading": "Material study",
+          "caption": "Stylized appeal, studio materials, depth and lighting.",
+          "prompt": "3D render, physically based materials, soft studio lighting. A single water droplet resting on a brushed aluminium surface, magnified, with visible caustics thrown onto the metal beneath it and the brushed grain refracted through the drop. Shallow depth of field, black background.",
+          "url": "https://openrouter.ai/benchmarks/media/images/3d-renders?variant=material-study",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品主图",
+              "value": "将所选主体作为唯一视觉核心，置于拉丝铝金属平台中央，采用微距平视或低角度近景构图，主体完整入画、不被裁切。材质遵循物理正确：金属表面细腻拉丝颗粒、主体自身高光与半透明折射，柔和影棚顶部布光打出干净高光带与柔和落地影，浅景深把焦外融为背景。严格保持主体的身份、轮廓、比例与关键特征一致，色彩克制，冷金属灰与主体固有色形成清晰层次，氛围安静高级。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "材质特写",
+              "value": "以所选主体的局部表面为画面焦点，做一次高精度材质研究：主体占据画幅中心偏大比例，细节纹理、微反射与边缘高光决定画面信息量。使用柔和的圆形影棚光源，在拉丝铝底座上形成清晰的焦散与折射投影，光斑随材质起伏产生冷调渐变。背景压成纯黑以强化体积与纵深，浅景深让焦点外的纹理自然柔化。保持主体材质属性、颜色与关键特征与参考一致，不做造型改动。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标",
+              "value": "将所选主体提炼为居中、正对镜头的图标式构图，主体占画面约七成并留出均匀边距，轮廓简洁可辨、剪影完整。沿用本场景的物理材质语言：拉丝铝质感底座、柔和影棚顶光、主体表面的高光与微折射，黑底衬托出干净的边缘光。保持主体的身份特征、比例与识别性一致，仅做风格化而非改形，色板限定为金属灰、主体固有色与少量冷调高光。整体干净、精确、可缩放。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为画面视觉中心，置于铺展的拉丝铝空间中，纵向或方形构图留出充足负空间供屏幕使用。柔和影棚光从画面上方斜切而下，金属表面呈现细腻拉丝走向与冷灰渐变，主体在高光与焦散中被放大、突出，背景向纯黑自然衰减，浅景深带来安静、高级的纵深。保持主体身份、关键特征与姿态一致，色彩低饱和、明暗层次分明，氛围克制沉静。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:09Z"
+        },
+        {
+          "id": "product-viz",
+          "label": "Product viz",
+          "heading": "Product viz",
+          "caption": "Stylized appeal, studio materials, depth and lighting.",
+          "prompt": "3D render, physically based materials, soft studio lighting. An unbranded chrome and frosted-glass atomiser on a dark rotating base, the polished collar reflecting a rectangular softbox and the frosted body reading as rough glass rather than plastic. Three-quarter view, soft gradient backdrop, no text anywhere.",
+          "url": "https://openrouter.ai/benchmarks/media/images/3d-renders?variant=product-viz",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "产品主图",
+              "value": "以所选产品为唯一主体，采用四分之三视角、居中构图，置于深色旋转底座或简洁台面上。使用物理正确的材质表现，金属部分呈抛光铬，玻璃或透明部分呈磨砂质感，边缘有柔和反光。光线为柔和影棚光，画面中保留一个矩形柔光箱的高光反射，暗部通透有层次，背景为柔和渐变。色彩克制、高级，突出体积与景深。严格保持产品外形、结构、比例、品牌特征一致（如有）。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "电商主图",
+              "value": "生成一张适合电商首图的产品可视化：以所选主体为核心，四分之三视角展示，放在深色旋转底座上，背景为简洁渐变。材质采用物理渲染，金属亮面与磨砂玻璃或半透明材质对比清晰，柔光箱反射自然，高光不暴。光线为柔和影棚布光，阴影柔和，主体边缘有轮廓光，营造高级、干净、有深度的氛围。保持主体身份、结构、颜色与关键细节一致。画面无品牌文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "广告海报",
+              "value": "以所选主体为视觉中心，制作一张 3D 渲染风格的广告海报画面。采用三分之四视角、低机位或平视构图，主体置于深色旋转底座，背景为柔和渐变。使用 PBR 材质：铬金属、磨砂玻璃、哑光塑料区分明确，柔光箱高光与边缘光强化轮廓，整体光线柔和、层次丰富。色彩高级克制，氛围冷静、科技、精致。保持主体外形与关键识别特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "将所选主体置入本风格的产品场景图中：主体居中或偏中，四分之三视角，放置于深色旋转底座或极简台面，背景为柔和渐变并带轻微景深。材质按物理渲染处理，金属抛光、玻璃磨砂、表面细腻，矩形柔光箱反射可见，柔光与轮廓光塑造体积。整体色调克制，工作室氛围安静高级。严格保持主体身份、结构、比例与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:19Z"
+        },
+        {
+          "id": "stylized-character",
+          "label": "Stylized character",
+          "heading": "Stylized character",
+          "caption": "Stylized appeal, studio materials, depth and lighting.",
+          "prompt": "3D render, physically based materials, soft studio lighting. A stylised clay figurine of a violinist mid-phrase standing on a turntable, matte vinyl and clay materials with visible thumbprints pressed into the surface, features simplified with no attempt at realism. Soft studio key from the left, seamless pale backdrop.",
+          "url": "https://openrouter.ai/benchmarks/media/images/3d-renders?variant=stylized-character",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色设计",
+              "value": "以「所选主体」为角色原型，生成3D渲染风格的简化全身造型：保留其身份与关键特征，如脸型、发型、服饰轮廓和标志性配色，但去除写实细节，做成黏土与哑光乙烯基材质，表面带轻微指纹压痕。让角色站在圆形唱盘上，姿态自然、有动作感，采用柔和影棚左侧主光，浅色无缝背景，突出体积感与投影。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "潮玩手办",
+              "value": "以「所选主体」为潮玩手办原型，生成3D渲染的收藏级公仔效果：保持主体身份与关键特征一致，如五官比例、发型、服装和主色，但整体造型简化，不追求写实。材质为哑光乙烯基与黏土，表面可见拇指按压的痕迹。主体站在圆形唱盘上，正面或轻微侧身，柔和影棚左侧主光，浅色无缝背景，画面干净居中。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像",
+              "value": "以「所选主体」为头像焦点，生成3D渲染风格的胸像或肩部以上近景。保留主体身份与关键外貌特征，如脸型、发型、肤色和标志性配饰，但五官与轮廓做简化处理，不追求写实。材质呈现哑光黏土或乙烯基质感，表面带轻微指纹压痕。采用柔和影棚左侧主光，浅色无缝背景，突出面部体积与柔和投影。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以「所选主体」为海报核心视觉，生成3D渲染风格的竖版构图：保留主体身份与关键特征，如轮廓、服饰、配色和标志性道具，但造型简化成黏土或哑光乙烯基手办质感，表面带轻微指纹压痕。主体站在唱盘或圆形展台上，居中偏下，上方留出呼吸空间；柔和影棚左侧主光，浅色无缝背景，氛围干净、有体积感。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:20Z"
+        }
+      ]
+    },
+    {
+      "id": "anime-manga",
+      "group": "Illustration",
+      "name": "Anime & manga",
+      "url": "https://openrouter.ai/benchmarks/media/images/anime-manga",
+      "why_chosen": "Line quality, painted backgrounds, dynamic pose.",
+      "variant_axis_name": "Subject",
+      "scenarios": [
+        {
+          "id": "action-panel",
+          "label": "Action panel",
+          "heading": "Action panel",
+          "caption": "Line quality, painted backgrounds, dynamic pose.",
+          "prompt": "Anime illustration, clean cel shading and crisp linework. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, hard specular highlights drawn as shapes rather than gradients.",
+          "url": "https://openrouter.ai/benchmarks/media/images/anime-manga?variant=action-panel",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "动作分镜",
+              "value": "以「所选主体」为主角生成一格漫画式动作分镜。采用略微倾斜的动态构图，主体处于动作爆发或转折的瞬间，肢体舒展、关节清晰，带明显运动倾向线与水花、气流飞溅轨迹。使用干净赛璐璐平涂与锐利线稿，轮廓线明确不毛糙；背景用厚涂笔触铺陈环境氛围，只做衬托不抢戏。光源自画面下方打来，硬边高光以块面而非渐变呈现，强调湿润反光与细密水珠质感。严格保持主体身份与关键特征（发型、脸型、配色、道具、服饰）一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色立绘",
+              "value": "以「所选主体」为唯一焦点生成一张完整的动漫角色立绘。采用全身或七分身构图，主体占据画面中央偏上区域，头顶到脚部关键部位完整可见，不做尴尬裁切。姿态选择最具张力的一瞬，肩线扭转、重心偏移，手臂或道具形成引导性斜线。上色为干净赛璐璐分面，阴影边界清晰，线条锐利均匀；背景为手绘感厚涂场景，色温偏冷，与主体形成明度对比。保持主体身份与关键外貌特征、标志性配色和配饰一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "竞技海报",
+              "value": "以「所选主体」为核心生成一张运动主题的竖幅动漫海报。采用低角度仰视或斜切构图，主体置于画面三分之二处，前方留出飞溅的水珠、汗滴或碎屑作为前景层次，后方留出竞技场馆或水面背景。光线为冷蓝的主光加硬边高光，高光以几何块面绘制而非柔和渐变，营造湿润、紧绷的竞技氛围。整体色彩为冷蓝、白与肤色三色主导，饱和度中等偏高。保持主体身份、体型比例与关键装备特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像",
+              "value": "以「所选主体」为唯一焦点生成一张动漫风格的近景头像。采用肩部以上的特写构图，面部占画面主要区域，发梢、耳部与肩线边缘完整可见，保留呼吸停顿或情绪爆发的一瞬表情。光线从侧下方打来，在颧骨、鼻梁与下颌形成硬边高光块面，皮肤带湿润反光与颗粒质感；背景为虚化的冷色调绘景，简洁柔和。线条干净锐利，阴影为清晰分面的赛璐璐上色。保持主体身份、五官比例与标志性发色发型一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:15Z"
+        },
+        {
+          "id": "background-scene",
+          "label": "Background scene",
+          "heading": "Background scene",
+          "caption": "Line quality, painted backgrounds, dynamic pose.",
+          "prompt": "Anime illustration, clean cel shading and crisp linework. A cedar forest at the height of summer, shafts of light cutting through the canopy as hard-edged beams with dust and pollen suspended in them, one small figure standing at the base of a vast trunk for scale. Saturated greens, lens flare drawn as overlapping shapes.",
+          "url": "https://openrouter.ai/benchmarks/media/images/anime-manga?variant=background-scene",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体为画面唯一叙事核心，置于盛夏雪松林深处。主体可站在巨大树干根部或林间小径上，用中远景构图、极小的人物比例反衬森林体量；顶光穿过树冠形成边缘锐利的硬质光柱，光柱中悬浮尘埃与花粉，镜头光晕用重叠色块绘制。赛璐璐平涂上色配干净线稿，高饱和翠绿与暖黄阳光对比，背景为手绘厚涂质感。保持主体身份与关键特征一致，不改变轮廓、配色与标志性细节。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张竖版手机壁纸。以所选主体作为画面下三分之一处的视觉锚点，上方留出大面积雪松树冠与穿透而下的硬边光柱，形成上轻下重的稳定构图，主体完整不被裁切。光线为盛夏正午的强逆光，尘埃与花粉在光柱中清晰可见，光晕以半透明重叠色块表现。色彩用高饱和翠绿、暖金与深墨绿阴影，赛璐璐平涂加细腻手绘背景。保持主体身份与关键特征一致，不改其轮廓、配色与标志性细节。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色立绘",
+              "value": "以所选主体生成一张全身角色立绘，动态姿势：侧身回望或迈步穿过林间光柱，姿态舒展、重心明确。主体置于画面中央，巨大雪松树干作为背景纵深参照，树冠光束从斜上方打亮发丝与肩线，形成清晰的边缘光。线稿干净锐利、赛璐璐平涂分区明确，阴影为硬边色块；色彩以饱和翠绿为主、暖黄高光点缀，空气中漂浮尘埃与花粉。严格保持主体身份、发型、服装配色与标志性细节一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "生成一张竖版海报式构图。以所选主体为视觉中心置于画面中下部，上方由雪松树冠与倾斜的硬边光柱构成天然引导线，视线汇聚于主体；主体轮廓完整、不被光柱或树枝遮挡。盛夏强光形成高对比明暗，尘埃花粉悬浮于光柱内，镜头光晕以重叠几何色块叠加。赛璐璐平涂加手绘厚涂背景，高饱和绿与暖金为主导色。保持主体身份与关键特征一致，不改变轮廓与配色。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:58Z"
+        },
+        {
+          "id": "character-portrait",
+          "label": "Character portrait",
+          "heading": "Character portrait",
+          "caption": "Line quality, painted backgrounds, dynamic pose.",
+          "prompt": "Anime illustration, clean cel shading and crisp linework. A pilot pulling her helmet off after a hard landing, hair in disarray with one strand fallen across the eye, a hard-edged cel shadow under the jaw and along the neck. Flight suit collar open, hangar lighting from above, expression tired rather than triumphant.",
+          "url": "https://openrouter.ai/benchmarks/media/images/anime-manga?variant=character-portrait",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "以所选主体为唯一焦点生成头像级近景特写。构图取肩部以上，面部占据画面主要区域，头顶、发型与肩线完整不裁切。沿用本风格的干净赛璐璐上色与利落勾线，下颌与颈侧压一道硬边赛璐璐阴影，光源自上方偏冷，明暗交界清晰。发型保留一缕碎发垂落遮住眼角，神态偏疲惫而非亢奋，情绪克制。背景做手绘质感虚化，色调压低饱和。保持主体身份与关键外貌特征一致，不改变脸型、发色与标志性配饰。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "以所选主体为核心输出一张角色设定向的半身立绘。采用三分之二侧身、重心偏移的动态站姿，肩颈线条舒展，衣领自然敞开，衣料褶皱用明确色块分层而非渐变涂抹。沿用本风格：干净赛璐璐阴影、锐利线稿、手绘质感背景，顶光在锁骨与下颌处留下硬边投影。整体色调以冷灰为主，点缀一处高饱和重点色。保持主体身份、发型轮廓与标志性服装元素一致。背景简化为工业或机库空间的暗示，不抢主体。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "氛围壁纸",
+              "value": "以所选主体为画面中心生成竖幅氛围壁纸。主体置于中下部，上方留出大面积手绘质感空间（顶光、尘埃、金属结构），形成呼吸感留白。沿用本风格：干净赛璐璐上色、利落勾线、硬边投影，光线自上而下形成强对比明暗块面。主体姿态略带疲惫与松弛，碎发凌乱，视线半垂或看向画外。色彩压低饱和，冷暖对比克制。保持主体身份与关键特征一致，不额外添加角色，不改动面部结构。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报主视觉",
+              "value": "以所选主体为主视觉生成一张竖版海报式构图。主体占据画面中央偏左，取动态收束的瞬间姿态形成张力，右侧或上方留出干净负空间便于后期排版。沿用本风格：干净赛璐璐阴影、锐利线稿、手绘质感背景，顶光制造下颌与颈部的硬边投影，色彩以冷调为主、局部暖光提亮。情绪偏疲惫内敛，不做夸张表情包化处理。保持主体身份、面部特征与标志性服饰一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:58Z"
+        },
+        {
+          "id": "interior-scene",
+          "label": "Interior scene",
+          "heading": "Interior scene",
+          "caption": "Line quality, painted backgrounds, dynamic pose.",
+          "prompt": "Anime illustration, clean cel shading and crisp linework. An empty classroom at dusk, desks in rows, orange light coming through the windows as hard-edged parallelograms across the floor and up the far wall. A curtain lifted by the breeze, chalk dust suspended in the light, the corridor beyond the door left dark.",
+          "url": "https://openrouter.ai/benchmarks/media/images/anime-manga?variant=interior-scene",
+          "aspect_ratio": "16:9",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体为画面唯一核心，安置在黄昏的室内空间。主体位于中景或近景显眼处，背景保留成排桌椅、窗框与门外暗走廊的纵深，透视统一、消失点一致。采用干净赛璐璐上色与利落勾线，橙红夕照以硬边平行四边形铺在地面并爬上远端墙面，窗帘被风掀起，光柱里悬浮细微尘埃。暖橙与赭红对比冷灰蓝阴影，氛围安静怀旧。严格保持主体的外形、材质、配色与关键识别特征不变，不被背景遮挡或替换。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色立绘",
+              "value": "以所选主体为唯一角色，生成全身或七分身立绘。安排一个自然动态姿势：回眸、抬手撩发或倚靠课桌，身体重心明确、四肢不遮挡躯干关键结构。主体处于窗边夕照中，轮廓被暖橙色边缘光勾出，背光侧落入冷灰蓝阴影，赛璐璐分色干净、线条利落。背景为虚化的空教室，桌椅与窗格提供纵深但不抢主体。严格保持人物的脸型、发型、服装与标志性特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张宽幅壁纸。以所选主体作为视觉落点，占据画面一侧或中央三分之一，其余空间交给黄昏教室的纵深：成排桌椅向远处收缩，窗框切割出橙红硬边光块斜铺地面、爬上远墙，窗帘轻扬，空气中漂浮细小尘埃。整体以暖橙、赭红为主调，暗部用冷灰蓝压制，营造安静、怀旧、略带时间停滞感的氛围。主体保持原有外形、比例与关键识别特征不变，不因风格化被改写。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "生成一张竖版海报式插画。以所选主体为画面核心，采用略带仰角或三分法构图，主体置于光带交汇处，形成明确的视觉焦点。延续干净赛璐璐上色与利落勾线，橙色夕照以硬边平行四边形横贯地面与远端墙面，窗帘被风吹起，尘埃在光束中可见。色彩以暖橙与冷灰蓝对比，氛围静谧、青春、微带怅然。保留主体身份与关键特征一致，不做过度变形或元素替换。画面留出干净负空间，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:25Z"
+        }
+      ]
+    },
+    {
+      "id": "cartoon",
+      "group": "Illustration",
+      "name": "Cartoon & comics",
+      "url": "https://openrouter.ai/benchmarks/media/images/cartoon",
+      "why_chosen": "Expression, panel layout with balloons, warmth.",
+      "variant_axis_name": "Format",
+      "scenarios": [
+        {
+          "id": "cartoon-character",
+          "label": "Cartoon character",
+          "heading": "Cartoon character",
+          "caption": "Expression, panel layout with balloons, warmth.",
+          "prompt": "Cartoon illustration of a round orange cat with an oversized expressive face caught mid-yawn, thick clean outlines, flat colours with simple two-tone shading, a plain pastel background. Exaggerated expression, no text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cartoon?variant=cartoon-character",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "以「所选主体」为唯一核心，生成一张卡通漫画风格头像。采用居中的近景或胸像构图，主体面部占据画面主要区域，突出夸张、生动的表情与圆润轮廓，头顶、发型、肩部完整不被裁切。用粗而干净的黑色描边、平涂色块和简单双色阴影塑造体积，背景为纯色柔和粉彩，营造温暖轻松氛围。保持主体身份与关键特征一致，五官、发型、配色和标志性细节不得改变。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "把「所选主体」转成卡通漫画角色设定图。使用正面或轻微三分之四角度全身或半身构图，姿态自然且带戏剧性，重点表现夸张表情与清晰剪影。采用粗壮统一的外轮廓、平涂主色、双色简单明暗，避免复杂渐变与写实质感；背景用单一柔和粉彩色衬托主体。保持主体身份、关键外貌特征、服装与配色一致，不同角度也不偏离设定。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "表情包",
+              "value": "以「所选主体」为核心制作卡通表情包画面。采用正方形紧凑特写，主体面部和上半身占满画面，捕捉大笑、惊讶、打哈欠等夸张瞬间，强化五官形变与情绪张力。用粗线条勾边、平涂色块和简单双色阴影，背景保持纯色粉彩或轻微几何装饰，整体温暖、幽默、易识别。保持主体身份和关键特征一致，不能换成另一角色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴纸",
+              "value": "将「所选主体」设计成卡通漫画贴纸或图标式画面。主体居中、轮廓完整，外缘留出均匀留白；动作与表情夸张可爱，适合小尺寸下仍清晰可辨。用均匀粗描边、平涂颜色、少量双色阴影和纯色粉彩背景，整体温暖明亮。保持主体身份、关键特征、配色与标志物一致，简化细节但不改变识别点。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:38Z"
+        },
+        {
+          "id": "childrens-book",
+          "label": "Children's book spread",
+          "heading": "Children's book spread",
+          "caption": "Expression, panel layout with balloons, warmth.",
+          "prompt": "Children's book illustration in soft gouache textures: a small bear in a yellow raincoat standing in a puddle under a huge umbrella, ducks paddling around its boots, warm evening light, rounded shapes and gentle colours. No text, composed to leave open space along the top edge.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cartoon?variant=childrens-book",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "童书页",
+              "value": "把「所选主体」放进一页童书跨页插画：柔和水粉（gouache）笔触质感，形状圆润、边缘柔和不锐利，主色为暖黄、赭橙与低饱和青绿的温柔配色，黄昏暖光从侧后方斜照，主体脚下有浅浅水洼与柔和倒影，周围点缀少量圆胖小动物或植物形成呼应。主体置于画面中偏一侧，画面上方留出大片空白天空。保持主体身份、比例与标志性特征一致，只做风格化简化，不改变外形结构。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "将「所选主体」绘制成卡通漫画风格角色设定图：圆润可爱的造型语言，头身比略夸张，线条干净带手绘感，表面覆盖细腻水粉颗粒与轻微纸张纹理。用暖橘色夕阳侧光加柔和反射光塑造体积，阴影偏向暖紫灰而非纯黑，整体色彩明亮温和。主体置于画面中央，可配一个简洁的圆形或色块背景。保留主体关键识别特征（配色、配件、轮廓比例）一致，不改变其基本外形与气质。画面单独成图、构图完整。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景插画",
+              "value": "以「所选主体」为主角创作一幅暖色系场景插画：柔和水粉质感，圆润造型，暖黄昏光线从画面深处漫射而来，空气中带轻微光晕与颗粒，色彩以暖黄、橘粉、灰蓝为主，低对比、无强锐边。主体自然融入环境并成为视觉中心，前后景用大小圆润的元素区分层次，画面顶部预留开阔天空留白。保持主体身份、外形比例与标志性细节一致，仅做绘画化处理，不要真实照片质感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贺卡封面",
+              "value": "为「所选主体」制作童书风贺卡封面插画：水粉笔触的柔和色块，圆润可爱的造型，温暖黄昏光从侧面打亮主体边缘形成柔和轮廓光；配色温和治愈，以奶黄、橘棕、淡青为主，整体明亮不刺眼。主体居中或略偏下，四周留出宽松的呼吸空间，便于后期添加祝福语。保持主体身份与关键特征一致，风格化但仍可辨识。构图简洁、单幅完整、层次清晰。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:36Z"
+        },
+        {
+          "id": "comic-panel",
+          "label": "Comic panel",
+          "heading": "Comic panel",
+          "caption": "Expression, panel layout with balloons, warmth.",
+          "prompt": "A single comic book panel in a classic line-and-flat-colour style: two characters at a diner counter, the one on the left leaning in with a speech balloon reading WE NEED TO TALK, the one on the right frozen mid-sip with a small sweat drop. Bold inks, halftone shading, the balloon tail pointing at the speaker.",
+          "url": "https://openrouter.ai/benchmarks/media/images/cartoon?variant=comic-panel",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "漫画分镜",
+              "value": "以「所选主体」为画面唯一主角，生成一格经典美式漫画分镜：粗黑勾线、平涂色块、网点纸阴影，暖色调并带轻微纸张颗粒感。主体置于画面中部偏一侧，另一侧预留对话气泡空间，气泡尾巴指向正在说话的一方；若主体是物品或景物，可让气泡尾指向发声位或用旁白框替代。保持主体外形、服装、配色与关键特征完全一致，不添加抢焦点的多余角色。气泡内以波浪短线代替文字。不出现可辨识文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "表情包",
+              "value": "以「所选主体」为核心做成单格漫画表情贴纸：半身或胸部以上特写，居中构图，主体神态夸张放大——瞪眼、张嘴、额角挂一滴小汗珠，四周加放射状速度线与网点阴影。粗黑描边、平涂高饱和色块、暖调背景，整体像印在纸上的复古漫画贴纸。严格保持主体身份、发型、五官比例与标志性配色一致，只夸张表情与线条力度，不改变本体特征。不出现可辨识文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物设定",
+              "value": "以「所选主体」为原型绘制一张漫画风格角色主视图：全身或四分之三身站姿，正面朝向观众，粗黑勾线与硬朗轮廓光强调体块，皮肤和服装用平涂色加网点过渡，背景为简洁暖色渐变或速度线条，营造轻松复古的漫画氛围。保持主体的脸型、发型、服饰细节、配色与体型比例高度还原，仅把渲染方式替换为经典线描平涂。画面干净、线条利落无杂线。不出现可辨识文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "封面",
+              "value": "以「所选主体」为视觉中心生成一张漫画分镜式封面图：主体位于黄金分割点，左右或前后安排一两个辅助元素形成对峙或对话关系，并在主体一侧留出空白对话气泡。粗黑墨线、平涂色块、网点阴影配合暖色纸质感，光线为室内暖黄光加边缘高光，氛围紧张又俏皮。保持主体身份、轮廓与关键配色一致，辅助元素只作陪衬不抢戏。气泡内不写字，以波浪短线示意。不出现可辨识文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:04:52Z"
+        }
+      ]
+    },
+    {
+      "id": "concept-art",
+      "group": "Illustration",
+      "name": "Concept art & fantasy",
+      "url": "https://openrouter.ai/benchmarks/media/images/concept-art",
+      "why_chosen": "Original design, world scale, costume detail.",
+      "variant_axis_name": "Subject",
+      "scenarios": [
+        {
+          "id": "creature",
+          "label": "Creature",
+          "heading": "Creature",
+          "caption": "Original design, world scale, costume detail.",
+          "prompt": "Concept art of an original creature, a six-limbed forest grazer with a moss-covered shell along its back and a long flexible neck, shown in a three-quarter pose on a neutral ground plane. Painterly digital rendering, a readable silhouette, plausible joints and weight, no text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/concept-art?variant=creature",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色设定",
+              "value": "以「所选主体」为唯一核心，生成原创概念设定图。采用三分之二侧面的大半身或全身构图，置于中性灰地面，主体完整入画、外轮廓清晰可读，肢体关节与重量感合理可信。沿背部或外轮廓叠加苔藓、甲壳、藤蔓一类有机覆盖层，延伸部位保持柔韧曲线。手绘数字绘画质感，笔触松弛但有体积，柔和顶侧光，色彩以苔绿、灰褐、土黄为主，氛围静谧而带探索感。严格保持主体身份、比例与关键特征一致，不替换物种或服装设定。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "生物图鉴",
+              "value": "把「所选主体」当作一本奇幻生态图鉴中的正式条目来绘制。构图居中偏侧，主体占据画面约三分之二，留出干净的中性背景与呼吸空间，视线方向略朝画外。强调解剖可信度：关节连接自然、四肢落地有压力感、表皮与甲壳有厚度，表面附着苔藓、菌斑与湿痕等环境痕迹。数字绘画上色，冷暖对比克制，主色为苔绿、赭石与雾灰，光线均匀通透。保持主体身份、体态与标志性特征前后一致，不做拟人化改造。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "世界观场景",
+              "value": "以「所选主体」为中心构建一张世界观概念场景图。主体置于前景或中景偏侧，身后是层层退远的雾林、巨木或石丘，形成明确的世界尺度对比，让人一眼读出体型大小。中景保留可通行的小径或水洼作为尺度参照。光线为清晨散射光，带轻微体积雾与空气透视；色调以青苔绿、灰蓝与暖土黄交织。绘画感笔触与细腻质感并存，轮廓在背景中依然可读。保持主体身份、比例与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "横版主视觉",
+              "value": "生成一张横版主视觉：以「所选主体」为画面绝对焦点，三分之二侧身、略微低机位，营造体量压迫感与英雄式剪影。主体占据画面中央偏左，右侧留出标题留白区域但不写任何文字。背景为中性灰地面加简化远景，光线为强烈的侧逆光，边缘轮廓带轻微辉光，甲壳与苔藓的湿润高光清晰可见。色彩以苔绿、暗褐、雾白为主，氛围神秘而庄重。严格保持主体身份、结构与关键特征一致，不添加额外角色或道具。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:18Z"
+        },
+        {
+          "id": "fantasy-character",
+          "label": "Fantasy character",
+          "heading": "Fantasy character",
+          "caption": "Original design, world scale, costume detail.",
+          "prompt": "Concept art of a desert ranger character in full costume, layered linen wraps, a scaled leather pauldron on one shoulder, a curved bow and quiver, goggles pushed up on the forehead. Three-quarter standing pose on a plain ground, painterly rendering with the materials distinguished by their sheen, no text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/concept-art?variant=fantasy-character",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色设计",
+              "value": "以所选主体为核心生成一张奇幻概念设定图，采用三分之二站姿全身构图，主体完整入画，脚部与头饰不被裁切。参考沙漠游侠的层次穿法：亚麻绑带、单肩鳞甲护肩、弧形弓与箭袋、额前推起的护目镜等细节可替换为主体对应的服饰与装备。光线为干燥暖调侧逆光，背景为极简沙地或中性地面，突出材质光泽差异：皮革哑光、金属冷亮、布料粗糙。保持主体身份、五官、发型与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "全身立绘",
+              "value": "以所选主体为唯一主角，生成奇幻概念艺术风格的全身立绘。采用三分之二站立姿态，身体微转、重心自然，四肢与随身装备完整可见。用沙漠游侠式的层叠布料、单肩护甲、弓与箭袋作为风格参照，替换为主体自身的服装与道具，强调剪影清晰与装备层级。色彩以沙金、赭石、皮革棕和冷灰金属为主，低饱和但有高光点缀；光线为暖色侧光，背景简化为空旷地面或薄雾远景。保持主体身份与关键特征一致，材质有手绘厚涂质感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为视觉核心，生成一张具有奇幻概念艺术气质的世界观场景图。构图采用三分之二视角的中全景，主体立于空旷地面或荒野中，周围留出可呼吸的空间，远景以低细节沙丘、岩层或雾气交代尺度。参考沙漠游侠的材质语言：层叠亚麻、鳞片皮革、金属护具、旧化弓具，并映射到主体表面。光线为黄昏暖侧逆光，色彩集中在沙金、赭石、青灰与深棕。保持主体身份、轮廓和关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "装备特写",
+              "value": "以所选主体或其所穿装备为焦点，生成奇幻概念艺术的近中景特写。构图采用三分之二角度，突出单肩护甲、层叠绑带、皮革扣具、弓具或随身道具等结构，同时保留主体面部或核心识别特征。参考沙漠游侠的材质对比：粗亚麻、哑光皮革、冷亮金属、风化木料，用暖色侧光照出各材质不同光泽。背景为虚化的沙地或中性暗面，不抢主体。保持主体身份、颜色方案与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:41Z"
+        },
+        {
+          "id": "sci-fi-environment",
+          "label": "Sci-fi environment",
+          "heading": "Sci-fi environment",
+          "caption": "Original design, world scale, costume detail.",
+          "prompt": "Concept art of a vast vertical city built inside a canyon, bridges and cables spanning the gap between the cliff faces, tiny figures on a walkway in the foreground giving the scale, atmospheric haze deepening with distance. Painterly digital rendering, a single strong light source from above, no text.",
+          "url": "https://openrouter.ai/benchmarks/media/images/concept-art?variant=sci-fi-environment",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色设计",
+              "value": "以所选主体为核心，将其置于峡谷垂直都市的栈道或悬桥之上，人物占画面下方三分之一，背后是层叠崖壁建筑、横跨深谷的桥梁与缆索，远处雾霭渐浓以拉开纵深。保留主体五官、发型、服饰结构与关键配饰，服装可加入金属与织物拼接的科幻质感，但轮廓与识别特征不得改变。单一强光源自上方投射，形成硬边亮部与深邃阴影，整体为冷灰蓝基底点缀暖色灯带的手绘数字绘景质感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体所处的环境为唯一主体，构建一座嵌入峡谷的巨型垂直都市：两侧崖壁密布层叠建筑，桥梁与缆索横跨谷口，前景保留可供参照比例的微小人物或物件。使用手绘数字绘景笔触，单一强光源自上方照射，光柱穿透雾霭，越向远处空气透视越浓、对比越低。色彩以冷灰、青蓝为基底，局部以暖橙灯光点缀，保持主体关键特征与材质辨识度不变。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "竖版海报",
+              "value": "生成一张竖构图的海报式画面，以所选主体为视觉中心，采用低视角仰拍强化峡谷垂直都市的高耸感，主体置于画面下三分之一，上方留出桥梁、缆索与雾霭交织的空间。主体身份、面部特征、服装轮廓与配色需严格保持一致，可叠加科幻配件但不改变识别度。单一强顶光制造戏剧性明暗对比，笔触带绘画感，冷灰蓝基调配少量暖色高光。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "手机壁纸",
+              "value": "生成一张适合竖屏观看的壁纸：以所选主体为前景焦点，安排在画面下方或一侧，其余空间交由峡谷中的垂直都市、层叠崖壁、横跨的桥梁与缆索填充，远处以浓雾过渡形成纵深。保持主体外形、比例与关键特征完全一致，仅调整光影与氛围以融入场景。单一强光源自上方洒落，冷灰蓝色调为主，局部暖色灯光点缀，整体为绘画感的数字概念艺术质感，画面干净透气。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:36Z"
+        }
+      ]
+    },
+    {
+      "id": "flat-vector-illustration",
+      "group": "Illustration",
+      "name": "Flat vector",
+      "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration",
+      "why_chosen": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+      "variant_axis_name": "Format",
+      "scenarios": [
+        {
+          "id": "icon-set",
+          "label": "Icon set",
+          "heading": "Icon set",
+          "caption": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+          "prompt": "Flat vector illustration, bold two-colour poster style. A set of nine icons on a three by three grid for a weather app: sun, cloud, rain, snow, wind, fog, thunderstorm, sunrise and moon, all drawn at the same stroke weight and the same optical size, sharing one corner radius. Clean edges, no gradients, one flat background.",
+          "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration?variant=icon-set",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "图标",
+              "value": "生成一枚以所选主体为唯一图形的扁平矢量图标。主体放正，采用正视角或标准侧视，去掉透视与体积感，只保留辨识度最高的轮廓与关键特征，用统一粗细的描边和统一圆角概括，配色限定为两种对比明确的纯色，不加渐变、阴影或高光。图形居中，四周留出等量留白，光学尺寸与同类图标保持一致，主体身份与核心特征必须清晰可辨。背景为单一平涂色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标组",
+              "value": "生成一组九枚扁平矢量图标，排列在三行三列的等距网格中，围绕所选主体衍生九个同族变体，例如不同状态、角度或组合部件。全部图标使用同一描边宽度、同一光学尺寸、同一圆角半径与同一套双色配色，去透视、无渐变、边缘干净利落，行列间距一致，视觉重量均衡。每个变体都需保留主体可识别的关键特征，彼此不混淆。背景为单一平涂色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴纸",
+              "value": "生成一枚以所选主体为原型的扁平矢量模切贴纸。主体轮廓外缘加一圈均匀的深色描边形成分割边，内部用大色块概括，只保留辨识度最高的造型特征，去透视、无渐变、无阴影、无高光。采用双色海报式配色，对比强烈，转角统一圆角，边缘干净无毛刺。主体居中，四周留白均匀，保持主体身份与关键特征一致。背景为单一平涂色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "界面图",
+              "value": "生成一张以所选主体为核心图标的扁平矢量界面示意图。采用卡片式分区布局，顶部放置代表主体的主图标，下方以同族小图标与色块示意信息层级与状态。全部图形遵守同一描边宽度、同一圆角半径与同一套双色配色，去透视、无渐变、无投影，边缘干净利落。主体图标放大居中成为视觉焦点，其余元素克制不抢戏，主体关键特征须保持可辨认。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:09Z"
+        },
+        {
+          "id": "isometric-scene",
+          "label": "Isometric scene",
+          "heading": "Isometric scene",
+          "caption": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+          "prompt": "Flat vector illustration, bold two-colour poster style. A one-room workshop drawn in isometric projection with no vanishing point, every edge parallel, depth coming only from which shape overlaps which. Bench, shelf and window reduced to flat rectangles, no gradients, one flat floor.",
+          "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration?variant=isometric-scene",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "等距场景图",
+              "value": "以所选主体为核心，绘制一张等距投影（isometric）单空间场景插画：主体置于画面中央的平坦地台上，所有边缘保持 30° 平行关系、不使用透视消失点，空间纵深只由图形前后遮挡关系体现。主体的关键外形、比例与识别特征必须保持一致。台面、墙面、置物架与窗洞全部简化为纯色矩形，无渐变、无投影柔化，仅用两种主色加一种地板色构成。用纯平面色块与干净描边表现材质，不添加纹理噪点。背景保持极简留白。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标",
+              "value": "把所选主体转译为等距风格的扁平矢量图标：主体正面朝向观者、略微抬高的等距视角，所有线条与形体边缘严格平行对齐，形成规整的立体方块感。保留主体的识别轮廓与关键细节，颜色简化为两色主调加一层地板底色，无渐变、无阴影模糊、无高光。描边粗细统一，边缘干净利落，带轻微镂空留白，像贴纸裁切般清晰。整体居中、四周留出等量空白，适合小尺寸显示。背景纯色或透明。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品展示",
+              "value": "以所选产品为主体，置于等距单房间展台的中央台座上。镜头为无消失点的平行投影，产品边缘与房间线条保持同一组平行方向，纵深靠前后遮挡表达。产品的造型、配色、材质与品牌识别特征须严格保持一致，不做夸张变形。房间中的台面、货架、窗口以纯色矩形概括，仅用两种主色加一层纯平地板色，禁止渐变与环境光晕。光线为无方向的全平光，靠色块明度区分层次。画面带海报式的克制留白。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为视觉中心，生成等距视角的扁平矢量场景壁纸。主体安放在画面偏中的位置，周边环绕同风格的极简等距小物件（方块、台面、层架）作为节奏点缀，所有元素共享同一组平行边缘与统一高度基准，无透视收敛。主体身份与关键特征保持一致，色彩压缩为两色主调加一层平地板色，全平涂无渐变、无模糊阴影，只有硬边色块与纯色描边。整体色调沉静、排布均衡克制。留出可容纳裁切的安全边距。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:10:14Z"
+        },
+        {
+          "id": "portrait",
+          "label": "Portrait",
+          "heading": "Portrait",
+          "caption": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+          "prompt": "Flat vector illustration, bold two-colour poster style. A stonemason at the bench, head and shoulders in three-quarter view, the face built from four flat shapes where the cheekbone and jaw are nothing but the boundary between two colours. No gradients, no outlines and no drawn features — the eye is a single notch of negative space.",
+          "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration?variant=portrait",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "以所选主体为唯一焦点生成竖幅头像。采用肩部以上近景，头部与肩线完整，轻微三分之二侧脸。用大块扁平色块概括面部与发型，五官不画线，仅靠两色交界、负空间缺口和轮廓切线暗示眼睛、鼻梁与下颌；无渐变、无描边、无写实细节。保持主体身份、发型、肤色和标志性配饰一致。背景为单色平涂或极简留白，营造冷静、干净的双色海报氛围。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色卡",
+              "value": "以所选人物或角色为主体生成竖幅角色卡肖像。取胸像或半身三分之二侧视，姿态稳定、透视克制。用两到四个扁平色块建立头脸结构，颧骨与下颌由色块边界自然形成，眼睛只用负空间小缺口表示；边缘干净，像模切贴纸，无渐变、无描边。保持角色身份、脸型、发型、服装主色和关键道具一致。整体为大胆双色海报风，背景简洁。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以所选主体为核心做竖幅极简人物海报。主体置于画面中心偏上，肩部以上或半身，三分之二侧脸，轮廓像模切版一样清晰。色彩限定为两种主色加一个纸底色，皮肤、衣物、背景都只用平涂色块；面部结构靠色块边界和负空间缺口表达，不画眼睛、不描边、无渐变、无纹理。保持主体身份、五官比例、发型与服装特征一致。氛围克制、现代、有印刷感。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标",
+              "value": "以所选主体生成竖幅头像图标式肖像。采用肩部以上正面或轻微三分之二侧脸，头部居中，边缘利落。用两色平涂色块概括外形，内部细节只保留最能识别身份的发型、眼镜、帽饰或轮廓缺口，眼睛用一个负空间小孔表示；无渐变、无描边、无写实阴影。保持主体身份与关键特征一致。背景使用单一纯色或留白，强调双色海报的秩序感。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:12Z"
+        },
+        {
+          "id": "spot-illustration",
+          "label": "Spot illustration",
+          "heading": "Spot illustration",
+          "caption": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+          "prompt": "Flat vector illustration, bold two-colour poster style. A cocktail being poured into a wide glass, the liquid rendered as one continuous flat shape with no gradients, the ice cubes cut out of it as negative space. Hard geometric edges, the splash simplified to three separate shapes.",
+          "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration?variant=spot-illustration",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "图标",
+              "value": "以所选主体为唯一视觉核心，生成一枚方形扁平矢量图标。主体轮廓用连续实色块表现，不加渐变、阴影或高光；内部细节靠负空间镂空切出，例如孔洞、缝隙与结构线。整体限用两色（一主一辅）加底色，硬边几何收口，透视统一为正视或轻微俯视。主体外缘留一圈等宽的 die-cut 描边与背景分离，拐角干净锐利。保持主体身份、比例与标志性特征一致，不添加写实质感与多余装饰；不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴纸",
+              "value": "生成一张以所选主体为中心的模切贴纸式扁平插画。主体被简化为两到三块连续实色形状，动作或结构拆解为彼此分离的几何块，互不重叠、不用渐变、不加投影。采用大胆的双色海报配色，如暖橙配深青，色块之间靠留白与负空间分隔；主体外围包一圈等宽白色描边形成 die-cut 轮廓，边缘锐利干净。保持主体身份、外形比例与关键特征一致，构图居中并留出少量安全边距。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以所选主体为主视觉，生成纵向扁平矢量海报插画。采用严格的正视或轻微俯视透视，主体占据画面中上三分之二，形态归纳为纯色平面，动态或结构拆解为三块以内的分离形状，不做渐变、噪点与写实光影。限用两种主色加一底色，对比强烈，大面积负空间制造节奏。保持主体身份与关键特征一致，轮廓硬朗、拐角利落，层次仅靠前后色块的大小与位置区分。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为核心元素，生成适配满屏或可平铺的扁平矢量壁纸插画。主体用连续实色块概括，细节以负空间镂空表达，整体压缩到两色加底色的限定色板，硬边几何、零渐变、零写实材质。构图上主体可居中或沿对角线排布，四周用简化的几何装饰形状呼应，保持透视统一、视觉重心稳定、边缘干净且描边等宽。保持主体身份、比例与标志性特征一致，避免细节堆砌。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:22Z"
+        },
+        {
+          "id": "stickers",
+          "label": "Stickers",
+          "heading": "Stickers",
+          "caption": "Clean edges, perspective discipline, set consistency, die-cut outline.",
+          "prompt": "Flat vector illustration, bold two-colour poster style. A sheet of six die-cut stickers of breakfast foods, each with a thick white outline offset evenly around its silhouette and a slight drop shadow under each sticker so the sheet reads as printed. No gradients, consistent line weight across the set.",
+          "url": "https://openrouter.ai/benchmarks/media/images/flat-vector-illustration?variant=stickers",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "贴纸集",
+              "value": "生成一张以「所选主体」为核心的六枚模切贴纸版式。将主体安排为六种小幅变体（不同姿态、表情、角度或配饰），以 2 列 × 3 行均匀排布在版面上，每枚贴纸保持主体身份与关键特征完全一致。采用扁平矢量插画，粗双色海报风格，纯色填充，无渐变，全组统一线宽。每枚贴纸沿轮廓均匀外扩一圈粗白边，下方带轻微投影，让整张纸呈现印刷切割感。背景简洁干净，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色贴",
+              "value": "生成一张以「所选角色主体」为核心的六枚模切贴纸。角色以六种可辨识的姿势、表情或小道具变化出现，按 2 列 × 3 行排列，每枚都保持同一角色的发型、服装、配色和五官特征一致。采用扁平矢量插画，粗双色海报风格，无渐变、无写实光影，全组统一线宽。每枚贴纸沿角色轮廓均匀外扩粗白边，并带轻微投影，使整张贴纸呈现印刷感。背景为单色或留白，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品贴",
+              "value": "生成一张以「所选产品」为核心的六枚模切贴纸版式。产品以六个展示角度或使用场景变体出现，按 2 列 × 3 行均匀排布，每枚保持产品外形、结构、关键配色与细节一致。采用扁平矢量插画，粗双色海报风格，纯色块，无渐变，统一线宽。每枚贴纸沿产品轮廓均匀外扩一圈粗白边，下方带轻微投影，让整张纸像印刷贴纸。背景简洁，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "表情包",
+              "value": "生成一张以「所选主体」为核心的六枚模切表情贴纸。主体以六种夸张表情或动作出现，按 2 列 × 3 行排列，每枚保持主体身份与关键特征一致，仅改变神态与手势。采用扁平矢量插画，粗双色海报风格，纯色填充，无渐变，统一线宽。每枚贴纸沿轮廓均匀外扩粗白边，并带轻微投影，使整张纸有印刷切割感。背景干净留白，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:29Z"
+        }
+      ]
+    },
+    {
+      "id": "painting",
+      "group": "Illustration",
+      "name": "Painting & fine art",
+      "url": "https://openrouter.ai/benchmarks/media/images/painting",
+      "why_chosen": "Brushwork, bleed and paper, economy of line.",
+      "variant_axis_name": "Medium",
+      "scenarios": [
+        {
+          "id": "ink-line",
+          "label": "Ink & line",
+          "heading": "Ink & line",
+          "caption": "Brushwork, bleed and paper, economy of line.",
+          "prompt": "Ink and line drawing on white paper, a single continuous fine pen line with no shading. A bicycle leaning against a lamppost on a quiet street, the wheels drawn as confident ellipses, the buildings behind suggested by a handful of lines and left mostly as empty paper. No hatching, no colour, no fill.",
+          "url": "https://openrouter.ai/benchmarks/media/images/painting?variant=ink-line",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体（街景、建筑或器物）为核心，创作一幅白纸上的单线墨迹速写。用一条不断线的细钢笔线勾勒主体轮廓，线条自信、均匀、无粗细突变，转折处可略带回锋与飞白。构图留出大面积空白纸面，仅用少量辅线暗示背景与环境关系，主体位于画面偏左或偏右三分线处。全图无排线、无明暗、无填色，纸面纹理与轻微洇墨作为唯一质感来源。保持主体外形、比例与关键结构特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "插画",
+              "value": "生成一张纯白纸面上的连续性墨线插画，以所选主体为唯一表现对象。用单根流畅细线一气呵成地描出主体外轮廓与主要结构线，省略内部细节，仅保留能被寥寥几笔说清的特征部位，其余留给空白纸面呼吸。线宽纤细统一，起收笔自然，允许极少量的墨色洇染制造手工感。保持主体身份、姿态与关键识别特征一致，不加阴影、材质贴图或任何色彩。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "极简海报",
+              "value": "以所选主体为核心制作一张极简线条海报式画面。主体用单笔细墨线绘制于纯白纸面，造型高度概括、轮廓独立、边缘干净，留出约三分之二的空白作为呼吸区，主体可轻微偏离中心以形成张力。全程无排线、无灰阶、无填色，只有线本身与纸的颗粒感构成层次。保持主体的外形比例、识别性结构与标志性特征一致，不做夸张变形。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "纹样素材",
+              "value": "将所选主体转化为可独立使用的墨线纹样素材。以单根连续细钢笔线在白纸上描绘主体，线条均匀克制，转角处圆润或微尖，禁止任何阴影线与交叉排线，主体外围留出均匀空白便于后期抠取。强调轮廓的可读性与独立性，让图形在极小尺寸下仍能辨认。保持主体的关键结构与比例特征一致，风格统一为纯线描。画面仅用黑白两色，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:28Z"
+        },
+        {
+          "id": "oil",
+          "label": "Oil",
+          "heading": "Oil",
+          "caption": "Brushwork, bleed and paper, economy of line.",
+          "prompt": "Oil painting on canvas, thick impasto brushwork visible in raking light. A harbour at the end of the day, fishing boats with their hulls built from a few loaded strokes, the water a broken surface of short horizontal marks, the sky knifed on in pale layers. Edges lost where warm meets warm, the canvas weave showing through in the thinnest passages.",
+          "url": "https://openrouter.ai/benchmarks/media/images/painting?variant=oil",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "风景画",
+              "value": "以所选主体（港口、渔船、山峦或街景等）为画面核心，采用横幅远景构图，主体置于中景偏一侧，前景留出水面破碎色块与浅滩反光。用厚涂法以载色饱满的笔触塑造主体轮廓，几笔概括船体或建筑体量，水面以短促横向笔触铺陈，天空以画刀刮出薄涂淡色层叠。暖调天光自低角度斜射，暖色与暖色交界处边缘虚化融合，最薄处透出亚麻画布织纹。保持主体造型、比例与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人像",
+              "value": "以所选人物为唯一焦点，生成半身胸像构图，肩部以上完整入画，头顶、双耳与肩线不被裁切，可轻微侧脸迎向光源。用油画厚涂笔触塑造面部，受光面以饱满堆叠的暖色颜料提亮，暗部以稀薄颜料轻扫带出画布质感，五官、发型与神态等关键特征必须与主体一致，不做过度美化改变身份。背景处理为几笔概括的环境色块或模糊的港湾天色，与人物暖色相互呼应。保留清晰笔触走向与织纹，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以所选主体为视觉中心生成油画质感海报底图。采用主体偏置、大面积天空或水面留白的构图，主体以厚涂笔触强调整体剪影与量感，周围用短促横向笔触与刀刮色层营造空气感和光线层次。色彩限定于黄昏暖橙、赭石与灰蓝组成的有限调色板，暖色相接处边缘柔化融合，画面一侧或下方保留低细节可排版区域。严格保持主体外形、比例与关键特征不变，笔触仅作风格化处理。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为中心生成适合全屏观看的油画壁纸。采用开阔横幅构图，主体落在三分线交点或中景位置，四周以简练笔触延伸出天空、水面或雾气的连续质感，避免密集细节干扰桌面图标阅读。整体以黄昏低角度暖光为主，颜料厚薄对比明显，亮部堆叠发光，暗部薄涂透出画布纹理，同类暖色交界处边缘自然消融。保持主体轮廓与关键特征可辨识且前后一致。画面干净无干扰元素，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:30Z"
+        },
+        {
+          "id": "watercolor",
+          "label": "Watercolor",
+          "heading": "Watercolor",
+          "caption": "Brushwork, bleed and paper, economy of line.",
+          "prompt": "Loose watercolor painting on textured paper, visible brush edges. Rain falling on a canal at dusk, the pigment allowed to bloom and granulate where each drop lands on the water, reflections of lit windows pulled downward in wet-on-wet streaks. Edges left unresolved, the brightest reflections reserved as bare paper.",
+          "url": "https://openrouter.ai/benchmarks/media/images/painting?variant=watercolor",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景插画",
+              "value": "以所选主体作为画面唯一叙事中心，置于黄昏运河、雨幕与湿漉漉的街道构成的开放式场景中。主体位于中景偏下，远景保留大面积虚化留白，前景用零星水渍与倒影引导视线。光线为黄昏暖窗灯加冷雨环境光，主体受光边缘清晰、背光侧融入纸色。水性颜料在半粗糙纸上自然扩散，允许色块互相浸润、颗粒沉淀，笔触边缘刻意不描实，最亮处保留为未上色的纸白。保持主体身份与关键特征不变，色彩限制在青灰、赭石、暖橙三色系内。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物肖像",
+              "value": "生成以所选主体为唯一焦点的水彩肖像。采用肩部以上的近景或标准胸像构图，面部占据画面主要区域，头顶、发型、双耳与肩线完整可见，不裁切额头、下巴或关键发饰。背景简化为单色湿染，让颜料从发梢与肩部自然晕出并向下流淌成湿接湿的痕迹。光源为侧后方暖光，在颧骨、鼻梁与下颌留下明亮高光，其余肤色以淡彩叠加、层层透出纸纹。保持主体身份与关键外貌特征一致，笔触松动，边缘不勾硬线。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "将所选主体安排为水彩海报的主视觉，居中或略偏一侧，四周留出大块未涂纸白作为呼吸区，构图简洁、疏密有致。主体只用少数几笔概括轮廓，色彩以青灰、赭石与暖橙做有限色阶，湿画法让颜料在纸纹上自然绽放并沉淀出颗粒。光线来自画面上方或侧面，仅保留一道最亮的高光，其余细节交给留白暗示，可用一条向下拖曳的湿接湿笔痕暗示雨或倒影。保持主体身份与关键特征不变，线条经济、克制、不描边。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张便于裁切为竖屏壁纸的水彩画面，以所选主体点缀于画面下半部或一侧，上方留给黄昏天空、雨丝与弥漫的水色。采用由深到浅的渐变构图，视线沿水面倒影向远处延伸，留白区域占三成以上以保证界面元素可读。光线为黄昏散射光，暖色窗灯在湿面上拉长成条状高光，其余皆为半透明淡彩层，纸纹与颗粒清晰可辨。主体只作剪影或极简色块处理，保留可识别轮廓与关键特征。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:30Z"
+        }
+      ]
+    },
+    {
+      "id": "pixel",
+      "group": "Illustration",
+      "name": "Pixel & retro",
+      "url": "https://openrouter.ai/benchmarks/media/images/pixel",
+      "why_chosen": "Grid honesty and a limited palette.",
+      "variant_axis_name": "Format",
+      "scenarios": [
+        {
+          "id": "8bit-portrait",
+          "label": "8-bit portrait",
+          "heading": "8-bit portrait",
+          "caption": "Grid honesty and a limited palette.",
+          "prompt": "8-bit style pixel art portrait of a woman with short dark hair in a green jacket, drawn on a 64 by 64 grid scaled up with crisp square pixels, four colours per region and no gradients, a plain single-colour background.",
+          "url": "https://openrouter.ai/benchmarks/media/images/pixel?variant=8bit-portrait",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "生成一张以所选主体为唯一焦点的 8-bit 像素头像。构图取肩部以上近景，主体居中并占据画面主要区域，头顶、发型、双耳与肩线完整可见，不做裁切。全部形体制成 64×64 网格上的方正像素块，放大后边缘锐利、方块清晰可数。用色限定每区域四色以内，无渐变无抗锯齿，靠明暗色块切分体积；正面或轻微三分之二角度，光线为平直均匀的像素高光与阴影。背景为单一纯色，与主体主色形成明确对比。保持主体身份与关键外貌特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "生成一张以所选主体为原型的 8-bit 像素角色设计图。构图取全身正面站姿，居中对称，四肢与轮廓清晰分离，头顶到脚底完整入画，脚下留一格地面阴影。所有结构落在 64×64 或 128×128 网格上，像素块方正，放大后无模糊过渡。配色为有限调色板，每区域不超过四色，无渐变无描边光晕，用纯色块加一档暗色表现体积与材质。光线为均匀平光，氛围复古街机。保持主体身份与关键特征（发型、服装主色、标志配件）一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标",
+              "value": "生成一枚以所选主体为图形的 8-bit 像素图标。构图居中，主体占画面约七成，外轮廓简洁可辨，缩到小尺寸仍能看清剪影。图形严格落在 32×32 或 64×64 网格上，线条由单个像素方块构成，放大后呈清晰马赛克。用色限制在四到六种纯色，无渐变、无阴影模糊、无抗锯齿，靠一两档明暗色块交代体积。背景为单一纯色底，与主体形成高对比。保持主体身份与标志性特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以所选主体为视觉中心的 8-bit 像素场景壁纸。主体位于画面中下部或三分线交点，周围用少量像素元素交代环境与纵深，保留大面积纯色天空或底色供构图呼吸。全部元素构建在统一网格上，像素块大小一致、边缘方正，放大后颗粒感清晰。配色为有限复古调色板，每区域不超过四色，无渐变无柔光，用纯色块分层表现前后景。光线为均匀平光或单一方向硬光。保持主体身份与关键特征一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:07Z"
+        },
+        {
+          "id": "sprite",
+          "label": "Sprite",
+          "heading": "Sprite",
+          "caption": "Grid honesty and a limited palette.",
+          "prompt": "Pixel art sprite of a knight character on a plain single-colour background, a 32 by 32 pixel grid scaled up with hard square pixels and no anti-aliasing, a limited palette of eight colours, a black outline, idle standing pose facing right.",
+          "url": "https://openrouter.ai/benchmarks/media/images/pixel?variant=sprite",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色精灵",
+              "value": "以所选主体为核心生成像素风角色精灵。采用正面或侧面站立待机姿势，主体完整置于画面中央，轮廓清晰，占画面约八成高度。将主体转译为32×32像素网格再放大，所有边缘为硬边方块像素，无抗锯齿、无平滑渐变；使用八色以内有限调色板，外轮廓用纯黑描边。保持主体身份与关键特征一致，如发型、服饰、配色、标志性配件或产品外形，不因像素化而丢失识别度。背景为纯色单色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像图标",
+              "value": "以所选主体为唯一焦点生成像素头像图标。采用肩部以上或头部特写构图，面部与主体特征居中，头顶、发型和肩部边缘完整可见，不裁切关键轮廓。将画面处理成32×32像素网格放大效果，硬边方形像素，无抗锯齿，八色以内有限调色板，黑色描边勾勒外轮廓。保持主体身份、五官、发型、配饰或产品标识一致，可做轻度像素简化但不可改变核心特征。背景为单一纯色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "道具图标",
+              "value": "以所选主体为核心生成像素风道具图标。主体居中，完整展示外形与关键结构，采用近似正面或四分之三视角，轮廓分明。将图像转译为32×32像素网格并放大，硬边方块像素，无抗锯齿与模糊过渡；仅用八色以内有限调色板，黑色描边强化边缘。保持主体身份与关键特征一致，如材质、颜色分区、标志性细节和比例，不因像素化而变形失真。背景为纯色单色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "敌方单位",
+              "value": "以所选主体为核心生成像素风敌方单位精灵。采用站立或轻微前倾的待机姿势，主体完整居中，轮廓明确，便于在游戏中识别。将画面转译为32×32像素网格放大效果，硬边方块像素，无抗锯齿，八色以内有限调色板，外轮廓使用纯黑描边。保持主体身份与关键特征一致，如体型、装备、配色、标志性结构或表情，不因像素化而丢失辨识度。背景为纯色单色，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:36Z"
+        },
+        {
+          "id": "tileset-scene",
+          "label": "Tileset scene",
+          "heading": "Tileset scene",
+          "caption": "Grid honesty and a limited palette.",
+          "prompt": "Pixel art scene built from a visible 16 pixel tile grid: a village street with a well, two cottages, a fence and a tree, viewed from a three-quarter top-down angle, a sixteen-colour palette, hard pixels with no anti-aliasing or blur, the tiles repeating cleanly.",
+          "url": "https://openrouter.ai/benchmarks/media/images/pixel?variant=tileset-scene",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "场景图",
+              "value": "以所选主体为核心，生成一张由可见 16 像素网格拼合的像素场景图。采用四分之三俯视视角，把主体安放在由街道、水井、栅栏与树木等模块化地砖构成的画面中心或三分点，主体自身也严格对齐同一网格，边缘为硬像素、无抗锯齿与模糊。使用十六色受限调色板，明暗靠两到三阶色块硬切，阴影短促并贴合地砖走向。保持主体身份与关键特征一致，轮廓、主色和比例在缩小后仍可辨认，重复地砖干净接缝、不错位不断裂。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "游戏地图",
+              "value": "以所选主体作为地图中的关键地标或角色，生成一张可平铺的像素地图区块。视角固定为四分之三俯视，地砖严格对齐 16 像素网格，横向与纵向都能无缝重复，主体置于可通行区域并留出足够的路径与边界。采用十六色受限调色板，硬边像素、无抗锯齿、无渐变模糊，用色块明暗区分地面、建筑与障碍物。保持主体身份与关键特征一致，尺寸与地砖比例协调，不因缩放而糊化。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "以所选主体为唯一主角，生成像素角色立绘或 sprite。采用正面或四分之三俯视朝向，主体居中、全身完整入镜，脚下对齐地砖网格线，四肢与配饰轮廓清晰。以十六色受限调色板绘制，硬像素边缘、无抗锯齿与模糊，用两到三阶色块表现体积与高光，阴影短促。保持主体身份与关键特征一致：发型、服装主色、标志性配件必须保留，缩小到 32 像素高度仍可辨认。背景为简洁的单色或纯地砖底。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标道具",
+              "value": "以所选主体为原型，生成一组像素图标或道具贴图。主体居中方框内，四周留出一格网格的安全边距，轮廓贴合 16 像素网格并保持硬像素边缘，无抗锯齿、无模糊、无渐变描边。使用十六色受限调色板，最多两到三阶明暗，高光集中在上方、阴影压在下缘。保持主体身份与关键特征一致：外形剪影、主色与辨识性细节不可替换，缩小后仍清晰可读。底色简洁统一，多个图标风格一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:08Z"
+        }
+      ]
+    },
+    {
+      "id": "style-switching",
+      "group": "Illustration",
+      "name": "Style switching",
+      "url": "https://openrouter.ai/benchmarks/media/images/style-switching",
+      "why_chosen": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+      "variant_axis_name": "Style",
+      "scenarios": [
+        {
+          "id": "3d-render",
+          "label": "3D render",
+          "heading": "3D render",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "3D render, physically based materials, soft studio lighting. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=3d-render",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "运动海报",
+              "value": "以所选主体为核心生成一张 3D 渲染风格的运动海报画面：主体置于翻涌的泳池水面中央，呈刚破水而出的动态瞬间，肩颈与头部完整可见，水膜顺肩线剥离、碎成水珠挂在面部与装备上。材质用基于物理的渲染表现湿润皮肤、氯蓝水体与白色泡沫的高光，柔和棚拍布光叠加自下而上的氯蓝色反射光。保持主体身份与关键外貌特征一致，动作可换但神态与结构不改。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "为所选主体生成一张 3D 角色设定式渲染：主体以半身动态姿态出现在被搅动的水面中，水线停在胸口或肩部，水珠沿下颌与发丝滴落。使用基于物理的材质刻画湿润质感，氯蓝色底光自水面下方打亮下颌与颧骨，白色泡沫形成柔和轮廓光。整体为干净的棚拍氛围，背景简化为深浅不一的蓝灰渐变水体。严格保持主体身份、体型比例与标志性特征一致，仅替换服装与场景氛围。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品主图",
+              "value": "把所选产品当作唯一主角，做一张 3D 渲染的产品主图：产品从翻涌的水面破出或半浸水中，水膜沿外壳滑落并碎裂成细小水珠挂在表面。材质采用基于物理的渲染，突出湿润高光、清晰反射与细腻粗糙度；柔和棚拍灯光配合自下而上的氯蓝色补光，水面白沫在背景虚化成柔光。保持产品的造型、比例、配色与标志性细节完全一致，只改变水体环境与光照。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张宽幅 3D 渲染壁纸：画面以所选主体为视觉中心，置于翻涌的泳池水面之上，周围是剥离的水膜与飞散的水珠。使用基于物理的材质与柔和棚拍布光，自下而上的氯蓝色光把水体照成通透的蓝绿，白沫在主体周围勾出高亮边缘。构图上让主体偏向三分线，留出大片干净水体空间便于摆放图标。保持主体身份与关键特征一致，不随意增删元素。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:13Z"
+        },
+        {
+          "id": "anime",
+          "label": "Anime",
+          "heading": "Anime",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Anime illustration, clean cel shading, crisp linework. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=anime",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色设计",
+              "value": "以「所选主体」为唯一主角，生成一张动漫角色主视觉图。沿用干净赛璐璐上色与锐利清晰的分线描边，主体置于画面中心偏下，呈向上突破水面的动态姿势，肩颈与头部完整可见。光源自下方打来，用氯蓝冷色提亮下颌、脖颈与肩部轮廓，水花与飞溅水珠在主体周围炸开成珠状高光，皮肤与服装保留湿润反光质感。背景简化为翻涌白沫的水面，冷暖对比明确、氛围紧张清爽。保持主体身份、发型、服装与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "动作定格",
+              "value": "抓拍「所选主体」最具张力的瞬间：动作停在爆发最高点，身体向上冲出水线，嘴微张做呼吸姿态，四肢延展但不遮挡面部。用动漫赛璐璐上色与利落线稿表现，下方氯蓝光勾勒边缘，水面被冲破成白色飞沫，水珠沿肩背与脸部飞散并保持独立颗粒感。构图上留出主体上方运动空间，形成向上的视觉引导。色彩以冷蓝为主、白沫为辅，高饱和高对比。严格保持主体身份与关键外观特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "运动海报",
+              "value": "为「所选主体」制作一张运动主题视觉海报。主体以半身到全身的中近景出现，呈破水而出的爆发姿态，画面下方铺满翻涌白色水花，上方留出干净留白用于呼吸感，整体形成自下而上的黄金构图。采用动漫赛璐璐上色、锐利线条与小块硬边阴影，氯蓝冷光从底部打亮，皮肤与装备带湿润高光与飞溅水珠。氛围清爽、竞技、充满速度感。保持主体身份、服饰与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "手机壁纸",
+              "value": "以「所选主体」为中心生成一张动漫风竖版壁纸。主体置于画面中部偏下，向上探出水面，头顶与肩部留出舒展空间；背景为大面积氯蓝到青白的水下渐变，水花与珠状水汽分布在四周，形成轻盈的包裹感。沿用动漫赛璐璐上色、干净锐利的描边与硬边阴影，冷色为主、局部白色高光提亮。保持画面中央区域简洁、不干扰主体识别，主体身份与关键特征需保持一致。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:39Z"
+        },
+        {
+          "id": "flat-vector",
+          "label": "Flat vector",
+          "heading": "Flat vector",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Flat vector illustration, bold two-colour poster style, no gradients. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=flat-vector",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "海报",
+              "value": "以所选主体为核心，生成一张竖版双色平涂海报：主体置于画面中下部，呈向上冲出的动势，周围用大块纯色色块切割出水面与空气的分界。仅用两种高饱和主色（冷蓝加纯白）并点缀少量强调色，全平涂、无渐变、无噪点，边缘为干净利落的矢量硬边。光线自下而上打亮主体下缘，形成强烈明暗对切与几何化高光。保留主体的身份、轮廓与关键特征，仅做风格化概括，不改变物种、比例或标志性细节，背景保持极简。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "以所选主体为唯一角色，生成平涂矢量角色立绘：半身或全身正面姿态，动作定格在发力瞬间，肩颈与手臂线条概括为粗实几何形，服装与配饰简化为两到三个大色块。采用双色限制配色，冷蓝作环境光、纯白作高光与飞溅碎形，禁止渐变与写实材质，只保留硬边阴影和形状化反光。自下而上的冷色补光强化体积感。保持主体身份、发型、体型与标志性道具一致，不做拟人化或比例夸张。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像",
+              "value": "以所选主体为唯一焦点，生成方形近景头像：头部与肩部完整入画，不裁切额头、下巴或关键发饰。主体呈呼吸或爆发瞬间的表情，嘴角微张、面部朝向镜头或三分之二侧脸。用平涂矢量处理皮肤与毛发，只保留两到三层硬边明暗色块，无渐变、无细腻噪点；冷蓝色光从下方托起下颌与颧骨，白色碎点模拟飞溅水珠。保持身份与五官、发型特征一致。背景为单一纯色。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以所选主体为核心，生成宽幅平涂矢量场景图：主体位于画面一侧，另一侧留出大块纯色负空间。以水平分界线切割上下区域，下半部为冷蓝深水、上半部为亮白空气，边界用锯齿状碎浪形概括。主体下缘受自下而上的冷光提亮，周围散布大小不一的圆点与水滴形作为飞溅。全图仅两种主色加一个强调色，纯平涂、无渐变、无纹理贴图。保持主体身份与关键特征一致，可风格化但不替换主体。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:14Z"
+        },
+        {
+          "id": "oil",
+          "label": "Oil",
+          "heading": "Oil",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Oil painting on canvas, thick impasto brushwork visible in raking light. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=oil",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "角色海报",
+              "value": "以「所选主体」为画面唯一主角，完整复刻本场景的油画厚涂质感：可见的堆叠笔触在侧光下形成立体肌理，主体处于张力最强的爆发瞬间，肩颈与面部有飞溅水珠与颗粒状高光剥离。光线自下方打来，形成氯蓝冷色环境光与白色碎浪的强对比，暗部保留暖褐底色与画布纹路。保持主体身份、五官、发型与标志性特征一致，不改变其基本造型。整体呈现手工油画质感，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像",
+              "value": "生成以「所选主体」为唯一焦点的头像肖像：采用肩部以上近景或标准胸像构图，主体头部略仰或正视，面部占据画面主要区域，额头、下巴、双耳与肩线完整可见，不裁切关键部位。以油画厚涂笔触塑形，侧逆光下颜料堆叠产生明确肌理，面部带细密水珠与湿润高光，背景为虚化的氯蓝色水域与白色泡沫。保持主体身份、五官比例与关键外貌特征一致，不美化变形。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景插画",
+              "value": "以「所选主体」为叙事中心，放入本场景的水中动势环境：主体处于破水而出的瞬间，四周水面被搅成白色碎浪与飞散水珠，水下透出氯蓝冷光，画面上方留出呼吸感空间。整体为布面油画质感，厚涂笔触在侧光下高低起伏，色彩以青蓝、白沫与暗褐色为主，氛围紧张而有力量感。保持主体身份与关键特征一致，姿态可动但不可换脸或改变形体结构。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成适合屏幕使用的壁纸，以「所选主体」为视觉重心，置于本场景的油画水体之中：大面积氯蓝色水面与白色浪花构成背景，主体位于三分线交点上，保留足够留白与柔和色彩过渡以便放置图标。厚涂笔触与画布纹理清晰可辨，侧光制造的颗粒高光形成丰富层次，整体氛围冷静而有力。保持主体身份与外形特征一致，不添加多余元素抢占画面。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:43Z"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "heading": "Photo",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Photograph, shallow depth of field. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=photo",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "运动海报",
+              "value": "以「所选主体」为核心生成一张竞技感运动海报。采用中近景半身构图，主体居中略偏，身体最低点与水面交界处形成一条横向切割线，水花、碎珠与飞溅沿动作方向散开，制造强烈动势。使用自下方打来的冷青蓝光源，水面高光破碎成白色亮点，皮肤与装备表面保留湿润高光与细密水珠质感。整体为氯蓝加亮白的低饱和冷调，浅景深虚化背景。严格保持主体身份与关键外貌特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物特写",
+              "value": "生成一张以「所选主体」为唯一焦点的近景特写。采用出水瞬间的胸像构图，面部占据画面主要区域，头顶、发型、双耳与肩线完整可见，不裁切额头、下巴或关键发饰。主体正视镜头或轻微侧脸，神情处于张口呼吸的临界瞬间，专注而有力。用自下而上的青蓝冷光打亮面部下缘与脖颈，发梢和皮肤表面挂着成串水珠，水膜沿肩线滑落并碎裂成颗粒。浅景深，背景虚化成蓝白水色。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品广告",
+              "value": "以「所选产品」为唯一主角生成一张运动质感广告图。产品置于画面中心或三分点，处于刚破出水面的瞬间，成片水膜从产品表面掀起、沿轮廓撕开并碎成悬浮水珠，形成清晰的液态描边。使用来自下方的青蓝冷光勾勒底缘，制造湿润高光与干净反射，水面被搅动成白色泡沫。浅景深，背景为虚化的氯蓝水色。严格保持产品的造型、比例、材质、颜色与原有标识位置一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "生成一张以「所选主体」为视觉核心的壁纸。主体置于画面下方三分之一，上方留出大面积被搅动的水面与青蓝光晕，形成呼吸般的留白。光线自下而上穿透水体，形成渐变冷蓝底色与碎白高光，水珠、气泡与浪花围绕主体悬浮分层。整体低饱和、高对比、浅景深，质感湿润清透。保持主体身份与核心轮廓特征一致，构图允许适度裁切，但主体五官或标志性造型必须完整可辨。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:51Z"
+        },
+        {
+          "id": "pixel",
+          "label": "Pixel",
+          "heading": "Pixel",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Pixel art, hard square pixels, a limited sixteen-colour palette, no anti-aliasing. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=pixel",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "头像",
+              "value": "以「所选主体」为唯一焦点生成像素头像：采用肩部以上的近景特写，主体头部完整居中，定格在刚破水而出的呼吸瞬间，嘴部微张、神情生动。画面使用硬边方块像素，禁止任何抗锯齿与边缘柔化，仅用十六色以内的限定调色板，以氯蓝为主色，底部打上水下冷光，水面在肩线处翻涌成白色碎点，脸上挂几颗水珠色块。严格保持主体身份、发型、五官与关键特征一致，背景简洁不抢戏，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设计",
+              "value": "把「所选主体」转化为像素游戏角色立绘：半身或四分之三身构图，主体居中，姿态定格在浮出水面换气的瞬间，肩部有水膜剥离、水花四散。整体用硬方像素块面塑造体积，无抗锯齿、无渐变羽化，仅用十六色限定调色板分层表现明暗：氯蓝水体、青白高光、深蓝阴影。必须保留主体的识别特征、服饰配色与轮廓剪影，各角度下保持一致。背景用抽象的池水色块与翻白浪花衬托，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "以「所选主体」为画面中心生成竖版像素壁纸：上下分层构图，下半部是透出氯蓝冷光的池水，上半部留出呼吸感的深色空间，主体在水面线处破水而出，水珠与浪花以硬边方块像素呈现。整图只使用十六色限定调色板，禁止抗锯齿与模糊，靠色块交界制造像素颗粒感，冷蓝主调、白色浪花点缀。主体身份、外形比例与关键特征需清晰可辨，构图留白均匀便于裁切。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "围绕「所选主体」构建一个破水而出的像素场景：主体位于画面视觉中心，水面在胸口或肩部高度翻涌成白色泡沫，水下方向投来氯蓝冷光，形成上暗下亮的层次。全图使用硬边方块像素绘制，零抗锯齿，严格限制在十六色以内，用色块堆叠表现水膜剥离、水珠飞溅与光斑闪烁。保持主体身份、材质与关键特征一致，环境元素只作衬托不遮挡主体。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:49Z"
+        },
+        {
+          "id": "watercolor",
+          "label": "Watercolor",
+          "heading": "Watercolor",
+          "caption": "One fixed scene. The only row where the pills are styles: how faithfully a model changes its look on command.",
+          "prompt": "Loose watercolor painting on textured paper, visible brush edges. A competitive swimmer in a racing cap and goggles surfacing at the moment of the breath, mouth open, a sheet of water peeling off the shoulders and breaking into beads across the face. Chlorine-blue light from below, the surface churned white where the arms enter.",
+          "url": "https://openrouter.ai/benchmarks/media/images/style-switching?variant=watercolor",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "运动海报",
+              "value": "以「所选主体」为画面唯一视觉中心，套用松散水彩语言：湿画法大面积晕染与干笔擦痕并存，纸张纹理、颜料沉积边缘与不规则笔触清晰可见。主体置于画面下半部，呈向上突破的动势，水花四溅并被分解成颗粒状水滴贴在皮肤或表面。光源来自下方，以氯蓝、青灰和冷白构成主调，局部用暖色提亮，明暗对比强烈而通透。保持主体身份、五官、发型与关键识别特征一致，不擅改造型与服饰细节。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物头像",
+              "value": "生成以「所选主体」为唯一焦点的近景头像。采用肩部以上的胸像构图，呈刚浮出水面的瞬间：发梢滴水、水珠挂在脸颊与下颌，口部微张，神情专注而鲜活，头顶与双肩边缘完整可见。背景简化为晕染开的氯蓝水面与朦胧白雾，笔触疏松、边缘不规则，纸纹与颜料颗粒清晰。面部受下方冷蓝反光，颧骨与鼻梁留出高光，肤色通透。严格保持主体五官、发型、肤色与标志性特征一致。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "角色设定",
+              "value": "为「所选主体」生成一张水彩风格的角色设定图。采用全身或七分身构图，主体处于动作高潮：破水而出或冲刺瞬间，肩背与手臂线条被水膜包裹，水幕从身体剥离并碎裂成珠。以松散水彩绘制，笔触方向顺着动势走，湿接湿晕染出光晕，纸面颗粒与颜料堆积边缘明显。色彩以氯蓝、冷白、青灰为主，背景大面积留白或极淡彩。保持角色身份、比例、服装与核心标识一致，不改变设定特征。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景插画",
+              "value": "围绕「所选主体」构建一片被水花包围的动态场景。主体位于画面偏右三分之一点，左下方留出大面积晕染水面提供呼吸感；白色浪沫在手臂或物体入水处翻涌，水珠以细笔点染飞散。整体为松散水彩：可见笔触边缘、纸张纹理、颜料自然沉积与轻微色彩溢出，氯蓝冷光自下而上打在主体轮廓上，形成通透的逆光边缘光。保持主体形态、材质与关键特征一致，不替换主体身份。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:10:56Z"
+        }
+      ]
+    },
+    {
+      "id": "logos",
+      "group": "Design",
+      "name": "Logos",
+      "url": "https://openrouter.ai/benchmarks/media/images/logos",
+      "why_chosen": "Short exact text, letterform invention, symbol plus text.",
+      "variant_axis_name": "Artifact",
+      "scenarios": [
+        {
+          "id": "emblem",
+          "label": "Emblem",
+          "heading": "Emblem",
+          "caption": "Short exact text, letterform invention, symbol plus text.",
+          "prompt": "Logo design: a circular emblem for a mountain trail club, a simplified peak and a single pine tree inside a ring, the words RIDGE TRAIL CLUB set around the inside of the ring in a clean sans serif, two colours only, flat. No gradients, centred with generous margin, nothing else in the frame.",
+          "url": "https://openrouter.ai/benchmarks/media/images/logos?variant=emblem",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "徽章",
+              "value": "以所选主体为核心，生成一枚圆形徽章式标志。将主体高度简化、几何化为剪影或极简线面，居中置于一枚细线圆环之内，构图绝对对称居中，环内主体占画面约三分之二，四周留出均匀充足的留白。整体为纯平面矢量质感，无渐变、无阴影、无立体高光，仅用两种颜色（一深一浅）构成，主体可用负形或实心块面表现。严格保留主体最具辨识度的外形特征与关键比例，确保一眼可辨。除环绕圆环的规范字标外，不出现其它文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "图标",
+              "value": "以所选主体为唯一识别核心，生成一枚适用于应用图标的扁平徽标。把主体提炼为极简几何剪影，置于正圆或圆角方形容器内，居中对称，主体占容器约三分之二，边缘留白均匀一致。纯平面矢量质感，无渐变、无阴影、无描边高光，严格限定两种颜色形成强对比，形状边缘干净利落、可缩至小尺寸仍清晰。严格保持主体的识别特征与轮廓比例，不加多余装饰元素。画面除主体与容器外不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "品牌标识",
+              "value": "以所选主体为依据，生成一枚极简品牌标志图形。将主体抽象为对称、平衡的一体化符号，可嵌入一段细线圆环或半环作为框架，整体居中放置并留出宽裕边距，视觉重心稳定。采用纯平面矢量风格，双色限于一深一浅，无渐变、无投影、无材质肌理，块面与线条粗细统一，收口干净。务必让主体最关键的结构特征与比例保持一致，避免过度抽象到不可辨认。除必要的规范字标外，不出现其它文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴纸",
+              "value": "以所选主体为核心，生成一张圆形割型贴纸图案。主体简化为平面剪影或双色块面，居中置于圆形容器内，外围保留一圈均匀边距便于模切，构图严格对称、无多余元素。纯平面矢量质感，无渐变、无阴影、无立体感，仅用两种对比明确的颜色，色块边缘平滑锋利。严格保留主体的核心外形特征与识别细节，确保缩放后仍能一眼认出。画面仅呈现主体与圆形容器，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:05:51Z"
+        },
+        {
+          "id": "monogram",
+          "label": "Monogram",
+          "heading": "Monogram",
+          "caption": "Short exact text, letterform invention, symbol plus text.",
+          "prompt": "Logo design: a monogram combining the letters A and V into a single interlocking mark, the two letters sharing one stroke, drawn with a uniform line weight, dark navy on an off-white background. Flat vector look, no gradients, no additional text, centred with generous margin.",
+          "url": "https://openrouter.ai/benchmarks/media/images/logos?variant=monogram",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "图标",
+              "value": "以所选主体为唯一核心，提炼成一枚极简单色矢量图标：抽取主体两到三个关键识别特征（外轮廓、标志性角度、核心细节），用等宽线条概括为几何化符号，并与代表主体的首字母共享同一条笔画、互相咬合成一个完整标记。深藏青线条置于米白底色，纯平涂表现，无渐变、无阴影、无描边粗细变化。保持主体身份与关键特征可辨识、比例稳定不扭曲。主体居中，四周留出充足留白。画面不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "徽标",
+              "value": "为所选主体设计一枚字母组合式品牌徽标。提取主体名称或核心概念的两个首字母，让它们共用一段笔画、彼此穿插咬合，形成单一不可分割的几何标记；线条粗细全程统一，转折干净利落。配色限定深藏青单色，背景为米白纯色，扁平矢量质感，禁止渐变、立体、投影与纹理。主体的行业气质与关键特征需在字形比例和重心上可感知，整体居中并保留宽裕边距。画面不出现额外文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "头像",
+              "value": "生成一张以所选主体为唯一焦点的头像标记。取肩部以上近景，将人物面部轮廓、发型与肩线用等宽深藏青线条高度概括，与主体首字母缠绕成一个整体徽记，正脸或轻微三分之二侧脸，五官以最简笔划保留识别度。米白纯色底，扁平矢量、无渐变、无噪点、无阴影。保持主体身份、发型轮廓与关键外貌特征一致，不夸张变形。图形居中，四周留足空白。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "印记",
+              "value": "把所选主体转化为一枚可作压印使用的单色印记图形。抽取主体的核心轮廓与最具辨识度的一处细节，将其与主体首字母合并为共用笔画的连环结构，线条粗细自始至终一致，边缘平整，形如现代版画或图章刻痕。深藏青单色落于米白底，纯平涂硬边，无渐变、无网点、无做旧纹理。主体身份特征必须保持可读、比例不失真。标记居中并留出宽阔边距，适合缩至极小尺寸。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:02Z"
+        },
+        {
+          "id": "wordmark",
+          "label": "Wordmark",
+          "heading": "Wordmark",
+          "caption": "Short exact text, letterform invention, symbol plus text.",
+          "prompt": "Logo design: a wordmark for a coffee roaster called NORTHWIND, the word set in a custom heavy geometric sans with the letters spaced tightly and one distinctive ligature between the T and the H, black on white. Flat, no gradients, no icon, centred with generous margin, nothing else in the frame.",
+          "url": "https://openrouter.ai/benchmarks/media/images/logos?variant=wordmark",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "品牌字标",
+              "value": "以所选主体（品牌或产品）的名称作为唯一字标内容，生成纯文字标志。采用纯白背景、纯黑单色，扁平无渐变、无阴影、无立体光效。构图绝对居中，四周留出充足留白，字标占据画面主体，不添加任何图标或装饰。字体使用自定义粗重几何无衬线，字距紧密，在特定字母间（如 T 与 H）设计一个独特连字。保持品牌名称拼写与字母形态完全一致，不可增删或变形。除该字标外，不出现其他文字、无关Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "个人签名",
+              "value": "以所选人物主体的姓名或常用名作为字标文字，制作个人专属字标。背景纯白，文字纯黑，整体扁平，无渐变、无纹理、无高光。字标居中，四周留足边距，画面中无其他元素。字体为定制粗几何无衬线，笔画等宽，字距收紧，姓名中某两个相邻字母（如 T 与 H）做连字处理，形成独特识别点。严格保持姓名拼写、字母顺序和主体身份一致，不得替换或缩写。除该姓名字标外，不出现其他文字、无关Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品标识",
+              "value": "以所选产品主体的名称或型号作为唯一文字，生成极简产品字标。纯白底、纯黑字，扁平化，无阴影、无渐变、无立体感。构图居中且留白充裕，字标为画面唯一焦点，不加图标或辅助图形。采用自定义重几何无衬线，字距紧密，在字母组合中设计一处标志性连字（如 T 与 H 相连）。保持产品名称拼写与关键字母特征完全一致，不可改变。除该字标外，不出现其他文字、无关Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "活动标题",
+              "value": "以所选活动或主题的名称作为字标内容，输出活动主标题式字标。背景纯白，文字纯黑，扁平无渐变、无光效、无材质。字标水平居中，四周留出宽裕边距，画面简洁无杂物。字体为粗重几何无衬线，字距紧凑，在关键字母间（如 T 与 H）加入独特连字，增强识别性。保持活动名称拼写、字母形态与主体身份一致，不得篡改。除该活动字标外，不出现其他文字、无关Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:14Z"
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "group": "Design",
+      "name": "Patterns & textures",
+      "url": "https://openrouter.ai/benchmarks/media/images/patterns",
+      "why_chosen": "Tileability and physical plausibility.",
+      "variant_axis_name": "Artifact",
+      "scenarios": [
+        {
+          "id": "fabric-print",
+          "label": "Fabric print",
+          "heading": "Fabric print",
+          "caption": "Tileability and physical plausibility.",
+          "prompt": "A flat lay of printed cotton fabric with a repeating block-print style floral in indigo on unbleached cloth, the weave of the fabric visible through the print, a gentle fold across one corner showing the print following the cloth. Soft daylight, fills the frame.",
+          "url": "https://openrouter.ai/benchmarks/media/images/patterns?variant=fabric-print",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "以所选主体为图案核心，生成可无缝平铺的织物印花壁纸。采用俯视平铺的满幅构图，主体被抽象为重复排列的印花单元，沿画面网格均匀分布，单元之间保留稳定的呼吸间距，形成可无限延展的节奏。色彩限定为靛蓝单色印在米白未漂棉布底色上，保留织物经纬纹理以及手工印版的轻微错位、晕边与颗粒感。柔和漫射日光自侧上方斜入，角落加一道自然布褶，让印花随布料起伏。严格保持主体身份与关键特征可辨识，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "包装纸",
+              "value": "把所选主体作为包装布面印花的主图形，生成俯视平铺的整块布面。构图满幅、无主次之分，主体以区块重复的版画风格均匀铺开，边角保留一道自然折痕与轻微卷边，暗示这是可包裹的实物。色彩限定靛蓝一种单色，印在粗糙未漂棉布上，能看见纱线交织与印油渗透的深浅变化。光线为均匀柔和的窗侧日光，明暗过渡平缓。主体的身份、轮廓与关键识别特征必须保持可辨识，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "平铺图",
+              "value": "生成一张俯视平铺的商品场景图：把所选主体实物摆在靛蓝植物染棉布印花的底衬上，布面铺满画面并轻微起褶，主体置于画面中部偏上或落在三分线处，四周留出印花与环境。布料保留手工印版的花卉重复纹样、经纬织纹与轻微吸墨晕染，色彩只在靛蓝与米白之间。柔和的日间漫射光从侧上方落下，投出浅淡柔影。严格保持主体的形状、材质、配色与识别特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "服饰印花",
+              "value": "以所选主体为印花母题，生成靛蓝单色、手工印版风格的重复纹样，用于服装面料印花。主体被简化为线面结合的块面图形，沿经纬方向等距重复，单元朝向统一或做轻微镜像变化，整体可无缝拼接。底色为未漂棉布原色，能看清织物纹理、印油厚薄与边缘微溢。角落安排一道柔缓布褶，令纹样随布料起伏产生轻微形变。保持主体身份与关键特征清晰可辨，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:15Z"
+        },
+        {
+          "id": "material-texture",
+          "label": "Material texture",
+          "heading": "Material texture",
+          "caption": "Tileability and physical plausibility.",
+          "prompt": "A close-up material texture of weathered oak planks, the grain, knots and fine cracks resolved sharply, a light silver-grey patina from years outdoors, lit from a low angle so the surface relief shows. Flat frontal view filling the frame, no objects.",
+          "url": "https://openrouter.ai/benchmarks/media/images/patterns?variant=material-texture",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "以所选主体为核心生成一张满幅材质壁纸。主体居中或按三分法摆放，背景铺满风化的橡木板：木纹、木节与细密裂纹清晰锐利，呈现户外多年沉淀的浅银灰包浆色。采用低角度侧光打亮表面起伏，让凹凸浮雕感与颗粒质感显现。整体色调克制统一，以冷灰与暖棕为主，氛围质朴、安静、有年代感。保持主体身份与关键特征一致，不改变其外形、配色与结构。画面平视正对、无透视畸变。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品图",
+              "value": "以所选主体为唯一焦点生成产品展示图。主体置于风化橡木板上，正面平视拍摄，占据画面主要区域，边缘完整不裁切。背景木纹、木节与细裂纹锐利可辨，浅银灰包浆由多年户外风吹日晒形成。低角度侧光斜射，勾出木材凹凸起伏与主体轮廓，阴影柔和自然。色彩以银灰、暖棕为主，质感粗粝而高级。保持产品外观、材质、结构与配色完全一致，不替换任何细节。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "场景图",
+              "value": "以所选主体为核心生成一张材质感场景图。主体立于画面中景或前景，背后是满幅风化橡木墙板，木纹、木节与细密裂纹清晰锐利，多年户外氧化形成浅银灰包浆。采用低角度侧光，让木材表面浮雕与主体体积同时显现，明暗层次分明。色调统一在冷灰与暖棕之间，氛围沉静、粗粝、带时间痕迹。保持主体身份、外形与关键特征一致。画面平视正对、满构图、无多余杂物。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴图",
+              "value": "以所选主体为中心生成可平铺的材质图标。主体简化居中，占画面核心区域，四周留出均匀余量，便于无缝拼接。底纹为风化橡木板，木纹走向、木节与细裂纹锐利清晰，浅银灰包浆来自长期户外暴露。低角度侧光强化表面起伏，质感真实可信，不做夸张高光或反光。色彩灰棕低饱和、整体统一。保持主体身份与关键特征一致，轮廓明确可辨。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:18Z"
+        },
+        {
+          "id": "seamless-pattern",
+          "label": "Seamless pattern",
+          "heading": "Seamless pattern",
+          "caption": "Tileability and physical plausibility.",
+          "prompt": "A seamless repeating pattern of hand-drawn citrus slices, lemons and limes on a cream background, arranged so the tile repeats without visible seams in any direction, flat colours with a light paper texture. Fills the whole frame edge to edge.",
+          "url": "https://openrouter.ai/benchmarks/media/images/patterns?variant=seamless-pattern",
+          "aspect_ratio": "1:1",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "壁纸",
+              "value": "生成一张以「所选主体」为核心元素的无缝重复图案壁纸。将主体简化为手绘风格的扁平插画，均匀散布于柔和奶油色底面上，元素之间保留呼吸感并做上下左右镜像错位排布，保证四边完全对齐、拼接无可见接缝。整体采用平涂色块与轻微纸张纹理，色调统一克制，可铺满画面边缘到边缘。严格保持主体身份与关键外观特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "印花布料",
+              "value": "生成可用于布料印花的无缝重复图案。以「所选主体」为唯一图案母题，按网格或半错位方式规律重复，主体轮廓做手绘线稿化处理，填充低饱和平涂色，并叠加一层细微纸张或织物颗粒质感。背景保持统一浅色，图案在任意方向平铺都看不到接缝。保持主体辨识度与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "包装纸",
+              "value": "生成一张可直接作为包装纸的无缝重复图案。以「所选主体」为图案核心，缩小为多个等大或大小交替的手绘图形，在浅色底面上均匀满铺，边缘元素做半切处理以便循环拼接，四边完全吻合无缝隙。采用扁平色块、轻纸张纹理和统一明暗，整体氛围清爽干净。严格保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "贴纸",
+              "value": "生成一组以「所选主体」为主题的无缝重复图案贴纸底图。主体被处理成简笔手绘图标，轮廓清晰、内部平涂，按规则网格重复排列，每个图形间距一致，四边裁切后仍可无缝拼接。底色为统一奶油色，叠加轻微纸张颗粒质感，整体像一整张可平铺的图案纸。保持主体身份与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:07:27Z"
+        }
+      ]
+    },
+    {
+      "id": "posters",
+      "group": "Design",
+      "name": "Posters & covers",
+      "url": "https://openrouter.ai/benchmarks/media/images/posters",
+      "why_chosen": "Multi-line text hierarchy, title plus imagery, legibility at small size.",
+      "variant_axis_name": "Artifact",
+      "scenarios": [
+        {
+          "id": "book-cover",
+          "label": "Book cover",
+          "heading": "Book cover",
+          "caption": "Multi-line text hierarchy, title plus imagery, legibility at small size.",
+          "prompt": "Front cover of a novel titled THE LONG SHORE with the author name M. R. HALE beneath it, a painted image of a lone lighthouse under a storm sky, the title set in a tall serif with generous letter spacing, a small publisher mark at the bottom. A portrait cover composed inside a square frame, all text legible.",
+          "url": "https://openrouter.ai/benchmarks/media/images/posters?variant=book-cover",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "书封",
+              "value": "以「所选主体」作为封面唯一主视觉，竖版画面中主体置于中上部，下方预留大片深色留白作为书名与作者名的排版区，但画面本身不生成任何文字。采用厚涂油画质感与戏剧性风暴天光，冷灰蓝为主调，暖橙或灯黄作唯一点缀光源，长投影、颗粒肌理与空气透视增强纵深。主体轮廓边缘与背景拉开明度层次，确保缩小后仍可辨识；严格保持主体身份、比例与关键特征一致，不做风格化变形。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "人物海报",
+              "value": "为「所选主体」生成一张竖版人物海报主视觉。采用中景或半身构图，主体位于画面中央偏下，视线朝向画外或轻微仰角，背景为压暗的风暴天空与远处剪影地标，形成前景主体、中景环境、远景天空的三层结构。光线为侧逆光加地面反射微光，边缘带高光勾边，色彩克制：冷蓝灰基调配一处暖色光源。保留主体发型、五官、服装与材质细节，身份特征不可改动。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "专辑封面",
+              "value": "以「所选主体」为核心生成唱片封面式主视觉。构图置于一个居中的方形画框内，主体偏轴摆放，四周保留均衡留白与呼吸感，画框外可用深色底衬托。采用手绘油画笔触与粗颗粒噪点，光线从画面一侧斜射，制造强烈明暗对比与长影。色彩限定为两到三色的高级灰组合，氛围静谧而带压迫感。主体需保持原有身份、比例与标志性特征，不替换、不美化过度。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "壁纸",
+              "value": "为「所选主体」生成一张竖版壁纸式画面。主体置于画面中上三分之一处，占据约三分之一高度，下方大面积天空或水面留白用于承载视觉呼吸。氛围取自风暴将至的黄昏，云层厚重、光线低斜，色彩由冷灰蓝过渡到暗金。质感上强调油画笔触、纸纹与轻微颗粒，边缘柔化但主体轮廓保持锐利。锁定主体的外形、颜色与关键识别特征，不添加多余装饰元素。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:07:23Z"
+        },
+        {
+          "id": "event-poster",
+          "label": "Event poster",
+          "heading": "Event poster",
+          "caption": "Multi-line text hierarchy, title plus imagery, legibility at small size.",
+          "prompt": "Event poster for a jazz night, the headline MIDNIGHT SESSIONS set large at the top, the date FRIDAY 12 JUNE and the venue THE BLUE ROOM smaller beneath it, a bold flat illustration of a saxophone filling the lower half. Two-colour print look, a strong type hierarchy, every word legible.",
+          "url": "https://openrouter.ai/benchmarks/media/images/posters?variant=event-poster",
+          "aspect_ratio": "2:3",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "活动海报",
+              "value": "以「所选主体」为唯一视觉核心，生成一张竖版活动海报。构图上主体占据下半部或中心偏下，上半部预留清晰的多行文字层级区域，标题最大、副标题与日期地点依次缩小，整体形成强对比的阅读顺序。采用双色印刷质感：有限色盘、粗壮扁平插画块面、轻微颗粒或套印偏移。光线为平面化无真实阴影，色彩高饱和且统一。保持主体身份与关键特征一致，轮廓简洁可辨，缩小后仍可识别。除必要排版占位外，不出现多余文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "演出海报",
+              "value": "以「所选主体」作为演出海报的核心符号，生成竖构图。主体用粗线条扁平插画处理，占据画面下半部或作为大剪影嵌入色块，上方保留标题、副标题、日期与场地的多行层级，字号从大到小清晰递进。双色印刷：主色与辅色限制在两种，带轻微网点、错版或纸张颗粒。光线平涂、无写实投影，氛围复古而直接。保持主体身份与关键特征一致，简化细节但保留识别点。除必要排版占位外，不出现多余文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "专辑封面",
+              "value": "以「所选主体」为专辑封面唯一主角，生成正方形或竖版封面构图。主体居中或偏下，使用大胆扁平插画、几何化色块和双色限色方案，上方或侧边预留多行文字层级：主标题最大，副信息最小，整体缩略图仍可读。质感为丝网印刷、轻微套印偏移与颗粒。光线完全平面化，强调轮廓与正负形。保持主体身份与关键特征一致，不改变核心比例与标志性细节。除必要排版占位外，不出现多余文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "社交海报",
+              "value": "以「所选主体」为中心生成适合手机浏览的竖版社交海报。主体放在下半部或中心偏下，上方建立清晰文字层级：大标题、小副标题、日期地点或口号依次排列，保证小尺寸下仍可读。风格为双色印刷与粗壮扁平插画，色块边缘利落，带少量纸张颗粒或套印错位。光线平涂，氛围现代、醒目、有节奏。保持主体身份与关键特征一致，轮廓与关键配色不漂移。除必要排版占位外，不出现多余文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:07:35Z"
+        },
+        {
+          "id": "social-thumbnail",
+          "label": "Social thumbnail",
+          "heading": "Social thumbnail",
+          "caption": "Multi-line text hierarchy, title plus imagery, legibility at small size.",
+          "prompt": "A social media thumbnail for a cooking video, the words 15 MINUTE RAMEN in huge bold condensed type across the frame, a close-up bowl of ramen behind the text, high contrast and saturated so it reads at a small size. Text sharp and legible, no other words.",
+          "url": "https://openrouter.ai/benchmarks/media/images/posters?variant=social-thumbnail",
+          "aspect_ratio": "16:9",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "视频封面",
+              "value": "以所选主体为唯一视觉中心，生成一张社交媒体视频缩略图式画面。采用高冲击力的近景或中近景构图，主体占据画面主要区域，背景简洁且与主体形成强对比；使用高饱和、明亮、干净的光线与色彩，边缘清晰，质感利落，小尺寸下也能一眼识别。保持主体身份、外形、材质和关键特征一致，不改变核心结构。画面采用海报式层级：主体在前，辅助元素退后，留出干净的视觉呼吸区。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "海报",
+              "value": "以所选主体为核心生成一张海报式主视觉。采用居中或三分法构图，主体大而明确，前景细节锐利，背景做简洁色块或虚化处理；光线具有方向感与高对比度，色彩饱和但不脏，整体氛围现代、直接、有封面感。保留主体身份与关键特征，材质、轮廓、配色和姿态需与参考一致；可加入抽象几何或光影作为层级分隔，但不喧宾夺主。画面需在小尺寸下仍清晰可读。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "缩略图",
+              "value": "围绕所选主体制作一张社交媒体缩略图。构图为紧凑近景或半身，主体置于画面中心偏上，边缘留出少量安全区；使用强烈明暗对比与饱和色彩，光线干净、立体，质感清晰锐利，氛围轻快或诱人，适合快速滑动时抓住注意力。保持主体身份、比例、颜色和关键细节一致，不额外添加会改变主体识别的元素。背景简化成统一色调或模糊环境，突出主体轮廓。不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "主视觉",
+              "value": "以所选主体为唯一主角，生成海报与封面风格的主视觉。采用大主体、强聚焦构图，主体占据画面六成以上，背景用对比色、渐变或简洁场景衬托；光线明亮直接，质感干净，色彩高饱和且层次分明，整体具有标题加图像的视觉层级，但不写任何文字。严格保持主体身份、外形、材质与关键特征一致，不改变五官、结构或品牌特征。画面需在小尺寸下依然清晰、醒目。不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:07:38Z"
+        }
+      ]
+    },
+    {
+      "id": "ui-mockups",
+      "group": "Design",
+      "name": "UI mockups",
+      "url": "https://openrouter.ai/benchmarks/media/images/ui-mockups",
+      "why_chosen": "Real-looking components and dense small text.",
+      "variant_axis_name": "Artifact",
+      "scenarios": [
+        {
+          "id": "app-screen",
+          "label": "App screen",
+          "heading": "App screen",
+          "caption": "Real-looking components and dense small text.",
+          "prompt": "A mobile app screen mockup for a habit tracker, a header reading TODAY, a list of five habits each with a checkbox, a name and a streak count, a bottom tab bar with four icons, clean modern flat design on a light background. All small text legible and real-looking, shown straight on with no device frame.",
+          "url": "https://openrouter.ai/benchmarks/media/images/ui-mockups?variant=app-screen",
+          "aspect_ratio": "9:16",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "应用界面",
+              "value": "以所选主体为核心生成一张竖版移动端应用主界面。顶部为简洁标题栏，主体以卡片或列表行形式占据首屏主要区域，行内配小尺寸缩略图、名称与状态数值，底部为四个图标的标签栏。整体采用浅色背景、现代扁平化设计，小圆角卡片、细分隔线、低饱和点缀色，元素对齐规整、留白均匀。正视角平铺展示，不加设备外框与透视。严格保持主体身份与关键特征一致；不出现具体可读文字、品牌 Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "数据看板",
+              "value": "以所选主体为视觉核心，生成一张浅色背景的移动端数据看板界面。顶部一行概览指标，中部用环形图、柱状图与进度条组合呈现与主体相关的数据，下方为带勾选框与数值的条目列表，底部四图标标签栏。现代扁平化风格，细线条图标、低饱和配色、规整网格对齐、均匀留白，正视角平铺不加设备外框。保持主体身份与关键特征一致，图形与缩略图需忠实还原主体形态；不出现具体可读文字、品牌 Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "个人主页",
+              "value": "以所选主体为中心生成竖版个人主页界面。顶部为头像与昵称区域，主体以圆形或圆角方形头像形式出现，下方依次为三到四条信息卡与带勾选框的习惯列表，底部四个图标的标签栏。浅色背景、现代扁平设计、小圆角、细分隔线、低饱和强调色，所有元素水平居中对齐，正视角平铺、无设备外框与立体透视。严格保持主体身份、面部与关键特征一致；不出现具体可读文字、品牌 Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "组件卡片",
+              "value": "以所选主体为内容来源，生成一组竖排堆叠的移动端 UI 组件卡片：顶部标题条、中部主体缩略图配状态数值、底部勾选行与四图标导航栏。浅灰或米白背景，现代扁平化设计，细描边、小圆角、克制的点缀色，卡片间距一致、对齐严谨，正视角平铺展示，不加设备外框、不做立体透视。保持主体身份与关键特征一致，缩略图需清晰还原主体轮廓与配色；不出现具体可读文字、品牌 Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:07:24Z"
+        },
+        {
+          "id": "device-mockup",
+          "label": "Device mockup",
+          "heading": "Device mockup",
+          "caption": "Real-looking components and dense small text.",
+          "prompt": "A device mockup: a smartphone lying on a pale desk at a slight angle beside a notebook and a pen, the screen showing a weather app with a large temperature reading and a five-day forecast. Soft daylight, the screen content sharp and legible, the bezels thin and even.",
+          "url": "https://openrouter.ai/benchmarks/media/images/ui-mockups?variant=device-mockup",
+          "aspect_ratio": "4:5",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "设备样机",
+              "value": "以所选主体为画面核心，创作一张真实感设备样机图：一台智能手机以轻微倾斜角度置于浅色桌面，屏幕朝向镜头、内容清晰锐利，机身呈现窄而均匀的真实边框。桌面同时摆放笔记本与一支笔作为陪衬，柔和日光从侧上方洒落，投影浅淡自然。主体的形态、色彩与关键特征须完整保留并保持身份一致，可作为机身贴图、屏幕主视觉或桌面实物出现，比例自然不拉伸。整体色调干净克制、细节密集，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "应用界面",
+              "value": "生成一张可放进手机屏幕的 App 界面式画面，以所选主体作为界面主视觉卡片或大图区，占据屏幕主要面积，周围以密集细小的仿真控件、列表与数据条环绕，风格简洁现代。保持主体身份、外貌与关键特征一致，构图遵循界面栅格，元素对齐、留白均匀、层次分明。屏幕内容必须清晰可读、边缘锐利，模拟真实 UI 的窄边框与微阴影，光线柔和均匀，避免反光遮挡主体。画面不出现真实文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "产品展示",
+              "value": "制作一张桌面产品样机图：所选主体作为真实物件置于浅色桌面，与一台倾斜摆放的手机、一本笔记本和一支笔共同构成简洁静物场景。主体位于画面视觉重心，形态、材质、配色与标志性细节须与原始主体严格一致，不做变形或替换。采用柔和日光、浅淡投影与低饱和中性色调，突出主体质感与桌面细节。手机屏幕内容清晰锐利、边框窄而均匀，整体真实可信、干净克制，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "界面海报",
+              "value": "以所选主体为唯一视觉主角，生成一张风格化的样机海报：主体居中或略偏一侧，周围以浅色桌面上斜放的手机、笔记本与笔作为点缀，构建真实又简洁的展示氛围。保持主体的身份特征、配色与关键细节完全一致，构图稳重、留白充足，光线为柔和自然日光，阴影浅淡均匀。屏幕区域呈现清晰锐利的界面感内容，边框窄而规整，色彩克制高级。整体不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:27Z"
+        },
+        {
+          "id": "landing-page",
+          "label": "Landing page",
+          "heading": "Landing page",
+          "caption": "Real-looking components and dense small text.",
+          "prompt": "A website landing page mockup for a note-taking app called LEDGER, a navigation bar with four links, a headline reading WRITE ONCE, FIND IT FOREVER, a short subheading, one primary button reading START FREE, and a product screenshot below. Clean modern layout, realistic spacing, all text legible.",
+          "url": "https://openrouter.ai/benchmarks/media/images/ui-mockups?variant=landing-page",
+          "aspect_ratio": "3:2",
+          "aspect_ratio_source": "llm",
+          "creative_copy": [
+            {
+              "label": "落地页",
+              "value": "以「所选主体」为主题制作一张桌面端网站落地页 UI 模型：顶部横向导航栏含四个文字链接与品牌位，中部是一句大标题主张、一行辅助副标题和一枚高亮主按钮，下方嵌入该主体的产品截图或主视觉卡片。采用干净现代的栅格版式，留白均匀、间距真实、圆角与阴影克制，浅色背景配单一强调色，无衬线字体层级分明，文字清晰可读。严格保持主体身份、外形、配色与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "应用界面",
+              "value": "以「所选主体」为核心生成一张应用主界面 UI 模型：左侧或顶部为导航结构，主体内容以卡片列表或详情面板呈现，包含缩略图、标题占位与状态标签，右侧可放信息侧栏。构图遵循统一栅格、对齐严谨，卡片间留白一致，采用柔和中性底色、白色浮层、细腻投影与浅描边，强调色仅用于按钮和激活态，整体真实可用、文字锐利可读。保持主体身份与关键特征一致，不改变其造型、材质与配色，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "仪表盘",
+              "value": "以「所选主体」为数据来源意象，生成一张仪表盘 UI 模型：顶部工具栏与时间筛选，中部为三到四张小尺寸指标卡与一张折线或柱状图表，侧边为图标导航列。版式紧凑、信息密度高，小号文字依然清晰，卡片圆角统一，网格对齐精确，色彩克制仅用一到两个强调色区分状态，投影与描边真实。将主体作为图表主视觉或品牌缩略图嵌入，保持其身份、外形与关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            },
+            {
+              "label": "移动端",
+              "value": "以「所选主体」为唯一视觉主角，生成一张手机端 App 界面 UI 模型：顶部状态栏与页面标题，中部为大尺寸主图卡片或主体特写，下方依次为两到三个功能入口与一枚主按钮，可加底部标签栏。竖向构图、边距统一、圆角柔和，浅色背景配单一强调色，字体层级清晰、文字可读，投影与描边细腻。主体居中且完整可见，保持身份、发型、材质、色彩等关键特征一致，不出现文字、Logo、水印、边框或乱码。"
+            }
+          ],
+          "enriched_at": "2026-09-24T01:06:36Z"
+        }
+      ]
+    }
+  ]
+}
