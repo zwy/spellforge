@@ -25,7 +25,7 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/<你的用户名>/spellforge.git
+git clone https://github.com/zwy/spellforge.git
 cd spellforge
 pip install -r requirements.txt
 
