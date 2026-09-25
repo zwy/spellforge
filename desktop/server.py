@@ -72,12 +72,18 @@ def start(token: str, timeout: float = 15.0) -> ServerHandle:
     return ServerHandle(server=server, thread=thread, port=port, token=token)
 
 
+# 直连 opener：探测自己机器上的服务绝不能走系统/环境代理
+# （GUI 启动时 urllib 会读 macOS 系统代理；部分代理工具会 503 掉
+#   urllib 风格的回环请求，导致就绪探测误判失败）
+_direct_opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+
+
 def _wait_ready(port: int, deadline: float) -> bool:
     """就绪探测：真实 HTTP 请求拿到 2xx 才算就绪（比 TCP 可通更强）。"""
     url = f"http://127.0.0.1:{port}/"
     while time.monotonic() < deadline:
         try:
-            with urllib.request.urlopen(url, timeout=1.5) as resp:
+            with _direct_opener.open(url, timeout=1.5) as resp:
                 if 200 <= resp.status < 300:
                     return True
         except (urllib.error.URLError, socket.timeout, OSError):
