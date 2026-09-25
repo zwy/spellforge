@@ -3,6 +3,42 @@
 本项目的所有重要变更记录于此。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [1.1.0] - 2026-09-25
+
+### 新增：桌面化（macOS 已验证，Windows 留钩子）
+
+- **独立桌面应用**：`python -m desktop.main` 或直接打开 `dist/SpellForge.app`；
+  pywebview 展示现有页面，不引入 Electron/Tauri；窗口关闭后本机服务优雅退出、
+  端口释放、无残留进程（`--smoke` 参数可自动化自检）
+- **用户数据隔离**：桌面模式数据统一写入系统用户目录
+  （macOS `~/Library/Application Support/SpellForge`，Windows `%APPDATA%\SpellForge`），
+  程序移动、升级不丢失；源码开发模式行为不变，继续使用仓库 `data/`
+- **统一路径模块** `styles/paths.py`：内置只读资源与用户可写数据严格分离；
+  种子 JSON 采用「包内默认 + 首启复制 + 用户副本读写」策略，
+  规范文档采用「用户重生成优先、包内兜底」
+- **一次性数据迁移**：`python -m styles.migrate`（预演 / `--apply` / `--apply --force`
+  先备份再导入），默认不覆盖用户目录已有数据，源文件只读不修改
+- **本机接口防护**：后端只监听 `127.0.0.1` 随机端口；Host 校验防 DNS rebinding；
+  写请求要求同源 Origin + 每次启动的随机访问令牌，外部网页无法触发
+- **macOS 打包**：`bash scripts/build_mac.sh` 产出 onedir + windowed 的
+  `dist/SpellForge.app`；放入 `desktop/assets/icon.png` 自动生成应用图标；
+  包内不含 `.env`、SQLite 与私人数据
+- **Windows 打包钩子**：`scripts/build_windows.bat` 与平台分支 spec 已就绪，
+  **未验证**，待 Windows 环境构建后按 README 清单验收
+
+### 修复
+
+- 修复 `store.export_json` 缺失，导致抓取 / LLM 补全 / 场景编辑后 `styles.json`
+  同步必崩（500）的问题
+- 修复迁移命令重复汇报同一文件名的问题
+
+### 测试
+
+- 新增 `tests/`（31 个用例）：路径解析、首启种子、二次启动不覆盖、
+  迁移安全、导出格式、接口防护、服务生命周期
+- macOS 干净环境（独立 HOME）实测：首启建库、重启保留修改、移动 `.app`
+  后数据保留、包内容安全审查通过
+
 ## [1.0.0] - 2026-09-24
 
 首个公开版本。

@@ -4,13 +4,8 @@
 """
 from __future__ import annotations
 
-from pathlib import Path
-
-from . import personal, store
+from . import paths, personal, store
 from .llm import chat_json, get_llm_config
-
-ROOT = Path(__file__).resolve().parent.parent
-SPEC_PATH = ROOT / "docs" / "通用自然语言提示词规范.md"
 ASPECT_RATIOS = ["1:1", "2:3", "3:2", "4:5", "5:4", "3:4", "4:3", "9:16", "16:9"]
 
 _spec_cache: str | None = None
@@ -19,9 +14,10 @@ _spec_cache: str | None = None
 def load_spec() -> str:
     global _spec_cache
     if _spec_cache is None:
-        if not SPEC_PATH.exists():
+        spec_path = paths.spec_doc_path()
+        if not spec_path.exists():
             raise RuntimeError("规范文档不存在，先运行 python -m styles.spec")
-        _spec_cache = SPEC_PATH.read_text(encoding="utf-8")
+        _spec_cache = spec_path.read_text(encoding="utf-8")
     return _spec_cache
 
 

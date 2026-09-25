@@ -1,6 +1,7 @@
 """LLM 客户端（OpenAI 规范 chat completions，兼容任意 provider）。
 
-配置解析优先级：设置库（personal.db 启用中的配置）> 环境变量 > 项目根目录 .env。
+配置解析优先级：设置库（personal.db 启用中的配置）> 环境变量 > .env 文件
+（源码模式读仓库根 .env；打包模式读用户数据目录下用户自放的 .env）。
 环境变量：LLM_BASE_URL / LLM_API_KEY / LLM_MODEL
 （兼容旧名 OPENROUTER_API_KEY / OPENROUTER_MODEL）。
 """
@@ -14,7 +15,8 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path(__file__).resolve().parent.parent
+from . import paths
+
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 
 # 直连会话（忽略本机失效代理变量），与 fetch.py 同策略
@@ -22,9 +24,8 @@ _session = requests.Session()
 _session.trust_env = False
 
 
-def _load_env_file() -> None:
-    env_path = ROOT / ".env"
-    if not env_path.exists():
+def _apply_env_file(env_path: Path | None) -> None:
+    if env_path is None or not env_path.exists():
         return
     for line in env_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
@@ -34,9 +35,14 @@ def _load_env_file() -> None:
         os.environ.setdefault(k.strip(), v.strip())
 
 
-_load_env_file()
+def _load_env_file() -> None:
+    _apply_env_file(paths.env_file_path())
+
 
 DEFAULT_MODEL = "deepseek/deepseek-v4.1-flash"
+
+
+_load_env_file()
 
 
 def get_llm_config() -> dict:

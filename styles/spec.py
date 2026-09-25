@@ -13,17 +13,9 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from collections import Counter
-from pathlib import Path
 
-from . import store
-
-ROOT = Path(__file__).resolve().parent.parent
-DOCS = ROOT / "docs"
-TEMPLATE = DOCS / "spec_template.md"
-OUTPUT = DOCS / "通用自然语言提示词规范.md"
-VOCAB_PATH = store.DATA_DIR / "spec_vocab.json"
+from . import paths, store
 
 DIMENSIONS = ["媒介与风格声明", "主体与瞬间", "环境与时间", "构图与镜头", "光线",
               "材质与质感", "色彩", "精确性与可验证细节", "负面约束", "不完美与真实感"]
@@ -102,9 +94,10 @@ def ratio_table() -> str:
 
 
 def vocab_list(dim: str, limit: int = 8) -> str:
-    if not VOCAB_PATH.exists():
+    vocab_path = paths.spec_vocab_path()
+    if not vocab_path.exists():
         return "_(词汇库未生成，运行 python -m styles.spec --refresh-vocab)_"
-    data = json.loads(VOCAB_PATH.read_text(encoding="utf-8"))
+    data = json.loads(vocab_path.read_text(encoding="utf-8"))
     items = data.get(dim, [])
     # 优先短而通用的表达
     items = sorted(items, key=lambda i: len(i.get("en", "")))[:limit]
@@ -189,20 +182,22 @@ def refresh_vocab() -> None:
                         seen.add(item["en"])
                         results[k].append(
                             {"en": str(item["en"])[:120], "zh": str(item.get("zh", ""))[:80]})
-    VOCAB_PATH.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"saved {VOCAB_PATH}: {sum(len(v) for v in results.values())} entries")
+    out_path = paths.spec_vocab_path()
+    out_path.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"saved {out_path}: {sum(len(v) for v in results.values())} entries")
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh-vocab", action="store_true", help="强制重跑 LLM 词汇提取")
     args = ap.parse_args()
-    if args.refresh_vocab or not VOCAB_PATH.exists():
+    if args.refresh_vocab or not paths.spec_vocab_path().exists():
         refresh_vocab()
-    template = TEMPLATE.read_text(encoding="utf-8")
+    template = paths.spec_template_path().read_text(encoding="utf-8")
     doc = render(template)
-    OUTPUT.write_text(doc, encoding="utf-8")
-    print(f"written {OUTPUT} ({len(doc)} chars)")
+    out = paths.spec_output_path()
+    out.write_text(doc, encoding="utf-8")
+    print(f"written {out} ({len(doc)} chars)")
     return 0
 
 

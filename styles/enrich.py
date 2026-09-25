@@ -18,7 +18,7 @@ import sys
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from . import store
+from . import paths, store
 from .llm import chat_json
 
 ASPECT_RATIOS = ["1:1", "2:3", "3:2", "4:5", "5:4", "3:4", "4:3", "9:16", "16:9"]
@@ -148,7 +148,7 @@ def run(force: bool = False, limit: int | None = None, style_id: str | None = No
 def export_creative_templates(conn, path=None) -> None:
     """导出创意模版数据 data/creative_templates.json（用户选择用）。"""
     from pathlib import Path
-    path = path or (store.DATA_DIR / "creative_templates.json")
+    path = path or paths.creative_templates_path()
     styles = store.load_styles(conn)
     out = {
         "version": "1.0",

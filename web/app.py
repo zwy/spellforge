@@ -7,15 +7,15 @@
 from __future__ import annotations
 
 import json
+import secrets
 import threading
-from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from styles import personal, store
+from styles import paths, personal, store
 from styles.enrich import run as enrich_run
 from styles.generate import generate
 from styles.llm import get_llm_config
@@ -25,8 +25,7 @@ from styles.scrape import scrape_all
 # 后台 LLM 补全状态（单实例运行）
 _enrich_state = {"running": False, "done": 0, "total": 0, "failed": 0, "error": None}
 
-WEB_DIR = Path(__file__).resolve().parent
-STATIC_DIR = WEB_DIR / "static"
+STATIC_DIR = paths.static_dir()
 
 app = FastAPI(title="咒语工坊 SpellForge")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
@@ -41,9 +40,7 @@ def index() -> FileResponse:  # type: ignore[name-defined]
 @app.get("/spec.md")
 def spec_markdown() -> FileResponse:  # type: ignore[name-defined]
     """《通用自然语言提示词规范》markdown 原文。"""
-    from fastapi.responses import FileResponse
-    from pathlib import Path
-    doc = Path(__file__).resolve().parent.parent / "docs" / "通用自然语言提示词规范.md"
+    doc = paths.spec_doc_path()
     if not doc.exists():
         raise HTTPException(404, "规范文档未生成，运行 python -m styles.spec")
     return FileResponse(doc, media_type="text/markdown")
@@ -373,6 +370,64 @@ def api_stats() -> dict:
         }
     finally:
         conn.close()
+
+
+
+class _DesktopGuardMiddleware:
+    """桌面模式访问防护（纯 ASGI 中间件，仅桌面入口安装）。
+
+    - Host 校验：拦截 DNS rebinding / 局域网直连（服务只应被本机窗口访问）。
+    - 写请求（POST/PUT/PATCH/DELETE）额外要求：
+        Origin（若携带）必须命中允许主机；
+        携带本次启动随机令牌 X-SF-Token（令牌经启动 URL 交给前端，
+        前端剥离到内存，不落 localStorage，不写死在包里）。
+    - 源码 Web 模式不安装，行为不变。
+    """
+
+    _MUTATING = {"POST", "PUT", "PATCH", "DELETE"}
+
+    def __init__(self, app, token: str):
+        self.app = app
+        self.token = token
+        self.allowed_hosts: set[str] = set()
+
+    def set_allowed_hosts(self, hosts: list[str]) -> None:
+        self.allowed_hosts = {h.lower() for h in hosts}
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http":
+            await self.app(scope, receive, send)
+            return
+        headers = {k.lower(): v for k, v in scope.get("headers", [])}
+        host = headers.get(b"host", b"").decode("latin-1").lower()
+        if host not in self.allowed_hosts:
+            await self._reject(send, "Host 校验失败：请通过应用窗口访问本机服务")
+            return
+        if scope["method"] in self._MUTATING:
+            origin = headers.get(b"origin", b"").decode("latin-1")
+            if origin:
+                origin_host = origin.split("://", 1)[-1].lower()
+                if origin_host not in self.allowed_hosts:
+                    await self._reject(send, "Origin 校验失败：已拒绝跨站请求")
+                    return
+            token = headers.get(b"x-sf-token", b"").decode("latin-1")
+            if not secrets.compare_digest(token, self.token):
+                await self._reject(send, "访问令牌缺失或不正确：请从应用窗口进入")
+                return
+        await self.app(scope, receive, send)
+
+    async def _reject(self, send, detail: str) -> None:
+        body = json.dumps({"detail": detail}, ensure_ascii=False).encode("utf-8")
+        headers = [(b"content-type", b"application/json; charset=utf-8"),
+                   (b"content-length", str(len(body)).encode())]
+        await send({"type": "http.response.start", "status": 403,
+                    "headers": headers})
+        await send({"type": "http.response.body", "body": body})
+
+
+def install_desktop_guard(app, token: str) -> _DesktopGuardMiddleware:
+    """给 ASGI app 安装桌面防护中间件并返回包装实例。"""
+    return _DesktopGuardMiddleware(app, token)
 
 
 if __name__ == "__main__":
