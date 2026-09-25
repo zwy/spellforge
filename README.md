@@ -38,6 +38,68 @@ python -m web.app           # 打开 http://127.0.0.1:8765
 > 首次运行会自动从 `data/*.json` 种子数据建库，无需任何额外步骤。
 > 生成提示词需要配置任意 OpenAI 规范 API（默认演示用 OpenRouter）。
 
+### 桌面模式（实验性）
+
+```bash
+pip install -r requirements.txt   # 含 pywebview
+python -m desktop.main            # 双击等价入口：独立窗口 + 本机服务
+```
+
+- 数据保存在系统用户数据目录（macOS `~/Library/Application Support/SpellForge`，
+  Windows `%APPDATA%\SpellForge`），升级或移动应用不丢失。
+- 想把开发仓库 `data/` 里的旧数据带过去：先 `python -m styles.migrate` 预演，
+  确认后 `python -m styles.migrate --apply`。
+- WebView 运行环境：macOS 用系统 WKWebView；Windows 用 WebView2（Win10/11 一般自带，
+  缺失时安装 [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)）。
+- 窗口关闭后本机服务自动退出；后端只监听 `127.0.0.1` 随机端口，
+  写请求需要本次启动令牌，外部网页无法触发本机接口。
+
+#### 应用图标
+
+把一张正方形 logo 放到 `desktop/assets/icon.png`（建议 1024×1024、透明背景），
+构建脚本会自动生成 macOS 的 `.icns` 和 Windows 的 `.ico` 并打进包里；
+没有这个文件时使用系统默认图标。
+
+#### macOS 打包
+
+```bash
+bash scripts/build_mac.sh    # 产出 dist/SpellForge.app（onedir + windowed）
+```
+
+本机试运行：
+
+```bash
+# 终端启动可看到日志；正常使用直接双击 dist/SpellForge.app
+dist/SpellForge.app/Contents/MacOS/SpellForge --smoke   # 自动开窗 2.5s 自检退出
+open dist/SpellForge.app
+```
+
+验收清单（已在本机验证）：把 `.app` 移动到任意位置（如 `/Applications` 或
+`/tmp`）后启动，用户数据仍在 `~/Library/Application Support/SpellForge`，
+修改过的数据在重启后保留；包内不含 `.env`、任何 SQLite 数据库与真实密钥。
+未做事项：签名与公证、自动更新。
+
+#### Windows 打包（钩子已留，未验证）
+
+当前没有 Windows 环境，构建与验收留待后续：
+
+```bat
+pip install -r requirements.txt
+scripts\build_windows.bat        :: 产出 dist\SpellForge\SpellForge.exe
+dist\SpellForge\SpellForge.exe --smoke
+```
+
+`--smoke` 结果写入 `%APPDATA%\SpellForge\smoke_result.txt`
+（windowed exe 无控制台输出）。验收清单：
+
+- 双击 `SpellForge.exe` 出现主界面；缺 WebView2 时先装
+  [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)
+- `--smoke` 后 `smoke_result.txt` 含 `port_released=yes`；任务管理器无残留进程
+- 数据落在 `%APPDATA%\SpellForge`；修改数据后重启保留；移动 `dist\SpellForge`
+  目录后启动数据仍在
+- 包内无 `.env`、无 `.db`、无真实密钥（与 macOS 包同规格，构建后复查一次）
+- 与 macOS 同等的主功能（场景库 / 主体库 / 生成 / 设置 / 历史）
+
 ### 命令行
 
 ```bash

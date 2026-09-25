@@ -6,12 +6,21 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from . import paths
 from .schema import CreativeCopyItem, Scenario, Style
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-DB_PATH = DATA_DIR / "app.db"
-JSON_PATH = DATA_DIR / "styles.json"
-SUBJECTS_JSON_PATH = DATA_DIR / "subjects.json"
+
+def __getattr__(name: str):
+    """路径属性动态解析（store.DATA_DIR 等保持原用法可用）。"""
+    if name == "DATA_DIR":
+        return paths.user_data_dir()
+    if name == "DB_PATH":
+        return paths.db_path()
+    if name == "JSON_PATH":
+        return paths.styles_json_path()
+    if name == "SUBJECTS_JSON_PATH":
+        return paths.subjects_json_path()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 def utcnow() -> str:
@@ -19,8 +28,7 @@ def utcnow() -> str:
 
 
 def connect(db_path: Path | None = None) -> sqlite3.Connection:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(db_path or DB_PATH)
+    conn = sqlite3.connect(db_path or paths.db_path())
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     _migrate(conn)
@@ -212,17 +220,19 @@ def export_subjects(conn: sqlite3.Connection) -> Path:
         "updated_at": utcnow(),
         "subjects": list_subjects(conn),
     }
-    SUBJECTS_JSON_PATH.write_text(
+    out_path = paths.subjects_json_path()
+    out_path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return SUBJECTS_JSON_PATH
+    return out_path
 
 
 def _seed_if_empty(conn: sqlite3.Connection) -> None:
-    """首次运行（空库）时，从随仓库分发的 JSON 种子数据导入。"""
+    """首次运行（空库）时，从 JSON 种子数据导入（包内默认 -> 用户副本）。"""
     try:
+        styles_json = paths.styles_json_path()
         if conn.execute("SELECT COUNT(*) c FROM styles").fetchone()["c"] == 0 \
-                and JSON_PATH.exists():
-            data = json.loads(JSON_PATH.read_text(encoding="utf-8"))
+                and styles_json.exists():
+            data = json.loads(styles_json.read_text(encoding="utf-8"))
             for s in data.get("styles", []):
                 conn.execute(
                     """INSERT OR IGNORE INTO styles
@@ -246,9 +256,10 @@ def _seed_if_empty(conn: sqlite3.Connection) -> None:
                          sc.get("enriched_at"), utcnow()),
                     )
             conn.commit()
+        subjects_json = paths.subjects_json_path()
         if conn.execute("SELECT COUNT(*) c FROM subjects").fetchone()["c"] == 0 \
-                and SUBJECTS_JSON_PATH.exists():
-            data = json.loads(SUBJECTS_JSON_PATH.read_text(encoding="utf-8"))
+                and subjects_json.exists():
+            data = json.loads(subjects_json.read_text(encoding="utf-8"))
             for s in data.get("subjects", []):
                 conn.execute(
                     """INSERT OR IGNORE INTO subjects (id, type, name, description, created_at, updated_at)
@@ -259,6 +270,21 @@ def _seed_if_empty(conn: sqlite3.Connection) -> None:
             conn.commit()
     except Exception as e:  # noqa: BLE001 —— 种子失败不阻塞启动
         print(f"[seed] skipped: {e}")
+
+
+def export_json(conn: sqlite3.Connection, path: Path | None = None) -> Path:
+    """把共享库全量导出为 styles.json（与种子文件同格式）。"""
+    target = Path(path) if path else paths.styles_json_path()
+    payload = {
+        "version": "1.0",
+        "updated_at": utcnow(),
+        "source": "openrouter.ai/benchmarks/media/images",
+        "styles": [style_to_dict(s) for s in load_styles(conn)],
+    }
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return target
 
 
 def style_to_dict(style: Style) -> dict:

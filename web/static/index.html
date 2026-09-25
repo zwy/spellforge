@@ -423,6 +423,20 @@
 <div id="toast" class="toast" role="status" aria-live="polite" style="display:none"></div>
 
 <script>
+// 桌面模式：从启动 URL 取一次性令牌并立即从地址栏剥离；
+// 之后所有写请求自动携带 X-SF-Token（令牌只留在内存，不落 localStorage）。
+const __sfToken = new URLSearchParams(location.search).get("sf_token") || "";
+if (__sfToken) {
+  history.replaceState(null, "", location.pathname);
+  const __origFetch = window.fetch.bind(window);
+  window.fetch = function (input, init = {}) {
+    if (typeof input === "string" && input.startsWith("/api/")) {
+      init.headers = Object.assign({}, init.headers, { "X-SF-Token": __sfToken });
+    }
+    return __origFetch(input, init);
+  };
+}
+
 const RATIOS = ["1:1","2:3","3:2","4:5","5:4","3:4","4:3","9:16","16:9"];
 const SUBJ_TYPES = ["人物", "产品", "景物", "品牌"];
 const TYPE_KEYS = { "人物": "person", "产品": "product", "景物": "scene", "品牌": "brand" };

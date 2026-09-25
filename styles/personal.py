@@ -7,15 +7,12 @@ from __future__ import annotations
 
 import sqlite3
 
-from .store import DATA_DIR, utcnow
-
-PERSONAL_DB_PATH = DATA_DIR / "personal.db"
-APP_DB_PATH = DATA_DIR / "app.db"
+from . import paths
+from .store import utcnow
 
 
 def connect() -> sqlite3.Connection:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(PERSONAL_DB_PATH)
+    conn = sqlite3.connect(paths.personal_db_path())
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     _migrate(conn)
@@ -55,9 +52,10 @@ def _migrate(conn: sqlite3.Connection) -> None:
 
 def _migrate_from_appdb(conn: sqlite3.Connection) -> None:
     """一次性迁移：app.db 里的 generations 整体搬到 personal.db 后从共享库删除。"""
-    if not APP_DB_PATH.exists():
+    app_db = paths.db_path()
+    if not app_db.exists():
         return
-    app = sqlite3.connect(APP_DB_PATH)
+    app = sqlite3.connect(app_db)
     app.row_factory = sqlite3.Row
     try:
         exists = app.execute(
@@ -160,9 +158,10 @@ def save_generation(conn: sqlite3.Connection, g: dict) -> int:
 def load_generations(conn: sqlite3.Connection, limit: int = 30) -> list[dict]:
     """按时间倒序取生成历史；subject_type 联查共享库（主体可能已删除）。"""
     subject_types: dict[int, str] = {}
-    if APP_DB_PATH.exists():
+    app_db = paths.db_path()
+    if app_db.exists():
         try:
-            app = sqlite3.connect(APP_DB_PATH)
+            app = sqlite3.connect(app_db)
             app.row_factory = sqlite3.Row
             for r in app.execute("SELECT id, type FROM subjects"):
                 subject_types[r["id"]] = r["type"]
