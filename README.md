@@ -54,6 +54,16 @@ python -m desktop.main            # 双击等价入口：独立窗口 + 本机�
 - 窗口关闭后本机服务自动退出；后端只监听 `127.0.0.1` 随机端口，
   写请求需要本次启动令牌，外部网页无法触发本机接口。
 
+#### 版本号
+
+发布版本统一改 `spellforge/__version__.py`；桌面窗口、页面左侧徽标、
+macOS bundle 和 Windows EXE 属性信息都会读取这个值。
+
+#### 版本号
+
+发布版本统一改 `spellforge/__version__.py`；桌面窗口、页面左侧徽标、
+macOS bundle 和 Windows EXE 属性信息都会读取这个值。
+
 #### 应用图标
 
 把一张正方形 logo 放到 `desktop/assets/icon.png`（建议 1024×1024、透明背景），

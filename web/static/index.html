@@ -51,6 +51,7 @@
   aside .sub { color: var(--muted); font-size: 12px; margin-bottom: 5px; }
   .brand-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
   .brand-row h1 { margin-bottom: 0; }
+  .version-badge { flex-shrink: 0; }
   .mode-switch { display: flex; gap: 6px; margin: 16px 0 14px; }
   .mode-switch button {
     flex: 1;
@@ -286,6 +287,7 @@
 <aside>
   <div class="brand-row">
     <h1>咒语工坊</h1>
+    <span class="badge version-badge" id="app-version" title="SpellForge 版本">v…</span>
     <button class="btn small" id="btn-settings" title="LLM 设置">⚙ 设置</button>
   </div>
   <div class="sub">openrouter.ai / benchmarks / styles</div>
@@ -453,6 +455,16 @@ function esc(s) {
   const d = document.createElement("div");
   d.textContent = s ?? "";
   return d.innerHTML;
+}
+
+async function loadAppVersion() {
+  try {
+    const info = await (await fetch("/api/version")).json();
+    el("app-version").textContent = info.display_version;
+    el("app-version").title = `咒语工坊 SpellForge ${info.display_version}`;
+  } catch {
+    el("app-version").textContent = "v?";
+  }
 }
 
 async function init() {
@@ -1026,6 +1038,7 @@ async function watchEnrich(btn) {
   }
 }
 
+loadAppVersion();
 init();
 setView("browse");
 </script>

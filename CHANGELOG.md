@@ -3,6 +3,22 @@
 本项目的所有重要变更记录于此。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [1.1.2] - 2026-09-25
+
+### 新增
+
+- **应用版本号统一管理**：版本定义集中在 `spellforge/__version__.py`；
+  页面左侧显示 `v1.1.2`，窗口标题携带版本，macOS bundle 与 Windows
+  EXE 属性使用同一版本来源，新增 `/api/version` 供前端读取。
+
+## [1.1.2] - 2026-09-25
+
+### 新增
+
+- **应用版本号统一管理**：版本定义集中在 `spellforge/__version__.py`；
+  页面左侧显示 `v1.1.2`，窗口标题携带版本，macOS bundle 与 Windows
+  EXE 属性使用同一版本来源，新增 `/api/version` 供前端读取。
+
 ## [1.1.1] - 2026-09-25
 
 ### 修复

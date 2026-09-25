@@ -15,6 +15,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from spellforge import __version__ as APP_VERSION
 from styles import paths, personal, store
 from styles.enrich import run as enrich_run
 from styles.generate import generate
@@ -27,7 +28,7 @@ _enrich_state = {"running": False, "done": 0, "total": 0, "failed": 0, "error": 
 
 STATIC_DIR = paths.static_dir()
 
-app = FastAPI(title="咒语工坊 SpellForge")
+app = FastAPI(title="咒语工坊 SpellForge", version=APP_VERSION)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
@@ -44,6 +45,16 @@ def spec_markdown() -> FileResponse:  # type: ignore[name-defined]
     if not doc.exists():
         raise HTTPException(404, "规范文档未生成，运行 python -m styles.spec")
     return FileResponse(doc, media_type="text/markdown")
+
+
+@app.get("/api/version")
+def api_version() -> dict:
+    """应用版本号，桌面/Web 共用同一来源。"""
+    return {
+        "app": "SpellForge",
+        "version": APP_VERSION,
+        "display_version": f"v{APP_VERSION}",
+    }
 
 
 @app.get("/api/styles")

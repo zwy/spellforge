@@ -18,16 +18,12 @@ import secrets
 import sys
 import threading
 
+from spellforge import __version__ as APP_VERSION
+
 # 必须在导入任何 styles / web 模块之前声明桌面模式
 os.environ.setdefault("SPELLFORGE_DESKTOP", "1")
 
-APP_TITLE = "咒语工坊 SpellForge"
-
-
-def _format_exception(e: Exception) -> list[str]:
-    import traceback
-
-    return traceback.format_exception(type(e), e, e.__traceback__)
+APP_TITLE = f"咒语工坊 SpellForge v{APP_VERSION}"
 
 
 def _format_exception(e: Exception) -> list[str]:
@@ -51,7 +47,7 @@ def _show_startup_error(message: str) -> None:
       <pre style="white-space:pre-wrap;color:#333">{message}</pre>
       <p style="color:#888">关闭此窗口后应用退出。</p>
     </div>"""
-    webview.create_window(f"{APP_TITLE} · 启动失败", html=html, width=560, height=320)
+    webview.create_window(f"SpellForge · 启动失败", html=html, width=560, height=320)
     webview.start()
 
 

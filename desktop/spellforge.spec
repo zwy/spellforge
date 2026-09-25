@@ -19,6 +19,10 @@ from pathlib import Path
 ROOT = Path(SPECPATH).resolve()   # spec 所在目录 = repo/desktop
 REPO = ROOT.parent                 # 仓库根
 
+# 统一应用版本来源；PyInstaller 的 macOS / Windows 资源信息和运行时 API 都用它。
+sys.path.insert(0, str(REPO))
+from spellforge.__version__ import __version__ as APP_VERSION
+
 datas = [
     (str(REPO / "web" / "static"), "web/static"),
     (str(REPO / "data" / "styles.json"), "data"),
@@ -67,12 +71,78 @@ a = Analysis(
 )
 pyz = PYZ(a.pure)
 
+# Windows EXE 版本资源：右键 -> 属性 -> 详细信息。
+# macOS 不需要；导入也仅在 Windows 分支执行，避免跨平台依赖。
+def _version_tuple_for_windows(version: str) -> tuple[int, int, int, int]:
+    numbers = []
+    for part in version.split("."):
+        digits = ""
+        for char in part:
+            if not char.isdigit():
+                break
+            digits += char
+        if not digits:
+            break
+        numbers.append(int(digits))
+    numbers.extend([0] * (4 - len(numbers)))
+    return tuple(numbers[:4])
+
+
+if sys.platform == "win32":
+    from PyInstaller.utils.win32.versioninfo import (
+        FixedFileInfo,
+        StringFileInfo,
+        StringStruct,
+        StringTable,
+        VarFileInfo,
+        VarStruct,
+        VSVersionInfo,
+    )
+
+    file_version_tuple = _version_tuple_for_windows(APP_VERSION)
+    windows_version = VSVersionInfo(
+        ffi=FixedFileInfo(
+            filevers=file_version_tuple,
+            prodvers=file_version_tuple,
+            mask=0x3F,
+            flags=0x0,
+            OS=0x40004,
+            fileType=0x1,
+            subtype=0x0,
+            date=(0, 0),
+        ),
+        kids=[
+            StringFileInfo(
+                [
+                    StringTable(
+                        "080404b0",
+                        [
+                            StringStruct("CompanyName", "SpellForge"),
+                            StringStruct("FileDescription", "咒语工坊 SpellForge"),
+                            StringStruct("FileVersion", APP_VERSION),
+                            StringStruct("InternalName", "SpellForge"),
+                            StringStruct("LegalCopyright", "MIT License"),
+                            StringStruct("OriginalFilename", "SpellForge.exe"),
+                            StringStruct("ProductName", "咒语工坊 SpellForge"),
+                            StringStruct("ProductVersion", APP_VERSION),
+                        ],
+                    )
+                ]
+            ),
+            VarFileInfo([VarStruct("Translation", [2052, 1200])]),
+        ],
+    )
+else:
+    windows_version = None
+
+
 exe = EXE(
     pyz,
     a.scripts,
     [],
     exclude_binaries=True,
     name="SpellForge",
+    version=windows_version,
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -104,6 +174,8 @@ if sys.platform == "darwin":
             "CFBundleName": "SpellForge",
             "CFBundleDisplayName": "咒语工坊 SpellForge",
             "CFBundleIdentifier": "com.spellforge.desktop",
+            "CFBundleShortVersionString": APP_VERSION,
+            "CFBundleVersion": APP_VERSION,
             "NSHumanReadableCopyright": "MIT License",
         },
     )
