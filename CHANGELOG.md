@@ -3,6 +3,16 @@
 本项目的所有重要变更记录于此。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [未发布]
+
+### 变更
+
+- **前端设计语言对齐**：与 91porn-download / riban-ranking 共用同套设计 token
+  （米白纸感主题 + 青绿主色），页面从暗色侧边栏布局改为顶栏导航布局，
+  风格库改为分组下拉导航；组件（按钮 / chip / 卡片/面板 / 弹窗 / toast）
+  与交互约定（堆叠 toast、统一确认弹窗、按钮 busy 态、本地时区时间）
+  与参考项目一致；新增《前端设计规范》与 `AGENTS.md` 作为跨项目对齐锚点。
+
 ## [1.1.2] - 2026-09-25
 
 ### 新增
