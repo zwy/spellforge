@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import json
+import os
 import secrets
 import threading
 
@@ -443,4 +444,8 @@ def install_desktop_guard(app, token: str) -> _DesktopGuardMiddleware:
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8765)
+    uvicorn.run(
+        app,
+        host=os.getenv("WEB_HOST", "127.0.0.1"),
+        port=int(os.getenv("WEB_PORT", "8765")),
+    )

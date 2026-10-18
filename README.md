@@ -32,11 +32,26 @@ pip install -r requirements.txt
 # 配置 LLM（也可启动后在页面左上角 ⚙ 设置里配置）
 cp .env.example .env        # 填入你的 API Key
 
-python -m web.app           # 打开 http://127.0.0.1:8765
+./scripts/start.sh            # 打开 http://127.0.0.1:8765
 ```
 
 > 首次运行会自动从 `data/*.json` 种子数据建库，无需任何额外步骤。
 > 生成提示词需要配置任意 OpenAI 规范 API（默认演示用 OpenRouter）。
+
+### 启动与停止
+
+```bash
+./scripts/start.sh                 # 默认 http://127.0.0.1:8765
+WEB_PORT=9000 ./scripts/start.sh   # 使用 9000 端口
+./scripts/stop.sh                  # 停止默认端口
+./scripts/stop.sh 9000             # 停止指定端口
+```
+
+- 启动脚本以后台方式运行，日志默认在 `/tmp/spellforge-web-8765.log`。
+- 服务健康检查：`curl -s --noproxy '*' http://127.0.0.1:8765/api/version`。
+- 停止脚本只会匹配仓库根目录下启动的 `web.app` 监听进程，不会误杀占用同一端口的浏览器；可以先 `./scripts/stop.sh --dry-run 9000` 预演。
+- 只改 `web/static/**` 后刷新页面即可；改 Python 文件或 `.env` 后需要重启。
+- 需要看日志时：`tail -f /tmp/spellforge-web-8765.log`。
 
 ### 桌面模式（实验性）
 

@@ -3,13 +3,18 @@
 本项目的所有重要变更记录于此。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
-## [1.1.2] - 2026-09-25
+## [1.2.0] - 2026-10-18
 
-### 新增
+### 变更
 
-- **应用版本号统一管理**：版本定义集中在 `spellforge/__version__.py`；
-  页面左侧显示 `v1.1.2`，窗口标题携带版本，macOS bundle 与 Windows
-  EXE 属性使用同一版本来源，新增 `/api/version` 供前端读取。
+- **前端设计语言对齐**：与 91porn-download / riban-ranking 共用同套设计 token
+  （米白纸感主题 + 青绿主色），页面从暗色侧边栏布局改为顶栏导航布局，
+  风格库改为分组下拉导航；组件（按钮 / chip / 卡片/面板 / 弹窗 / toast）
+  与交互约定（堆叠 toast、统一确认弹窗、按钮 busy 态、本地时区时间）
+  与参考项目一致；新增《前端设计规范》与 `AGENTS.md` 作为跨项目对齐锚点。
+- **本地服务启停脚本**：新增 `scripts/start.sh` / `scripts/stop.sh`，
+  支持 `WEB_PORT` / `WEB_HOST`，启动时自动做 `/api/version` 健康检查；
+  停止脚本只结束本仓库的 `web.app` 监听进程，并支持 `--dry-run` 预演。
 
 ## [1.1.2] - 2026-09-25
 
